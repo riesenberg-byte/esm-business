@@ -49,3 +49,15 @@ In Claude Code (Web) eine Routine anlegen:
   > Lies ROUTINE.md im Repository und führe den Lauf für heute genau danach aus. Halte dich strikt an die Grenzen für Anzahl, Abrufe und Länge.
 
 Erster Test: Routine einmal manuell starten, danach `RUNLOG.md` und `data/feed_status.json` prüfen. Nicht erreichbare Feeds in `data/sources.json` korrigieren oder entfernen.
+
+## Qualität und Laufstatus
+
+`python3 scripts/validate.py` prüft nur und verändert keine Dateien.
+`python3 -m unittest discover -s tests` prüft Parser, Datenregeln und Schreibverhalten.
+Die vollständigen Schreibbefehle und Statusregeln stehen in ROUTINE.md.
+
+`data/legacy.json` hält die unveränderten Datums-Ausnahmen des übernommenen Bestands fest; neue Artikel müssen vollständige Datumsangaben haben. Gemeinsame Quellen erzeugen Warnungen zur redaktionellen Prüfung.
+
+Bei `Tunnel connection failed: 403 Forbidden` zunächst die erlaubten Netzwerkziele der Routine-Umgebung prüfen. Danach dort einen manuellen Feed-Abruf testen. Änderungen im Repository können diese Umgebungseinstellungen nicht freischalten. Der Websuche-Ersatzweg funktioniert nur, wenn entsprechende Werkzeuge verfügbar sind.
+
+Metadaten unterscheiden letzten Versuch, letzte erfolgreiche (ggf. eingeschränkte) Recherche und Laufstatus. Ein technischer Ausfall aktualisiert den Recherchezeitpunkt nicht. `letzter_artikel` zeigt das letzte bekannte Aufnahmedatum; Eventänderungen stehen zusätzlich im Laufprotokoll.

@@ -1,5 +1,5 @@
 // esm.business – Service Worker: App-Hülle aus dem Cache, Daten immer frisch mit Offline-Rückfall
-const CACHE = "esm-business-v1";
+const CACHE = "esm-business-v2";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "fonts/SchibstedGrotesk.woff2",
   "icons/favicon.svg", "icons/icon-192.png", "icons/icon-512.png"];
 

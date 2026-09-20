@@ -1,0 +1,146 @@
+{
+ "_hinweis": "Bestandsausnahmen aus Commit 39d4ff0. Keine erfundenen Veröffentlichungs- oder Aufnahmezeitpunkte. retention_start ist ausschließlich der Beginn der Aufbewahrungsfrist für Altartikel ohne added. Nicht für neue Artikel erweitern.",
+ "retention_start": "2026-09-20",
+ "items": {
+  "bmw-aiconic": {
+   "missing_added": true
+  },
+  "bmw-agentic": {
+   "missing_added": true
+  },
+  "mb-scale": {
+   "missing_added": true
+  },
+  "ehi-agentic": {
+   "datum": "2026-09"
+  },
+  "zalando": {
+   "missing_added": true
+  },
+  "siemens-eigen": {
+   "missing_added": true
+  },
+  "coba": {
+   "missing_added": true
+  },
+  "agentpay-de": {
+   "missing_added": true
+  },
+  "laender-plattform": {
+   "missing_added": true
+  },
+  "f13": {
+   "datum": "2026-02",
+   "missing_added": true
+  },
+  "iais-arztbrief": {
+   "missing_added": true
+  },
+  "stanford-burnout": {
+   "missing_added": true
+  },
+  "tk-service": {
+   "missing_added": true
+  },
+  "tk-hub": {
+   "datum": "2026-09"
+  },
+  "tk-6h": {
+   "datum": "2026-03",
+   "missing_added": true
+  },
+  "bitkom": {
+   "datum": "2026",
+   "missing_added": true
+  },
+  "deloitte-soai": {
+   "missing_added": true
+  },
+  "mckinsey-2026": {
+   "datum": "2026-08",
+   "missing_added": true
+  },
+  "sn-tcloud": {
+   "datum": "2026-07",
+   "missing_added": true
+  },
+  "sn-stackit": {
+   "datum": "2026",
+   "missing_added": true
+  },
+  "sn-noris": {
+   "missing_added": true
+  },
+  "tk-mistral": {
+   "datum": "2026-09"
+  },
+  "armis": {
+   "missing_added": true
+  },
+  "veza": {
+   "datum": "2026-03",
+   "missing_added": true
+  },
+  "moveworks": {
+   "datum": "2025-12",
+   "missing_added": true
+  },
+  "agent365": {
+   "missing_added": true
+  },
+  "gemini-ent": {
+   "datum": "2026-04",
+   "missing_added": true
+  },
+  "agent-fabric": {
+   "datum": "2026-04",
+   "missing_added": true
+  },
+  "sn-target": {
+   "datum": "2026-09"
+  },
+  "sn-workforce": {
+   "datum": "2026-05",
+   "missing_added": true
+  },
+  "raleigh": {
+   "datum": "2026-09"
+  },
+  "energy": {
+   "datum": "2026-09"
+  },
+  "nowonnow": {
+   "datum": "2026",
+   "missing_added": true
+  },
+  "forrester-ps": {
+   "datum": "2026",
+   "missing_added": true
+  },
+  "australia-ind": {
+   "datum": "2026-05",
+   "missing_added": true
+  },
+  "rovo-ops": {
+   "datum": "2026-05",
+   "missing_added": true
+  },
+  "opendesk-ch": {
+   "datum": "2026-09"
+  },
+  "mcp-console": {
+   "datum": "2026",
+   "missing_added": true
+  },
+  "act-registry": {
+   "datum": "2026-09"
+  },
+  "tk-autonomy": {
+   "datum": "2026-09"
+  },
+  "amplify": {
+   "datum": "2026-04",
+   "missing_added": true
+  }
+ }
+}

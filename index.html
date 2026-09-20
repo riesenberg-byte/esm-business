@@ -432,7 +432,11 @@ function applyLang(){
   document.querySelectorAll("[data-i]").forEach(el=>{ if(el.dataset.i==="foot2") el.innerHTML=T("foot2"); else el.textContent=T(el.dataset.i); });
   document.getElementById("sub").textContent=T("sub");
   const up=document.getElementById("updated");
-  if(META&&META.aktualisiert){ const d=new Date(META.aktualisiert); up.textContent=T("updatedL").replace("{d}",d.toLocaleDateString(loc(),{day:"numeric",month:"long",year:"numeric"})+", "+d.toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"})); } else up.textContent="";
+  const stamp=META&&META.letzte_recherche;
+  up.textContent=stamp?((lang==="de"?"Recherche: ":"Research: ")+new Date(stamp).toLocaleString(loc())):(lang==="de"?"Recherchezeitpunkt nicht bestätigt":"Research time not confirmed");
+  if(META&&META.laufstatus==="blocked") up.textContent+=(lang==="de"?" · Letzter Abruf fehlgeschlagen":" · Last retrieval failed");
+  if(META&&META.laufstatus==="partial") up.textContent+=(lang==="de"?" · Eingeschränkte Quellenabdeckung":" · Limited source coverage");
+  if(META&&META.letzter_artikel) up.textContent+=(lang==="de"?" · Letzte Meldung: ":" · Latest article: ")+fmt(META.letzter_artikel);
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===lang));
 }
 function syncTabs(){

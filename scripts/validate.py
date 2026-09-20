@@ -1,80 +1,136 @@
 #!/usr/bin/env python3
-"""Prüft data/items.json und data/events.json, archiviert Altes, pflegt seen.json.
-Aufruf: python3 scripts/validate.py [--seen candidates.json]   Exit 1 bei Fehlern."""
-import json, re, sys
-from datetime import date, timedelta, datetime, timezone
+"""Read-only validation by default; --apply performs maintenance after validation."""
+import argparse
+import json
+import re
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlparse
+from common import norm_url, write_json
 
-ROOT = Path(__file__).resolve().parent.parent; DATA = ROOT / "data"
-CATS = {"ai": {"consumer", "eri", "fs", "gps", "lshc", "tmt", "cross"},
-        "esm": {"sn", "ma", "results", "industry", "market"},
-        "sov": {"snsov", "cloud", "ai", "work"},
-        "tech": {"mcp", "gov", "dev"}}
-DATE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
-KEEP_DAYS = 120
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / 'data'
+CATS = {'ai': {'consumer','eri','fs','gps','lshc','tmt','cross'},
+        'esm': {'sn','ma','results','industry','market'},
+        'sov': {'snsov','cloud','ai','work'}, 'tech': {'mcp','gov','dev'}}
+REGIONS = {'DE','DACH','EU','US','Global','CH','AT'}
 
-def load(p, d):
-    try: return json.loads(p.read_text(encoding="utf-8"))
-    except FileNotFoundError: return d
 
-def bi(o, name, maxlen, errs, iid):
-    if not isinstance(o, dict) or not o.get("de") or not o.get("en"):
-        errs.append(f"{iid}: '{name}' braucht de und en"); return
-    for k in ("de", "en"):
-        if len(o[k]) > maxlen: errs.append(f"{iid}: '{name}.{k}' zu lang ({len(o[k])}>{maxlen})")
+def load(path, default=None):
+    try:
+        return json.loads(path.read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        if default is not None:
+            return default
+        raise
+
+
+def valid_date(value):
+    try:
+        return isinstance(value, str) and bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}', value)) and date.fromisoformat(value) is not None
+    except ValueError:
+        return False
+
+
+def valid_url(value):
+    try:
+        u = urlparse(value)
+        return isinstance(value, str) and u.scheme == 'https' and bool(u.hostname) and not u.username and not any(c.isspace() or c in '\"<>' for c in value)
+    except (ValueError, TypeError):
+        return False
+
+
+def validate(items, events, legacy):
+    errors, warnings, ids, urls = [], [], set(), {}
+    def bi(obj, field, limit, label):
+        if not isinstance(obj, dict) or any(not isinstance(obj.get(k), str) or not obj[k].strip() or len(obj[k]) > limit for k in ('de','en')):
+            errors.append(f'{label}: {field} benötigt de/en, 1–{limit} Zeichen')
+    if not isinstance(items, list) or not isinstance(events, list):
+        return ['items/events müssen Listen sein'], []
+    for item in items:
+        if not isinstance(item, dict):
+            errors.append('Artikel muss Objekt sein'); continue
+        iid = item.get('id'); label = str(iid)
+        if not isinstance(iid, str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', iid):
+            errors.append(f'{label}: ungültige ID'); continue
+        if iid in ids: errors.append(f'{iid}: doppelte ID')
+        ids.add(iid)
+        old = legacy.get('items', {}).get(iid, {})
+        if item.get('tab') not in CATS or item.get('cat') not in CATS.get(item.get('tab'), set()): errors.append(f'{iid}: tab/cat ungültig')
+        if not valid_date(item.get('datum')) and not (old.get('datum') and item.get('datum') == old['datum']): errors.append(f'{iid}: datum muss gültiges YYYY-MM-DD sein')
+        if not valid_date(item.get('added')) and not (old.get('missing_added') and 'added' not in item): errors.append(f'{iid}: added fehlt/ungültig')
+        if valid_date(item.get('added')) and item['added'] > date.today().isoformat(): errors.append(f'{iid}: added liegt in der Zukunft')
+        if item.get('region') not in REGIONS: errors.append(f'{iid}: region ungültig')
+        if type(item.get('rel_score')) is not int or item['rel_score'] not in (1,2,3): errors.append(f'{iid}: rel_score ungültig')
+        if not valid_url(item.get('quelle')): errors.append(f'{iid}: quelle ungültig')
+        else: urls.setdefault(norm_url(item['quelle']), []).append(iid)
+        if not isinstance(item.get('qn'), str) or not item['qn'].strip(): errors.append(f'{iid}: qn fehlt')
+        for field, limit in [('titel',90),('kurz',400),('rel',220)]: bi(item.get(field),field,limit,iid)
+        if item.get('tab') == 'ai': bi(item.get('sub'),'sub',30,iid)
+        elif item.get('sub') is not None: errors.append(f'{iid}: sub nur bei ai')
+        if (item.get('metric') is None) != (item.get('msub') is None): errors.append(f'{iid}: metric/msub nur gemeinsam')
+        if item.get('metric') is not None:
+            bi(item['metric'],'metric',14,iid); bi(item.get('msub'),'msub',50,iid)
+    for url, group in urls.items():
+        if len(group)>1: warnings.append('Gemeinsame Quelle redaktionell prüfen: ' + ', '.join(group))
+    event_keys = set()
+    for event in events:
+        if not isinstance(event, dict): errors.append('Event muss Objekt sein'); continue
+        label = str(event.get('titel'))
+        for field, limit in [('titel',150),('tag',100),('ort',150),('note',400)]: bi(event.get(field),field,limit,label)
+        if not valid_date(event.get('datum')): errors.append(f'{label}: datum ungültig')
+        if event.get('bis') is not None and (not valid_date(event['bis']) or str(event['bis']) < str(event.get('datum'))): errors.append(f'{label}: bis ungültig')
+        if not valid_url(event.get('url')): errors.append(f'{label}: URL ungültig')
+        else:
+            key = (norm_url(event['url']), str(event.get('datum')))
+            if key in event_keys: errors.append(f'{label}: doppeltes Event')
+            event_keys.add(key)
+    return errors, warnings
+
 
 def main():
-    items = load(DATA / "items.json", []); events = load(DATA / "events.json", []); errs = []
-    ids, urls = set(), set()
-    for i in items:
-        iid = i.get("id", "?")
-        if iid in ids: errs.append(f"doppelte id {iid}")
-        ids.add(iid)
-        urls.add(i.get("quelle"))
-        if i.get("tab") not in CATS: errs.append(f"{iid}: unbekannter tab"); continue
-        if i.get("cat") not in CATS[i["tab"]]: errs.append(f"{iid}: cat passt nicht zu tab")
-        if not DATE.match(str(i.get("datum", ""))): errs.append(f"{iid}: datum ungültig")
-        if i.get("added") and not re.match(r"^\d{4}-\d{2}-\d{2}$", i["added"]): errs.append(f"{iid}: added ungültig")
-        if i.get("rel_score") not in (1, 2, 3): errs.append(f"{iid}: rel_score 1–3")
-        if not str(i.get("quelle", "")).startswith("https://"): errs.append(f"{iid}: quelle muss https sein")
-        if not i.get("qn"): errs.append(f"{iid}: qn (Quellenname) fehlt")
-        bi(i.get("titel"), "titel", 110, errs, iid); bi(i.get("kurz"), "kurz", 480, errs, iid); bi(i.get("rel"), "rel", 260, errs, iid)
-        if i.get("metric"): bi(i["metric"], "metric", 14, errs, iid); bi(i.get("msub"), "msub", 50, errs, iid)
-        if i.get("sub"): bi(i["sub"], "sub", 30, errs, iid)
-    for e in events:
-        if not re.match(r"^\d{4}-\d{2}-\d{2}$", e.get("datum", "")): errs.append(f"Event {e.get('titel')}: datum")
-        if not str(e.get("url", "")).startswith("https://"): errs.append(f"Event {e.get('titel')}: url")
-    if errs:
-        print("FEHLER:\n- " + "\n- ".join(errs)); sys.exit(1)
-
-    # Archivieren: Einträge, die älter als KEEP_DAYS hinzugefügt wurden
-    limit = (date.today() - timedelta(days=KEEP_DAYS)).isoformat()
-    old = [i for i in items if i.get("added") and i["added"] < limit]
-    if old:
-        arch = load(DATA / "archive.json", []); arch.extend(old)
-        (DATA / "archive.json").write_text(json.dumps(arch, ensure_ascii=False, indent=1), encoding="utf-8")
-        items = [i for i in items if i not in old]
-    # Vergangene Events älter als 14 Tage entfernen
-    ev_limit = (date.today() - timedelta(days=14)).isoformat()
-    events = [e for e in events if (e.get("bis") or e["datum"]) >= ev_limit]
-    (DATA / "items.json").write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
-    (DATA / "events.json").write_text(json.dumps(events, ensure_ascii=False, indent=1), encoding="utf-8")
-
-    # Geprüfte Kandidaten merken, damit sie nicht erneut Tokens kosten
-    if "--seen" in sys.argv:
-        cand = load(ROOT / sys.argv[sys.argv.index("--seen") + 1], [])
-        seen = load(DATA / "seen.json", [])
-        known = {s["url"] for s in seen}
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--apply', action='store_true')
+    parser.add_argument('--seen', type=Path, help='Nur tatsächlich geprüfte Kandidaten')
+    parser.add_argument('--status', choices=['ok','partial','blocked'])
+    parser.add_argument('--method', choices=['feeds','search'])
+    args = parser.parse_args()
+    if args.apply and (not args.status or not args.method): parser.error('--apply benötigt --status und --method')
+    if not args.apply and (args.seen or args.status or args.method): parser.error('Schreiboptionen benötigen --apply')
+    items, events = load(DATA/'items.json'), load(DATA/'events.json')
+    legacy = load(DATA/'legacy.json', {})
+    errors, warnings = validate(items, events, legacy)
+    for warning in warnings: print('WARNUNG:', warning)
+    if errors: raise SystemExit('FEHLER:\n- ' + '\n- '.join(errors))
+    if args.apply:
+        # Read and check every input before writing any file.
+        seen = load(DATA/'seen.json', [])
+        reviewed = load(args.seen) if args.seen else []
+        for entry in seen:
+            if not valid_url(entry.get('url')) or not valid_date(entry.get('am')): raise SystemExit('seen.json ungültig')
+        for entry in reviewed:
+            if not valid_url(entry.get('url')): raise SystemExit('Geprüfter Kandidat: URL ungültig')
+        now = datetime.now(timezone.utc).isoformat(timespec='minutes')
         today = date.today().isoformat()
-        seen += [{"url": c["url"], "am": today} for c in cand if c["url"] not in known]
-        cut = (date.today() - timedelta(days=45)).isoformat()
-        seen = [s for s in seen if s["am"] >= cut]
-        (DATA / "seen.json").write_text(json.dumps(seen, ensure_ascii=False, indent=0), encoding="utf-8")
-    meta = {"aktualisiert": datetime.now(timezone.utc).isoformat(timespec="minutes"),
-            "artikel": len(items),
-            "letzter_artikel": max((i.get("added") or "" for i in items), default="")}
-    (DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"OK: {len(items)} Artikel, {len(events)} Events" + (f", {len(old)} archiviert" if old else ""))
+        merged = {norm_url(s['url']): s['am'] for s in seen}
+        for entry in reviewed: merged[norm_url(entry['url'])] = today
+        seen = [{'url':u,'am':d} for u,d in sorted(merged.items()) if d >= (date.today()-timedelta(days=45)).isoformat()]
+        cutoff = (date.today()-timedelta(days=120)).isoformat()
+        old = [i for i in items if (i.get('added') or legacy.get('retention_start', today)) < cutoff]
+        archive = load(DATA/'archive.json', [])
+        archived_ids = {i['id'] for i in archive}
+        archive += [i for i in old if i['id'] not in archived_ids]
+        items = [i for i in items if i not in old]
+        events = [e for e in events if (e.get('bis') or e['datum']) >= (date.today()-timedelta(days=14)).isoformat()]
+        meta = load(DATA/'meta.json', {})
+        meta.update(letzter_versuch=now, laufstatus=args.status, methode=args.method, artikel=len(items), letzter_artikel=max((i.get('added','') for i in items),default=''))
+        if args.status in ('ok','partial'):
+            meta['letzte_recherche'] = now
+            meta['aktualisiert'] = now
+        write_json(DATA/'items.json', items); write_json(DATA/'events.json', events)
+        if old: write_json(DATA/'archive.json', archive)
+        write_json(DATA/'seen.json', seen); write_json(DATA/'meta.json', meta)
+    print(f'OK: {len(items)} Artikel, {len(events)} Events' + ('; gespeichert' if args.apply else '; nur geprüft'))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

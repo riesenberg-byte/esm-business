@@ -7,22 +7,15 @@ from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from common import norm_url, write_json
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 UA = "Mozilla/5.0 (esm.business feed reader)"
 
 def load(p, default):
     try: return json.loads(p.read_text(encoding="utf-8"))
-    except Exception: return default
-
-def norm_url(u):
-    u = html.unescape(u.strip())
-    q = urllib.parse.urlparse(u)
-    if "bing.com" in q.netloc and "apiclick" in q.path:          # Bing-Weiterleitung auflösen
-        real = urllib.parse.parse_qs(q.query).get("url", [""])[0]
-        if real: u = real; q = urllib.parse.urlparse(u)
-    params = [(k, v) for k, v in urllib.parse.parse_qsl(q.query) if not k.lower().startswith(("utm_", "wt_", "cmp", "ocid"))]
-    return urllib.parse.urlunparse((q.scheme, q.netloc.lower().removeprefix("www."), q.path.rstrip("/"), "", urllib.parse.urlencode(params), ""))
+    except FileNotFoundError: return default
 
 def text(el):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html.unescape("".join(el.itertext()) if el is not None else ""))).strip()
@@ -45,10 +38,15 @@ def entries(raw):
     for it in root.iter("item"):
         yield text(it.find("title")), (it.findtext("link") or "").strip(), text(it.find("description")), it.findtext("pubDate")
     for it in root.iter("{http://www.w3.org/2005/Atom}entry"):
-        link = it.find("a:link[@rel='alternate']", ns) or it.find("a:link", ns)
+        link = it.find("a:link[@rel='alternate']", ns)
+        if link is None:
+            link = it.find("a:link", ns)
+        summary = it.find("a:summary", ns)
+        if summary is None:
+            summary = it.find("a:content", ns)
         yield (text(it.find("a:title", ns)), link.get("href") if link is not None else "",
-               text(it.find("a:summary", ns) or it.find("a:content", ns)),
-               it.findtext("a:updated", namespaces=ns) or it.findtext("a:published", namespaces=ns))
+               text(summary),
+               it.findtext("a:published", namespaces=ns) or it.findtext("a:updated", namespaces=ns))
 
 def score(s, kw):
     s = s.casefold(); total = 0; hits = []
@@ -63,7 +61,7 @@ def main():
     cfg = load(DATA / "sources.json", {})
     items = load(DATA / "items.json", [])
     seen = load(DATA / "seen.json", [])
-    known = {norm_url(i["quelle"]) for i in items} | {s["url"] for s in seen}
+    known = {norm_url(i["quelle"]) for i in items} | {norm_url(s["url"]) for s in seen}
     cutoff = datetime.now(timezone.utc) - timedelta(days=cfg.get("max_age_days", 6))
     excl = [e.casefold() for e in cfg.get("exclude", [])]
     out, status, titles = [], {}, set()
@@ -76,14 +74,14 @@ def main():
                 if u in known: continue
                 d = parse_date(date)
                 if d and d.tzinfo is None: d = d.replace(tzinfo=timezone.utc)
-                if d and d < cutoff: continue
+                if d and (d < cutoff or d > datetime.now(timezone.utc) + timedelta(days=1)): continue
                 blob = f"{title} {desc}"
                 if any(e in blob.casefold() for e in excl): continue
                 sc, hits = score(blob, cfg.get("keywords", {}))
                 if sc < 3: continue
                 key = re.sub(r"\W+", "", title.casefold())[:60]
                 if key in titles: continue
-                titles.add(key); n += 1
+                titles.add(key); known.add(u); n += 1
                 out.append({"url": u, "titel": title[:200], "teaser": desc[:280], "datum": d.date().isoformat() if d else None,
                             "feed": f["name"], "score": sc, "treffer": hits[:6]})
             status[f["name"]] = {"ok": True, "neu": n}
@@ -92,8 +90,8 @@ def main():
     out.sort(key=lambda c: c["datum"] or "", reverse=True)
     out.sort(key=lambda c: c["score"], reverse=True)
     out = out[: cfg.get("max_candidates", 40)]
-    (ROOT / "candidates.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-    (DATA / "feed_status.json").write_text(json.dumps({"stand": datetime.now(timezone.utc).isoformat(timespec="minutes"), "feeds": status}, ensure_ascii=False, indent=1), encoding="utf-8")
+    write_json(ROOT / "candidates.json", out)
+    write_json(DATA / "feed_status.json", {"stand": datetime.now(timezone.utc).isoformat(timespec="minutes"), "status": "blocked" if status and all(not v["ok"] for v in status.values()) else "partial" if any(not v["ok"] for v in status.values()) else "ok", "feeds": status})
     bad = [k for k, v in status.items() if not v["ok"]]
     print(f"{len(out)} Kandidaten aus {len(status)-len(bad)}/{len(status)} Feeds." + (f" Fehler: {', '.join(bad)}" if bad else ""))
 
