@@ -1,0 +1,1301 @@
+[
+ {
+  "tab": "ai",
+  "cat": "consumer",
+  "sub": {
+   "de": "Automotive",
+   "en": "Automotive"
+  },
+  "id": "bmw-aiconic",
+  "rel_score": 2,
+  "datum": "2026-05-13",
+  "region": "DE",
+  "metric": {
+   "de": "Multi-Agent",
+   "en": "Multi-agent"
+  },
+  "msub": {
+   "de": "Standard im Einkauf",
+   "en": "standard in procurement"
+  },
+  "titel": {
+   "de": "BMW macht Multi-Agenten-System im Einkauf zum Standard",
+   "en": "BMW makes a multi-agent system standard in procurement"
+  },
+  "kurz": {
+   "de": "Mit AIconic betreibt BMW eines der ersten Multi-Agenten-Systeme auf einer zentralen KI-Plattform, fest etabliert im Einkaufsressort. Vorausgegangen waren Werkzeuge wie ein Angebotsanalyst und ein Ausschreibungsassistent, die pro Angebot deutlich Zeit sparen.",
+   "en": "With AIconic, BMW runs one of the first multi-agent systems on a central AI platform, now a standard function in procurement. It builds on earlier tools such as an offer analyst and a tender assistant that save significant time per offer."
+  },
+  "rel": {
+   "de": "Das Muster „zentrale KI-Plattform plus fachliche Agenten“ setzt sich durch. Wer noch einzelne Chatbots pro Abteilung betreibt, sollte über einen gemeinsamen Zugangspunkt nachdenken.",
+   "en": "The pattern of a central AI platform with domain agents is taking hold. Anyone still running separate chatbots per department should consider a shared access point."
+  },
+  "quelle": "https://www.press.bmwgroup.com/deutschland/article/detail/T0450032DE/kuenstliche-intelligenz-fuer-hoehere-effizienz-und-produktivitaet-%E2%80%93-generative-ki-im-einkauf-der-bmw-group?language=de",
+  "qn": "BMW Group PressClub"
+ },
+ {
+  "tab": "ai",
+  "cat": "consumer",
+  "sub": {
+   "de": "Automotive",
+   "en": "Automotive"
+  },
+  "id": "bmw-agentic",
+  "rel_score": 2,
+  "datum": "2026-05-22",
+  "region": "DE",
+  "metric": null,
+  "titel": {
+   "de": "BMW: Agentic AI im Flottenangebot und in der Werkzeuginventur",
+   "en": "BMW: agentic AI in fleet quotes and tool inventory"
+  },
+  "kurz": {
+   "de": "BMW zeigt zwei produktive Anwendungsfälle: Agenten unterstützen den Angebotsprozess im Flottengeschäft von Alphabet und übernehmen die vollautomatisierte Inventur von Spezialwerkzeugen im Einkauf.",
+   "en": "BMW presents two live use cases: agents support the quoting process in Alphabet's fleet business and run a fully automated inventory of special tooling in procurement."
+  },
+  "rel": {
+   "de": "Agenten wirken zuerst in Serviceprozessen mit vielen Rückfragen und klaren Regeln – nicht in der Produktentwicklung.",
+   "en": "Agents land first in service processes with many queries and clear rules – not in product development."
+  },
+  "quelle": "https://www.bmwgroup.com/de/news/allgemein/2026/agentic-AI.html",
+  "qn": "BMW Group"
+ },
+ {
+  "tab": "ai",
+  "cat": "consumer",
+  "sub": {
+   "de": "Automotive",
+   "en": "Automotive"
+  },
+  "id": "mb-scale",
+  "rel_score": 2,
+  "datum": "2026-07-14",
+  "region": "DE",
+  "metric": {
+   "de": ">1.500",
+   "en": ">1,500"
+  },
+  "msub": {
+   "de": "Teilnehmende am KI-Hackathon",
+   "en": "AI hackathon participants"
+  },
+  "titel": {
+   "de": "Mercedes-Benz skaliert KI über die Belegschaft",
+   "en": "Mercedes-Benz scales AI across its workforce"
+  },
+  "kurz": {
+   "de": "Mercedes will, dass Mitarbeitende KI nicht nur nutzen, sondern selbst gestalten, und unterscheidet dafür drei Kompetenzstufen. Auf der obersten bauen Fachbereiche eigene Workflows, etwa mit n8n. Ein Hackathon mit mehr als 1.500 Beschäftigten gab dem Rollout Schub.",
+   "en": "Mercedes wants employees to shape AI, not just use it, and defines three competence levels. At the top, business teams build their own workflows, for example with n8n. A hackathon with more than 1,500 employees accelerated the rollout."
+  },
+  "rel": {
+   "de": "Automatisierung wandert in die Fachbereiche. Das beschleunigt, erzeugt aber schnell parallele Workflow-Welten, die jemand zusammenhalten muss.",
+   "en": "Automation is moving into business teams. That speeds things up but quickly creates parallel workflow worlds that someone has to hold together."
+  },
+  "quelle": "https://www.computerwoche.de/article/4196161/so-skaliert-mercedes-benz-die-ki-gestutzte-automatisierung.html",
+  "qn": "Computerwoche"
+ },
+ {
+  "tab": "ai",
+  "cat": "consumer",
+  "sub": {
+   "de": "Handel",
+   "en": "Retail"
+  },
+  "id": "ehi-agentic",
+  "rel_score": 2,
+  "added": "2026-09-12",
+  "datum": "2026-09",
+  "region": "DACH",
+  "metric": {
+   "de": "11,6 %",
+   "en": "11.6%"
+  },
+  "msub": {
+   "de": "nutzen Agentic Commerce",
+   "en": "use agentic commerce"
+  },
+  "titel": {
+   "de": "Handel: Agenten geplant, Kunden noch zögerlich",
+   "en": "Retail: agents planned, customers still hesitant"
+  },
+  "kurz": {
+   "de": "In einer EHI-Befragung aus dem deutschsprachigen Handel setzen 11,6 Prozent bereits Agentic-Commerce-Anwendungen ein, 48,4 Prozent planen es. Einen Shopping-Assistenten haben 22,8 Prozent. Die Stichprobe ist nicht repräsentativ.",
+   "en": "In an EHI survey of German-speaking retailers, 11.6% already use agentic commerce applications and 48.4% plan to. 22.8% run a shopping assistant. The sample is not representative."
+  },
+  "rel": {
+   "de": "Der Handel investiert zuerst vorne beim Kunden. Retouren, Filialservice und Lieferantenprozesse dahinter müssen nachziehen, sonst bremst die Servicekette den Agenten aus.",
+   "en": "Retail invests at the customer front first. Returns, store service and supplier processes behind it must catch up, or the service chain will slow the agent down."
+  },
+  "quelle": "https://www.etailment.de/magazin/haendler-setzen-auf-ki-agenten-ihre-kunden-aber-nicht",
+  "qn": "etailment"
+ },
+ {
+  "tab": "ai",
+  "cat": "consumer",
+  "sub": {
+   "de": "Handel",
+   "en": "Retail"
+  },
+  "id": "zalando",
+  "rel_score": 1,
+  "datum": "2026-06-11",
+  "region": "EU",
+  "metric": null,
+  "titel": {
+   "de": "Zalando rüstet sich für einkaufende Agenten",
+   "en": "Zalando prepares for shopping agents"
+  },
+  "kurz": {
+   "de": "Zalando sieht Agentic Commerce als starken zusätzlichen Einkaufskanal. Entscheidend sei dann weniger das Marketingbudget als eine verlässliche, maschinenlesbare Infrastruktur, über die Agenten Produkte finden.",
+   "en": "Zalando sees agentic commerce as a strong additional shopping channel. What matters then is less the marketing budget than reliable, machine-readable infrastructure that agents can use."
+  },
+  "rel": {
+   "de": "Maschinenlesbarkeit wird zur Pflicht – für Produktkataloge ebenso wie für Service-Kataloge und Wissensartikel.",
+   "en": "Machine readability becomes mandatory – for product catalogues as well as service catalogues and knowledge articles."
+  },
+  "quelle": "https://corporate.zalando.com/en/technology/beyond-ai-agents-what-really-keeps-customers",
+  "qn": "Zalando"
+ },
+ {
+  "tab": "ai",
+  "cat": "eri",
+  "sub": {
+   "de": "Industrie",
+   "en": "Industrial products"
+  },
+  "id": "siemens-eigen",
+  "rel_score": 3,
+  "datum": "2026-04-20",
+  "region": "DE",
+  "metric": {
+   "de": "Wochen → Tage",
+   "en": "Weeks → days"
+  },
+  "msub": {
+   "de": "Einarbeitung neuer Ingenieure",
+   "en": "onboarding new engineers"
+  },
+  "titel": {
+   "de": "Siemens bringt Engineering-Agenten ins TIA Portal",
+   "en": "Siemens brings an engineering agent into TIA Portal"
+  },
+  "kurz": {
+   "de": "Der Eigen Engineering Agent plant, schreibt und prüft Automatisierungscode selbstständig und wurde in Pilotprojekten mit über 100 Unternehmen in 19 Ländern erprobt. In einem Beispiel sank die Einarbeitungszeit neuer Ingenieure von mehreren Wochen auf wenige Tage.",
+   "en": "The Eigen Engineering Agent plans, writes and checks automation code on its own and was piloted with more than 100 companies in 19 countries. In one example, onboarding time for new engineers fell from several weeks to a few days."
+  },
+  "rel": {
+   "de": "Agenten erreichen die Werkbank der Industrie. Mit der EU-Maschinenverordnung ab 2027 wird die Nachvollziehbarkeit KI-erzeugter Steuerungssoftware zur Pflichtfrage.",
+   "en": "Agents are reaching the industrial workbench. With the EU Machinery Regulation from 2027, traceability of AI-generated control software becomes a must."
+  },
+  "quelle": "https://www.computer-automation.de/engineering/hannover-messe-2026--siemens-stellt-neuen-ki-agenten-vor.htm",
+  "qn": "Computer&AUTOMATION"
+ },
+ {
+  "tab": "ai",
+  "cat": "fs",
+  "sub": {
+   "de": "Banken",
+   "en": "Banking"
+  },
+  "id": "coba",
+  "rel_score": 3,
+  "datum": "2026-04-28",
+  "region": "DE",
+  "metric": {
+   "de": "75 %",
+   "en": "75%"
+  },
+  "msub": {
+   "de": "Anfragen löst der Avatar autonom",
+   "en": "of queries resolved autonomously"
+  },
+  "titel": {
+   "de": "Commerzbank: KI löst drei Viertel der Serviceanfragen",
+   "en": "Commerzbank: AI resolves three quarters of service queries"
+  },
+  "kurz": {
+   "de": "Die digitale Servicekraft Ava löst laut Bank 75 Prozent der an sie gerichteten Anliegen selbst. FraudAI senkte Fehlalarme im Betrugsmonitoring um 40 Prozent, und Mitarbeitende haben über 4.100 eigene agentische Assistenten angelegt. Die Bank erwartet einen Wertbeitrag von rund 300 Mio. Euro.",
+   "en": "The digital service agent Ava resolves 75% of the requests addressed to it, according to the bank. FraudAI cut false alarms in fraud monitoring by 40%, and employees have created more than 4,100 agentic assistants. The bank expects a value contribution of around €300m."
+  },
+  "rel": {
+   "de": "Banken messen KI inzwischen in Euro. Gleichzeitig zeigt der Fall, wie eng KI-Nutzen und Stellenabbau in der öffentlichen Wahrnehmung verknüpft sind.",
+   "en": "Banks now measure AI in euros. The case also shows how closely AI benefits and job cuts are linked in public perception."
+  },
+  "quelle": "https://www.boersen-zeitung.de/banken-finanzen/nicht-im-hype-sondern-in-der-realitaet",
+  "qn": "Börsen-Zeitung"
+ },
+ {
+  "tab": "ai",
+  "cat": "fs",
+  "sub": {
+   "de": "Zahlungsverkehr",
+   "en": "Payments"
+  },
+  "id": "agentpay-de",
+  "rel_score": 2,
+  "datum": "2026-05-13",
+  "region": "DE",
+  "metric": {
+   "de": "Premiere",
+   "en": "First"
+  },
+  "msub": {
+   "de": "agentische Zahlung in DE",
+   "en": "agentic payment in Germany"
+  },
+  "titel": {
+   "de": "Erste Zahlung durch einen KI-Agenten in Deutschland",
+   "en": "First payment by an AI agent in Germany"
+  },
+  "kurz": {
+   "de": "Mastercard hat mit Deutscher Bank, DZ Bank und N26 erstmals in Deutschland eine authentifizierte Transaktion über einen KI-Agenten abgewickelt – auf Basis eines klaren Mandats und vollständig nachvollziehbar.",
+   "en": "Mastercard, with Deutsche Bank, DZ Bank and N26, completed the first authenticated transaction by an AI agent in Germany – based on a clear mandate and fully traceable."
+  },
+  "rel": {
+   "de": "Mandat, Authentifizierung und Nachvollziehbarkeit werden die Bausteine, die jeder agentische Prozess braucht – nicht nur im Zahlungsverkehr.",
+   "en": "Mandate, authentication and traceability become the building blocks every agentic process needs – not only in payments."
+  },
+  "quelle": "https://www.it-finanzmagazin.de/mastercard-deutsche-bank-dz-bank-und-n26-erste-transaktion-mit-ki-agenten-in-deutschland-244287/",
+  "qn": "IT Finanzmagazin"
+ },
+ {
+  "tab": "ai",
+  "cat": "gps",
+  "sub": {
+   "de": "Landesverwaltung",
+   "en": "State government"
+  },
+  "id": "laender-plattform",
+  "rel_score": 2,
+  "datum": "2026-05-11",
+  "region": "DE",
+  "metric": {
+   "de": "3 Länder",
+   "en": "3 states"
+  },
+  "msub": {
+   "de": "gemeinsame KI-Plattform",
+   "en": "shared AI platform"
+  },
+  "titel": {
+   "de": "NRW, Hessen und Baden-Württemberg bauen gemeinsame KI-Plattform",
+   "en": "Three German states build a shared AI platform"
+  },
+  "kurz": {
+   "de": "Die drei Länder bündeln Standards, Schnittstellen und Pilotanwendungen. Baden-Württemberg liefert mit KIVA eine offene, cloudagnostische Referenzarchitektur, die auch eine Plattform für Anwendungen und Agenten umfasst. Die Kooperation läuft zunächst bis Ende 2028.",
+   "en": "The three states pool standards, interfaces and pilot applications. Baden-Württemberg contributes KIVA, an open, cloud-agnostic reference architecture that also includes a platform for applications and agents. The cooperation runs until the end of 2028."
+  },
+  "rel": {
+   "de": "Die Verwaltung setzt auf „Einer für Alle“ und Souveränität. Lösungen müssen in solche Referenzarchitekturen passen statt eigene Inseln zu bauen.",
+   "en": "Government is betting on 'one for all' and sovereignty. Solutions need to fit such reference architectures rather than create their own islands."
+  },
+  "quelle": "https://www.move-online.de/k21-meldungen/gemeinsame-ki-plattform-fuer-drei-laender/",
+  "qn": "move – moderne verwaltung"
+ },
+ {
+  "tab": "ai",
+  "cat": "gps",
+  "sub": {
+   "de": "Landesverwaltung",
+   "en": "State government"
+  },
+  "id": "f13",
+  "rel_score": 1,
+  "datum": "2026-02",
+  "region": "DE",
+  "metric": {
+   "de": ">100.000",
+   "en": ">100,000"
+  },
+  "msub": {
+   "de": "Nutzende bis Ende 2026 erwartet",
+   "en": "users expected by end of 2026"
+  },
+  "titel": {
+   "de": "F13: KI-Assistenz für die Landesverwaltung wächst",
+   "en": "F13: AI assistant for state administration keeps growing"
+  },
+  "kurz": {
+   "de": "Baden-Württembergs F13 war die erste KI-Assistenz im produktiven Verwaltungseinsatz und steht allen Landesbediensteten zur Verfügung. Bis Ende 2026 werden über 100.000 Nutzende erwartet; Thüringen plant den flächendeckenden Rollout.",
+   "en": "Baden-Württemberg's F13 was the first AI assistant in productive government use and is available to all state employees. More than 100,000 users are expected by the end of 2026; Thuringia plans a full rollout."
+  },
+  "rel": {
+   "de": "Open Source und Nachnutzung zwischen Ländern werden zum Standardweg – ein Maßstab auch für kommerzielle Anbieter.",
+   "en": "Open source and reuse across states are becoming the default – a benchmark for commercial vendors too."
+  },
+  "quelle": "https://oeffentlicher-dienst-news.de/so-nutzt-der-oeffentliche-dienst-kuenstliche-intelligenz-bund-laender/",
+  "qn": "Öffentlicher Dienst News"
+ },
+ {
+  "tab": "ai",
+  "cat": "lshc",
+  "sub": {
+   "de": "Krankenhaus",
+   "en": "Hospitals"
+  },
+  "id": "iais-arztbrief",
+  "rel_score": 2,
+  "datum": "2026-07-24",
+  "region": "DE",
+  "metric": {
+   "de": "2.500",
+   "en": "2,500"
+  },
+  "msub": {
+   "de": "Entlassbriefe pro Jahr in einer Klinik",
+   "en": "discharge letters a year at one clinic"
+  },
+  "titel": {
+   "de": "Fraunhofer: KI-Assistent für Arzt- und Entlassbriefe",
+   "en": "Fraunhofer: AI assistant for discharge letters"
+  },
+  "kurz": {
+   "de": "Das Fraunhofer IAIS hat einen Assistenten entwickelt, der Anamnese, Befunde und Untersuchungsergebnisse auswertet und in standardisierte Brief-Formate überführt. Eine beteiligte Klinik schreibt rund 2.500 Entlassbriefe pro Jahr.",
+   "en": "Fraunhofer IAIS developed an assistant that analyses history, findings and test results and turns them into standardised letter formats. One participating clinic writes around 2,500 discharge letters a year."
+  },
+  "rel": {
+   "de": "Dokumentation ist im Gesundheitswesen der größte schnelle Hebel. Die ärztliche Prüfung bleibt Pflicht und muss im Prozess sichtbar sein.",
+   "en": "Documentation is the biggest quick lever in health care. Physician review remains mandatory and must be visible in the process."
+  },
+  "quelle": "https://www.iais.fraunhofer.de/de/branchen-themen/branchen/gesundheitswesen/ki-gestuetzter_arztbrief-assistent.html",
+  "qn": "Fraunhofer IAIS"
+ },
+ {
+  "tab": "ai",
+  "cat": "lshc",
+  "sub": {
+   "de": "Forschung",
+   "en": "Research"
+  },
+  "id": "stanford-burnout",
+  "rel_score": 1,
+  "datum": "2026-06-10",
+  "region": "US",
+  "metric": null,
+  "titel": {
+   "de": "Studie: KI-Entlassbriefe senken Burnout stärker als Arbeitszeit",
+   "en": "Study: AI discharge summaries reduce burnout more than workload"
+  },
+  "kurz": {
+   "de": "Eine in JAMA Network Open veröffentlichte Studie aus Stanford fand bei KI-erstellten Verlaufszusammenfassungen nur eine geringe Zeitersparnis, aber weniger Burnout bei Klinikärzten.",
+   "en": "A Stanford study published in JAMA Network Open found only small time savings from AI-generated hospital course summaries, but less burnout among physicians."
+  },
+  "rel": {
+   "de": "Der Nutzen von KI zeigt sich nicht immer in Minuten. Wer nur Zeitersparnis misst, unterschätzt Wirkung auf Belastung und Bindung.",
+   "en": "AI value does not always show in minutes. Measuring only time saved underestimates effects on workload and retention."
+  },
+  "quelle": "https://www.aerzteblatt.de/news/ki-agent-konnte-dokumentationsbelastung-und-burnout-von-klinikarzten-reduzieren-058c2d9d-9db5-40b6-a735-4ceeedb8b0c3",
+  "qn": "Deutsches Ärzteblatt"
+ },
+ {
+  "tab": "ai",
+  "cat": "tmt",
+  "sub": {
+   "de": "Telko",
+   "en": "Telecom"
+  },
+  "id": "tk-service",
+  "rel_score": 3,
+  "datum": "2026-07-15",
+  "region": "DE",
+  "metric": {
+   "de": "End-to-End",
+   "en": "End-to-end"
+  },
+  "msub": {
+   "de": "Störung bis Rechnung",
+   "en": "fault to invoice"
+  },
+  "titel": {
+   "de": "Telekom automatisiert ganze Servicekette im Geschäftskundenservice",
+   "en": "Telekom automates entire service chains for business customers"
+  },
+  "kurz": {
+   "de": "Ein Agent soll aus einer Störungsmeldung ein Ticket, daraus einen Technikertermin und schließlich die Rechnung machen – ohne Telefonat dazwischen. Grundlage sind Partnerschaften mit n8n und Parloa; bei komplexen Fällen bleibt der Mensch zuständig.",
+   "en": "An agent turns a fault report into a ticket, then a technician appointment and finally an invoice – with no phone call in between. It builds on partnerships with n8n and Parloa; complex cases stay with people."
+  },
+  "rel": {
+   "de": "Der Maßstab verschiebt sich vom Chatbot zur Ende-zu-Ende-Automatisierung. Genau dort entscheidet sich, ob Service-Plattformen und Agenten sauber zusammenspielen.",
+   "en": "The benchmark moves from chatbots to end-to-end automation. That is where it becomes clear whether service platforms and agents work together cleanly."
+  },
+  "quelle": "https://digital-magazin.de/telekom-agenten-business-kundenservice-wirklich-hinter/",
+  "qn": "digital-magazin.de"
+ },
+ {
+  "tab": "ai",
+  "cat": "tmt",
+  "sub": {
+   "de": "Telko",
+   "en": "Telecom"
+  },
+  "id": "tk-hub",
+  "rel_score": 2,
+  "added": "2026-09-16",
+  "datum": "2026-09",
+  "region": "EU",
+  "metric": {
+   "de": "7 Mio.",
+   "en": "7m"
+  },
+  "msub": {
+   "de": "Kundinnen und Kunden",
+   "en": "customers"
+  },
+  "titel": {
+   "de": "T-Systems: eine Leitstelle für viele KI-Agenten",
+   "en": "T-Systems: one control centre for many AI agents"
+  },
+  "kurz": {
+   "de": "Mit dem T-AI Agentic Hub bietet die Telekom eine Plattform, um viele Agenten kontrolliert zu betreiben. Banco Sabadell will damit agentische KI bereichsübergreifend verankern und das Erlebnis von rund sieben Millionen Kunden verbessern.",
+   "en": "With the T-AI Agentic Hub, Telekom offers a platform to run many agents under control. Banco Sabadell plans to use it to embed agentic AI across the group and improve the experience of about seven million customers."
+  },
+  "rel": {
+   "de": "„Agent Control Towers“ werden eine eigene Produktkategorie – mit europäischen Anbietern, die über Souveränität punkten wollen.",
+   "en": "Agent control towers are becoming their own product category – with European vendors competing on sovereignty."
+  },
+  "quelle": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/09/viele-ki-agenten-eine-leitstelle-telekom-schafft-den-ueberblic",
+  "qn": "Deutsche Telekom"
+ },
+ {
+  "tab": "ai",
+  "cat": "tmt",
+  "sub": {
+   "de": "IT-Dienstleistung",
+   "en": "IT services"
+  },
+  "id": "tk-6h",
+  "rel_score": 1,
+  "datum": "2026-03",
+  "region": "DE",
+  "metric": {
+   "de": "6 h → 1 h",
+   "en": "6 h → 1 h"
+  },
+  "msub": {
+   "de": "Analysezeit",
+   "en": "analysis time"
+  },
+  "titel": {
+   "de": "KI-Agent verkürzt Analysearbeit von sechs Stunden auf eine",
+   "en": "AI agent cuts analysis work from six hours to one"
+  },
+  "kurz": {
+   "de": "Ein Agent von T-Systems fragt selbstständig mehrere Systeme ab, bewertet die Ergebnisse und weist auf Unstimmigkeiten hin, etwa in medizinischen Daten. Die Analysezeit sank von rund sechs Stunden auf etwa eine.",
+   "en": "A T-Systems agent queries several systems on its own, weighs the results and flags inconsistencies, for example in medical data. Analysis time fell from about six hours to about one."
+  },
+  "rel": {
+   "de": "Recherche über mehrere Systeme ist ein Einsatzfeld mit schnellem, messbarem Effekt – solange die Entscheidung beim Menschen bleibt.",
+   "en": "Research across systems delivers quick, measurable effects – as long as people keep the decision."
+  },
+  "quelle": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/03/von-sechs-stunden-auf-60-minuten",
+  "qn": "Deutsche Telekom"
+ },
+ {
+  "tab": "ai",
+  "cat": "cross",
+  "sub": {
+   "de": "Studie",
+   "en": "Study"
+  },
+  "id": "bitkom",
+  "rel_score": 2,
+  "datum": "2026",
+  "region": "DE",
+  "metric": {
+   "de": "41 %",
+   "en": "41%"
+  },
+  "msub": {
+   "de": "Unternehmen nutzen KI",
+   "en": "of companies use AI"
+  },
+  "titel": {
+   "de": "Bitkom: KI-Nutzung in Deutschland mehr als verdoppelt",
+   "en": "Bitkom: AI use in Germany more than doubles"
+  },
+  "kurz": {
+   "de": "41 Prozent der Unternehmen in Deutschland nutzen KI, nach 17 Prozent im Vorjahr. 77 Prozent der Nutzer sehen ihre Wettbewerbsposition spürbar verbessert.",
+   "en": "41% of companies in Germany use AI, up from 17% the year before. 77% of users say their competitive position has noticeably improved."
+  },
+  "rel": {
+   "de": "Die Frage ist nicht mehr ob, sondern wie skaliert und gesteuert wird.",
+   "en": "The question is no longer whether, but how to scale and govern."
+  },
+  "quelle": "https://bitkom-research.de/studien/digitalisierung-der-wirtschaft-2026",
+  "qn": "Bitkom Research"
+ },
+ {
+  "tab": "ai",
+  "cat": "cross",
+  "sub": {
+   "de": "Studie",
+   "en": "Study"
+  },
+  "id": "deloitte-soai",
+  "rel_score": 3,
+  "datum": "2026-06-23",
+  "region": "Global",
+  "metric": {
+   "de": "21 %",
+   "en": "21%"
+  },
+  "msub": {
+   "de": "mit reifer Agenten-Governance",
+   "en": "with mature agent governance"
+  },
+  "titel": {
+   "de": "Agenten skalieren schneller als die Leitplanken",
+   "en": "Agents are scaling faster than guardrails"
+  },
+  "kurz": {
+   "de": "In Deloittes State of AI in the Enterprise 2026 mit 3.235 Führungskräften aus 24 Ländern haben nur 21 Prozent ein reifes Governance-Modell für agentische KI. 74 Prozent erwarten, bis 2027 KI-Agenten einzusetzen.",
+   "en": "In Deloitte's State of AI in the Enterprise 2026, covering 3,235 leaders in 24 countries, only 21% have a mature governance model for agentic AI. 74% expect to use AI agents by 2027."
+  },
+  "rel": {
+   "de": "Die Lücke zwischen Einsatz und Steuerung wächst. Governance wird damit zur Voraussetzung für Skalierung, nicht zum Nachgang.",
+   "en": "The gap between use and control is widening. Governance becomes a precondition for scaling, not an afterthought."
+  },
+  "quelle": "https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html",
+  "qn": "Deloitte Insights"
+ },
+ {
+  "tab": "ai",
+  "cat": "cross",
+  "sub": {
+   "de": "Studie",
+   "en": "Study"
+  },
+  "id": "mckinsey-2026",
+  "rel_score": 2,
+  "datum": "2026-08",
+  "region": "Global",
+  "metric": {
+   "de": "40 %",
+   "en": "40%"
+  },
+  "msub": {
+   "de": "der Großunternehmen skalieren Agenten",
+   "en": "of large firms scale agents"
+  },
+  "titel": {
+   "de": "McKinsey: Großunternehmen skalieren Agenten – Erträge folgen noch nicht",
+   "en": "McKinsey: large firms scale agents – returns not yet following"
+  },
+  "kurz": {
+   "de": "Unter Unternehmen mit über einer Milliarde Dollar Umsatz skalieren 40 Prozent bereits KI-Agenten, nach 27 Prozent im Vorjahr. Rund ein Fünftel sieht die Nutzung durch Betriebskosten der Modelle begrenzt.",
+   "en": "Among companies with more than $1bn in revenue, 40% already scale AI agents, up from 27% a year earlier. Around a fifth say model operating costs limit their use."
+  },
+  "rel": {
+   "de": "Skalierung allein bringt noch keinen Ertrag. Kosten je Agent und Prozess werden zur Steuerungsgröße.",
+   "en": "Scale alone does not deliver returns. Cost per agent and process becomes a key control metric."
+  },
+  "quelle": "https://brutkasten.com/artikel/mckinsey-report-2026-ki-agenten-am-vormarsch-ertraege-steigen-dadurch-nicht",
+  "qn": "brutkasten"
+ },
+ {
+  "tab": "sov",
+  "cat": "snsov",
+  "id": "sn-tcloud",
+  "rel_score": 3,
+  "datum": "2026-07",
+  "region": "DE",
+  "metric": {
+   "de": "100 % DE",
+   "en": "100% DE"
+  },
+  "msub": {
+   "de": "Datenhaltung in Telekom-RZ",
+   "en": "data held in Telekom DCs"
+  },
+  "titel": {
+   "de": "Sovereign ServiceNow auf der T Cloud",
+   "en": "Sovereign ServiceNow on T Cloud"
+  },
+  "kurz": {
+   "de": "T-Systems betreibt die ServiceNow-Plattform auf seiner souveränen T Cloud in Deutschland. Kundendaten bleiben in Telekom-Rechenzentren und unter deutscher bzw. europäischer Betriebskontrolle; unterstützt werden unter anderem ITSM, ITOM, CSM und HR.",
+   "en": "T-Systems runs the ServiceNow platform on its sovereign T Cloud in Germany. Customer data stays in Telekom data centres under German/EU operational control; supported areas include ITSM, ITOM, CSM and HR."
+  },
+  "rel": {
+   "de": "Für regulierte Branchen wird ServiceNow damit auch dort eine Option, wo die Public Cloud bisher ausgeschlossen war. Funktionsumfang und Release-Takt gegenüber der Standard-Cloud sollte man genau vergleichen.",
+   "en": "For regulated industries ServiceNow becomes an option where public cloud was previously ruled out. Feature scope and release cadence versus the standard cloud deserve a close comparison."
+  },
+  "quelle": "https://www.t-systems.com/de/en/application-services/solutions/servicenow-solutions/sovereign-servicenow",
+  "qn": "T-Systems"
+ },
+ {
+  "tab": "sov",
+  "cat": "snsov",
+  "id": "sn-stackit",
+  "rel_score": 3,
+  "datum": "2026",
+  "region": "DE",
+  "metric": {
+   "de": ">50 %",
+   "en": ">50%"
+  },
+  "msub": {
+   "de": "Workloads 2028 privat oder souverän (Prognose)",
+   "en": "workloads private or sovereign by 2028 (forecast)"
+  },
+  "titel": {
+   "de": "ServiceNow auf STACKIT als Managed Service",
+   "en": "ServiceNow on STACKIT as a managed service"
+  },
+  "kurz": {
+   "de": "Auf der STACKIT-Cloud der Schwarz-Gruppe gibt es ServiceNow für ITSM, CSM und ITOM als vollständig verwalteten Dienst mit Daten in Deutschland; Deloitte führt die Umsetzung. Deloitte erwartet, dass bis 2028 über die Hälfte der Unternehmens-Workloads in privaten oder souveränen Clouds läuft.",
+   "en": "On the Schwarz Group's STACKIT cloud, ServiceNow for ITSM, CSM and ITOM is available as a fully managed service with data in Germany; Deloitte leads delivery. Deloitte expects more than half of enterprise workloads to run on private or sovereign clouds by 2028."
+  },
+  "rel": {
+   "de": "Mit T Cloud, STACKIT und noris entsteht ein eigener Markt für souveräne ServiceNow-Betriebsmodelle – Auswahlkriterien sind Rechtsraum, Betriebspersonal und AI-Funktionsumfang.",
+   "en": "With T Cloud, STACKIT and noris, a market for sovereign ServiceNow operating models is forming – selection criteria are jurisdiction, operating staff and AI feature scope."
+  },
+  "quelle": "https://stackit.com/en/solutions/data-and-ai/servicenow",
+  "qn": "STACKIT"
+ },
+ {
+  "tab": "sov",
+  "cat": "snsov",
+  "id": "sn-noris",
+  "rel_score": 2,
+  "datum": "2026-07-01",
+  "region": "DE",
+  "metric": null,
+  "titel": {
+   "de": "noris network startet ServiceNow Sovereign Cloud mit Partnern",
+   "en": "noris network launches ServiceNow Sovereign Cloud with partners"
+  },
+  "kurz": {
+   "de": "noris network betreibt die vollständige ServiceNow-Plattform in eigenen Hochsicherheitsrechenzentren in Deutschland und vermarktet sie gemeinsam mit SOLVVision und der iTSM Group – Beratung, Plattform und Betrieb aus einer Hand.",
+   "en": "noris network runs the full ServiceNow platform in its own high-security data centres in Germany and markets it with SOLVVision and iTSM Group – consulting, platform and operations from one source."
+  },
+  "rel": {
+   "de": "Auch mittelständische Rechenzentrumsbetreiber steigen ein. Das senkt die Einstiegshürde für souveränen Betrieb, erhöht aber die Zahl der Varianten, die man vergleichen muss.",
+   "en": "Mid-sized data centre operators are entering too. That lowers the barrier to sovereign operation but multiplies the variants to compare."
+  },
+  "quelle": "https://www.presse-control.de/2026/07/01/servicenow-souvern-aus-rechenzentren-in-deutschland/",
+  "qn": "Presse Control"
+ },
+ {
+  "tab": "sov",
+  "cat": "ai",
+  "id": "tk-mistral",
+  "rel_score": 2,
+  "added": "2026-09-17",
+  "datum": "2026-09",
+  "region": "DE",
+  "metric": {
+   "de": "EU-Modell",
+   "en": "EU model"
+  },
+  "msub": {
+   "de": "Mistral in der T Cloud",
+   "en": "Mistral on T Cloud"
+  },
+  "titel": {
+   "de": "Telekom setzt für Gesprächsnotizen auf Mistral in der T Cloud",
+   "en": "Telekom uses Mistral on T Cloud for call notes"
+  },
+  "kurz": {
+   "de": "„Voice AI Notes“ fasst Geschäftskundengespräche mit dem Modell Mistral Small 4 zusammen und verarbeitet die Daten in europäischen Rechenzentren. Ab 2027 sollen Gespräche automatisch Aufgaben, CRM-Einträge oder Service-Tickets auslösen.",
+   "en": "'Voice AI Notes' summarises business calls with the Mistral Small 4 model and processes data in European data centres. From 2027, calls are to trigger tasks, CRM entries or service tickets automatically."
+  },
+  "rel": {
+   "de": "Souveräne KI wandert vom Pilotprojekt ins Standardprodukt – und endet direkt im Service-Ticket. Schnittstellen zu ESM-Plattformen werden damit zum Souveränitätsthema.",
+   "en": "Sovereign AI moves from pilot to standard product – and ends up directly in a service ticket. Interfaces to ESM platforms become a sovereignty issue."
+  },
+  "quelle": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/09/ki-im-mittelstand-wenn-aus-anrufen-automatisierte-prozesse-werd",
+  "qn": "Deutsche Telekom"
+ },
+ {
+  "tab": "esm",
+  "cat": "ma",
+  "id": "armis",
+  "rel_score": 3,
+  "datum": "2026-04-20",
+  "region": "Global",
+  "metric": {
+   "de": "7,75 Mrd. $",
+   "en": "$7.75bn"
+  },
+  "msub": {
+   "de": "größter Zukauf der Firmengeschichte",
+   "en": "largest deal in company history"
+  },
+  "titel": {
+   "de": "ServiceNow schließt Armis-Übernahme ab",
+   "en": "ServiceNow completes Armis acquisition"
+  },
+  "kurz": {
+   "de": "Armis erfasst und schützt in Echtzeit vernetzte Geräte von IT über OT und IoT bis zu Medizingeräten – laut ServiceNow fast sieben Milliarden. Zusammen mit Veza soll sich der adressierbare Markt für Security und Risk mehr als verdreifachen.",
+   "en": "Armis discovers and protects connected assets in real time, from IT through OT and IoT to medical devices – nearly seven billion, according to ServiceNow. Together with Veza, the addressable security and risk market is expected to more than triple."
+  },
+  "rel": {
+   "de": "CMDB und Security wachsen zusammen: Asset-Daten aus OT und IoT fließen künftig in dieselbe Plattform wie Incidents und Changes. Für Industrie und Kliniken ein relevanter Schritt.",
+   "en": "CMDB and security are converging: OT and IoT asset data will flow into the same platform as incidents and changes. A relevant step for manufacturing and hospitals."
+  },
+  "quelle": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-completes-Armis-acquisition-closing-the-gap-between-asset-visibility-and-cyber-risk/default.aspx",
+  "qn": "ServiceNow Newsroom"
+ },
+ {
+  "tab": "esm",
+  "cat": "ma",
+  "id": "veza",
+  "rel_score": 2,
+  "datum": "2026-03",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "Veza bringt Berechtigungs-Transparenz für Menschen, Maschinen und Agenten",
+   "en": "Veza adds access visibility for people, machines and agents"
+  },
+  "kurz": {
+   "de": "Mit dem im März abgeschlossenen Kauf von Veza erhält ServiceNow den Access Graph, der systemübergreifend zeigt, welche Rechte jede menschliche, maschinelle und KI-Agenten-Identität hat.",
+   "en": "With the Veza acquisition closed in March, ServiceNow gains the Access Graph, which shows across systems which permissions every human, machine and AI agent identity holds."
+  },
+  "rel": {
+   "de": "Agenten brauchen eigene Identitäten und Rechte. Wer sie nicht sieht, kann sie nicht steuern – Veza adressiert genau die Governance-Lücke, die viele Studien beschreiben.",
+   "en": "Agents need their own identities and permissions. What you can't see, you can't govern – Veza targets exactly the governance gap many studies describe."
+  },
+  "quelle": "https://industrialcyber.co/news/servicenow-closes-armis-deal-to-extend-ai-powered-cyber-risk-visibility-across-ot-and-iot/",
+  "qn": "Industrial Cyber"
+ },
+ {
+  "tab": "esm",
+  "cat": "ma",
+  "id": "moveworks",
+  "rel_score": 2,
+  "datum": "2025-12",
+  "region": "Global",
+  "metric": {
+   "de": "2,85 Mrd. $",
+   "en": "$2.85bn"
+  },
+  "msub": {
+   "de": "Kaufpreis Moveworks",
+   "en": "Moveworks price"
+  },
+  "titel": {
+   "de": "Moveworks: der AI-Assistent als Einstieg für Mitarbeitende",
+   "en": "Moveworks: the AI assistant as employees' front door"
+  },
+  "kurz": {
+   "de": "ServiceNow hat die Übernahme des Agentic-AI-Anbieters Moveworks für 2,85 Mrd. Dollar im Dezember 2025 abgeschlossen. Dessen Assistent spielt eine zentrale Rolle in ServiceNows Plänen für den Mitarbeiter-Einstieg und abgesicherte autonome Workflows.",
+   "en": "ServiceNow closed its $2.85bn acquisition of agentic AI vendor Moveworks in December 2025. Its assistant plays a central role in ServiceNow's plans for the employee front door and secured autonomous workflows."
+  },
+  "rel": {
+   "de": "Der Wettbewerb um den „ersten Klick“ der Mitarbeitenden – Copilot, Gemini oder ServiceNow – entscheidet mit, wo Serviceanfragen künftig landen.",
+   "en": "The race for employees' first click – Copilot, Gemini or ServiceNow – will help decide where service requests land."
+  },
+  "quelle": "https://www.darkreading.com/cybersecurity-operations/servicenow-buys-armis-gets-ai-control-tower",
+  "qn": "Dark Reading"
+ },
+ {
+  "tab": "esm",
+  "cat": "market",
+  "id": "agent365",
+  "rel_score": 3,
+  "datum": "2026-05-01",
+  "region": "Global",
+  "metric": {
+   "de": "15 $",
+   "en": "$15"
+  },
+  "msub": {
+   "de": "pro Nutzer und Monat",
+   "en": "per user per month"
+  },
+  "titel": {
+   "de": "Microsoft Agent 365 ist allgemein verfügbar",
+   "en": "Microsoft Agent 365 is generally available"
+  },
+  "kurz": {
+   "de": "Microsoft positioniert Agent 365 als Steuerungsebene für Agenten über Entra, Defender, Purview und Intune – auch für lokal laufende Agenten auf Windows. Seit Juli lassen sich Agenten aus Amazon Bedrock, Google Gemini Enterprise, Anthropic Claude, Databricks und Salesforce Agentforce ins Register synchronisieren.",
+   "en": "Microsoft positions Agent 365 as the control plane for agents across Entra, Defender, Purview and Intune – including agents running locally on Windows. Since July, agents from Amazon Bedrock, Google Gemini Enterprise, Anthropic Claude, Databricks and Salesforce Agentforce can be synced into the registry."
+  },
+  "rel": {
+   "de": "Microsoft kommt über Identität und Security – ServiceNow über Workflows und CMDB. Viele Unternehmen werden beides haben und klären müssen, welche Ebene führt.",
+   "en": "Microsoft comes in through identity and security – ServiceNow through workflows and CMDB. Many companies will have both and need to decide which layer leads."
+  },
+  "quelle": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+  "qn": "Microsoft Security Blog"
+ },
+ {
+  "tab": "esm",
+  "cat": "market",
+  "id": "gemini-ent",
+  "rel_score": 2,
+  "datum": "2026-04",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "Google: Agentenplattform mit Identität, Gateway und Register",
+   "en": "Google: agent platform with identity, gateway and registry"
+  },
+  "kurz": {
+   "de": "Auf der Cloud Next 2026 machte Google aus Vertex AI die Gemini Enterprise Agent Platform. Für die Governance erhält jeder Agent eine eigene kryptografische Identität, dazu kommen ein Agent Gateway und ein Agent Registry.",
+   "en": "At Cloud Next 2026, Google turned Vertex AI into the Gemini Enterprise Agent Platform. For governance, each agent gets its own cryptographic identity, plus an Agent Gateway and an Agent Registry."
+  },
+  "rel": {
+   "de": "Alle großen Plattformen bauen dieselben Grundbausteine: Agenten-Identität, Gateway, Register. Unterschiede liegen in Reichweite über fremde Plattformen.",
+   "en": "All major platforms are building the same building blocks: agent identity, gateway, registry. The differences lie in reach across other platforms."
+  },
+  "quelle": "https://www.forbes.com/sites/janakirammsv/2026/06/09/microsoft-makes-governance-the-gate-for-enterprise-ai-agents/",
+  "qn": "Forbes"
+ },
+ {
+  "tab": "esm",
+  "cat": "market",
+  "id": "agent-fabric",
+  "rel_score": 2,
+  "datum": "2026-04",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "Salesforce: Agent Fabric als Steuerungsebene",
+   "en": "Salesforce: Agent Fabric as control plane"
+  },
+  "kurz": {
+   "de": "Auf der TDX 2026 positionierte Salesforce Agentforce neu, umhüllt von Agent Fabric. Das Dashboard verfolgt Agenten und MCP-Server über Salesforce und Drittanbieter hinweg und bietet Governance für risikoreichere Prozesse.",
+   "en": "At TDX 2026 Salesforce repositioned Agentforce, wrapped by Agent Fabric. Its dashboard tracks agents and MCP servers across Salesforce and third parties and offers governance for higher-risk processes."
+  },
+  "rel": {
+   "de": "Auch CRM-Plattformen beanspruchen die Rolle der Leitstelle. Die Frage „Wer steuert die Agenten?“ wird zur Architekturentscheidung mit Lock-in-Folgen.",
+   "en": "CRM platforms also claim the control-tower role. 'Who governs the agents?' becomes an architecture decision with lock-in consequences."
+  },
+  "quelle": "https://linesncircles.com/Blog/Enterprise/Enterprise_Agent_Platforms_2026",
+  "qn": "linesNcircles"
+ },
+ {
+  "tab": "esm",
+  "cat": "sn",
+  "id": "sn-target",
+  "rel_score": 3,
+  "added": "2026-09-12",
+  "datum": "2026-09",
+  "region": "Global",
+  "metric": {
+   "de": "1,5 Mrd. $",
+   "en": "$1.5bn"
+  },
+  "msub": {
+   "de": "neues AI-Ziel 2026",
+   "en": "new 2026 AI target"
+  },
+  "titel": {
+   "de": "ServiceNow hebt AI-Ziel an, Nutzung verneunfacht",
+   "en": "ServiceNow lifts AI target as usage grows ninefold"
+  },
+  "kurz": {
+   "de": "Die AI-Nutzung stieg vom ersten zum zweiten Quartal um das Neunfache, mehr als 50 Kunden zahlen über eine Million Dollar für die neuen AI-Pakete. Das Jahresziel wurde von 1 auf 1,5 Mrd. Dollar angehoben.",
+   "en": "AI usage grew ninefold from Q1 to Q2 and more than 50 customers pay over $1m for the new AI packages. The annual target rose from $1bn to $1.5bn."
+  },
+  "rel": {
+   "de": "Die Diskussion verschiebt sich von „ob“ zu „wie steuern wir Kosten und Nutzen“ – verbrauchsabhängige Preise machen das dringlicher.",
+   "en": "The debate shifts from 'whether' to 'how do we govern cost and value' – consumption pricing makes it more urgent."
+  },
+  "quelle": "https://finance.yahoo.com/technology/ai/articles/servicenow-ai-control-tower-targets-060206182.html",
+  "qn": "MarketBeat via Yahoo Finance"
+ },
+ {
+  "tab": "esm",
+  "cat": "sn",
+  "id": "sn-workforce",
+  "rel_score": 2,
+  "datum": "2026-05",
+  "region": "Global",
+  "metric": {
+   "de": "4 Bereiche",
+   "en": "4 domains"
+  },
+  "msub": {
+   "de": "neue AI-Spezialisten",
+   "en": "new AI specialists"
+  },
+  "titel": {
+   "de": "Autonomous Workforce: AI-Spezialisten für IT, CRM, HR und Security",
+   "en": "Autonomous Workforce: AI specialists for IT, CRM, HR and security"
+  },
+  "kurz": {
+   "de": "Auf der Knowledge 2026 stellte ServiceNow AI-Spezialisten vor, die ganze Prozesse gemeinsam mit Menschen abarbeiten. Der L1-IT-Service-Desk-Spezialist ist bereits verfügbar.",
+   "en": "At Knowledge 2026 ServiceNow introduced AI specialists that complete end-to-end processes alongside people. The L1 IT service desk specialist is already available."
+  },
+  "rel": {
+   "de": "Der L1-Service-Desk wird zum naheliegenden ersten Einsatzfeld mit messbarem Ergebnis.",
+   "en": "The L1 service desk becomes the obvious first area with measurable results."
+  },
+  "quelle": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-brings-Autonomous-Workforce-to-every-major-business-function/default.aspx",
+  "qn": "ServiceNow Newsroom"
+ },
+ {
+  "tab": "esm",
+  "cat": "results",
+  "id": "raleigh",
+  "rel_score": 2,
+  "added": "2026-09-12",
+  "datum": "2026-09",
+  "region": "US",
+  "metric": {
+   "de": "−65 %",
+   "en": "−65%"
+  },
+  "msub": {
+   "de": "Kosten Service Desk",
+   "en": "service desk cost"
+  },
+  "titel": {
+   "de": "Raleigh senkt IT-Service-Desk-Kosten um 65 Prozent",
+   "en": "Raleigh cuts IT service desk cost by 65%"
+  },
+  "kurz": {
+   "de": "ServiceNow nennt für Raleigh eine Reduktion der IT-Service-Desk-Kosten um 65 Prozent durch agentische Workflows.",
+   "en": "ServiceNow reports a 65% reduction in IT service desk costs for Raleigh through agentic workflows."
+  },
+  "rel": {
+   "de": "Starke Zahl für den öffentlichen Sektor – als Herstellerangabe aber nur mit Blick auf die Ausgangsbasis vergleichbar.",
+   "en": "A strong public-sector figure – but as a vendor claim only comparable with the baseline in view."
+  },
+  "quelle": "https://finance.yahoo.com/technology/ai/articles/servicenow-ai-control-tower-targets-060206182.html",
+  "qn": "MarketBeat via Yahoo Finance"
+ },
+ {
+  "tab": "esm",
+  "cat": "results",
+  "id": "energy",
+  "rel_score": 1,
+  "added": "2026-09-12",
+  "datum": "2026-09",
+  "region": "EU",
+  "metric": {
+   "de": ">5 Mio. $",
+   "en": ">$5m"
+  },
+  "msub": {
+   "de": "mögliche Einsparung",
+   "en": "potential savings"
+  },
+  "titel": {
+   "de": "Europäischer Energieversorger erwartet Millioneneinsparung",
+   "en": "European energy company expects multi-million savings"
+  },
+  "kurz": {
+   "de": "Ein nicht genannter europäischer Energieversorger rechnet durch agentische Workflows mit möglichen Einsparungen von über fünf Millionen Dollar.",
+   "en": "An unnamed European energy company expects potential savings of more than $5m from agentic workflows."
+  },
+  "rel": {
+   "de": "Versorger stehen unter Kosten- und Fachkräftedruck; Service-Automatisierung ist dort ein naheliegender Hebel.",
+   "en": "Utilities face cost and skills pressure; service automation is an obvious lever there."
+  },
+  "quelle": "https://finance.yahoo.com/technology/ai/articles/servicenow-ai-control-tower-targets-060206182.html",
+  "qn": "MarketBeat via Yahoo Finance"
+ },
+ {
+  "tab": "esm",
+  "cat": "results",
+  "id": "nowonnow",
+  "rel_score": 1,
+  "datum": "2026",
+  "region": "Global",
+  "metric": {
+   "de": "410.000 h",
+   "en": "410,000 h"
+  },
+  "msub": {
+   "de": "pro Jahr gespart",
+   "en": "saved per year"
+  },
+  "titel": {
+   "de": "Now on Now: AI-Suche und Virtual Agent im eigenen Haus",
+   "en": "Now on Now: AI search and virtual agent in-house"
+  },
+  "kurz": {
+   "de": "ServiceNow gibt an, durch AI-gestützte Suche und den Virtual Agent über HR und IT hinweg jährlich 410.000 Stunden zu sparen.",
+   "en": "ServiceNow says AI-powered search and virtual agent across HR and IT save it 410,000 hours a year."
+  },
+  "rel": {
+   "de": "Gute Größenordnung für eigene Business Cases – als Herstellerzahl mit Vorsicht zu verwenden.",
+   "en": "A useful order of magnitude for business cases – to be used with care as a vendor figure."
+  },
+  "quelle": "https://www.servicenow.com/customers/now-on-now-ai-experience.html",
+  "qn": "ServiceNow"
+ },
+ {
+  "tab": "esm",
+  "cat": "industry",
+  "id": "forrester-ps",
+  "rel_score": 1,
+  "datum": "2026",
+  "region": "Global",
+  "metric": {
+   "de": "Leader",
+   "en": "Leader"
+  },
+  "msub": {
+   "de": "Forrester Wave Q1/2026",
+   "en": "Forrester Wave Q1 2026"
+  },
+  "titel": {
+   "de": "Industry Cloud für den öffentlichen Sektor",
+   "en": "Industry cloud for the public sector"
+  },
+  "kurz": {
+   "de": "ServiceNow wird in der Forrester Wave für Industry-Cloud-Lösungen im Public Sector als Leader und Customer Favorite geführt.",
+   "en": "ServiceNow is named a Leader and Customer Favorite in the Forrester Wave for public-sector industry cloud solutions."
+  },
+  "rel": {
+   "de": "Analysten sehen Branchenlösungen als eigenen Markt – Behörden können Anbieter zunehmend daran messen.",
+   "en": "Analysts treat industry solutions as a market of their own – agencies can increasingly compare vendors on it."
+  },
+  "quelle": "https://www.servicenow.com/industries/government.html",
+  "qn": "ServiceNow"
+ },
+ {
+  "tab": "esm",
+  "cat": "industry",
+  "id": "australia-ind",
+  "rel_score": 1,
+  "datum": "2026-05",
+  "region": "Global",
+  "metric": {
+   "de": "MCO + Telco",
+   "en": "MCO + Telco"
+  },
+  "msub": {
+   "de": "Australia-Release",
+   "en": "Australia release"
+  },
+  "titel": {
+   "de": "Branchen-Neuerungen im Australia-Release",
+   "en": "Industry updates in the Australia release"
+  },
+  "kurz": {
+   "de": "Das Australia-Release bringt Now Assist für Manufacturing Commercial Operations sowie für Telekommunikation eine erweiterte Customer-360-Sicht mit Verwaltung verkaufter Produkte.",
+   "en": "The Australia release adds Now Assist for Manufacturing Commercial Operations and, for telecoms, an extended Customer 360 view including management of sold products."
+  },
+  "rel": {
+   "de": "Wer auf älteren Releases ist, lässt branchenspezifische AI-Funktionen liegen.",
+   "en": "Organisations on older releases are leaving industry-specific AI features on the table."
+  },
+  "quelle": "https://www.servicenow.com/community/upgrades-and-patching-blogs/kickstart-your-australia-release-industry-solutions/ba-p/3539499",
+  "qn": "ServiceNow Community"
+ },
+ {
+  "tab": "esm",
+  "cat": "market",
+  "id": "rovo-ops",
+  "rel_score": 1,
+  "datum": "2026-05",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "Atlassian bringt Rovo Ops für die Störungsbearbeitung",
+   "en": "Atlassian launches Rovo Ops for incident response"
+  },
+  "kurz": {
+   "de": "Jira Service Management hat mit Rovo Ops einen fertigen Operations-Agenten, der Kontext zusammenfasst, ähnliche Störungen findet und Ursachen vorschlägt.",
+   "en": "Jira Service Management now ships Rovo Ops, an out-of-the-box operations agent that summarises context, finds similar incidents and suggests root causes."
+  },
+  "rel": {
+   "de": "Agenten für den IT-Betrieb werden Standardausstattung. Der Unterschied liegt künftig in Datenbasis und Integration, nicht im Agenten selbst.",
+   "en": "Operations agents are becoming standard. The difference will lie in data and integration, not the agent itself."
+  },
+  "quelle": "https://community.atlassian.com/forums/JSM-News-Discussions-discussions/Team-26-Service-Collection-Announcements-Roundup/m-p/3240454",
+  "qn": "Atlassian Community"
+ },
+ {
+  "tab": "sov",
+  "cat": "cloud",
+  "id": "atos-stackit",
+  "rel_score": 2,
+  "added": "2026-09-14",
+  "datum": "2026-09-03",
+  "region": "EU",
+  "metric": null,
+  "titel": {
+   "de": "Atos vertreibt und integriert künftig STACKIT",
+   "en": "Atos to resell and integrate STACKIT"
+  },
+  "kurz": {
+   "de": "Atos und Schwarz Digits haben in München eine Partnerschaft geschlossen: Atos verkauft die STACKIT-Plattform weiter und bindet sie in Kundenlandschaften ein.",
+   "en": "Atos and Schwarz Digits signed a partnership in Munich: Atos will resell the STACKIT platform and integrate it into client landscapes."
+  },
+  "rel": {
+   "de": "Souveräne Clouds kommen über große Integratoren in die Breite. Service-Management muss hybride Landschaften mit US- und EU-Plattformen abdecken.",
+   "en": "Sovereign clouds are going mainstream through large integrators. Service management must cover hybrid landscapes with US and EU platforms."
+  },
+  "quelle": "https://www.drweb.de/atos-stackit-souveraene-cloud/",
+  "qn": "Dr. Web Magazin"
+ },
+ {
+  "tab": "sov",
+  "cat": "work",
+  "id": "opendesk-ch",
+  "rel_score": 1,
+  "added": "2026-09-14",
+  "datum": "2026-09",
+  "region": "CH",
+  "metric": null,
+  "titel": {
+   "de": "Schweizer Bundesverwaltung wechselt zu openDesk",
+   "en": "Swiss federal administration moves to openDesk"
+  },
+  "kurz": {
+   "de": "Die Schweiz stellt ihre Bundesverwaltung auf die Open-Source-Suite openDesk um – ein Zeichen, dass die öffentliche Hand bei souveränen Arbeitsplätzen Tempo aufnimmt.",
+   "en": "Switzerland is moving its federal administration to the open-source suite openDesk – a sign the public sector is speeding up on sovereign workplaces."
+  },
+  "rel": {
+   "de": "ESM-Prozesse müssen sich künftig auch an souveräne Arbeitsplatz-Suiten anbinden lassen, nicht nur an Microsoft 365.",
+   "en": "ESM processes will need to connect to sovereign workplace suites too, not just Microsoft 365."
+  },
+  "quelle": "https://www.drweb.de/atos-stackit-souveraene-cloud/",
+  "qn": "Dr. Web Magazin"
+ },
+ {
+  "tab": "tech",
+  "cat": "mcp",
+  "id": "cmdb-mcp",
+  "rel_score": 3,
+  "added": "2026-09-12",
+  "datum": "2026-09-10",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "CMDB MCP Server: CMDB-Zugriff für externe AI-Clients",
+   "en": "CMDB MCP Server: CMDB access for external AI clients"
+  },
+  "kurz": {
+   "de": "Im Australia-Release stellt ServiceNow CMDB-Funktionen wie Suche, CI-Anlage und Klassenvorschläge als MCP-Werkzeuge bereit. Externe AI-Clients arbeiten damit ohne direkten Datenbankzugriff; Zugang über OAuth und die Rollen sn_cmdb_user bzw. sn_cmdb_editor.",
+   "en": "In the Australia release ServiceNow exposes CMDB functions such as search, CI creation and class suggestions as MCP tools. External AI clients use them without direct database access; access via OAuth and the roles sn_cmdb_user or sn_cmdb_editor."
+  },
+  "rel": {
+   "de": "Schreibrechte für Agenten bewusst begrenzen und Agenten als eigene Maschinenidentitäten führen.",
+   "en": "Limit agent write access deliberately and model agents as separate machine identities."
+  },
+  "quelle": "https://www.servicenow.com/docs/r/servicenow-platform/now-assist-for-configuration-management-database-cmdb/na-cmdb-mcp-server.html",
+  "qn": "ServiceNow Docs"
+ },
+ {
+  "tab": "tech",
+  "cat": "mcp",
+  "id": "mcp-console",
+  "rel_score": 2,
+  "datum": "2026",
+  "region": "Global",
+  "metric": {
+   "de": "v1.3",
+   "en": "v1.3"
+  },
+  "msub": {
+   "de": "MCP Server Console",
+   "en": "MCP Server Console"
+  },
+  "titel": {
+   "de": "MCP Server Console: eigene MCP-Server auf der Instanz",
+   "en": "MCP Server Console: your own MCP servers on the instance"
+  },
+  "kurz": {
+   "de": "Die Konsole bündelt Erstellung und Verwaltung von MCP-Servern mit OAuth 2.0. Ab Version 1.3 entstehen Werkzeuge aus Subflows, Actions, REST-APIs, Knowledge Graphs und Now-Assist-Skills.",
+   "en": "The console centralises creating and managing MCP servers with OAuth 2.0. From version 1.3, tools can be built from subflows, actions, REST APIs, knowledge graphs and Now Assist skills."
+  },
+  "rel": {
+   "de": "Bestehende Flow-Logik wird für externe Agenten nutzbar. Schnittstellen-Governance einplanen, bevor Teams frei Server anlegen.",
+   "en": "Existing flow logic becomes usable by external agents. Plan interface governance before teams spin up servers freely."
+  },
+  "quelle": "https://www.servicenow.com/docs/r/release-notes/mcp-server-console-rn.html",
+  "qn": "ServiceNow Docs"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "act-registry",
+  "rel_score": 2,
+  "added": "2026-09-13",
+  "datum": "2026-09",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "AI Control Tower als Register und Kostensteuerung",
+   "en": "AI Control Tower as registry and cost control"
+  },
+  "kurz": {
+   "de": "MCP-Server werden im Inventar der AI Control Tower als AI-Assets geführt und überwacht. Laut ServiceNow lassen sich Kosten je Abteilung verfolgen, Agenten abschalten und günstigere Modelle je Aufgabe wählen.",
+   "en": "MCP servers are registered and monitored as AI assets in the AI Control Tower inventory. ServiceNow says costs can be tracked per department, agents switched off and cheaper models chosen per task."
+  },
+  "rel": {
+   "de": "Auch Agenten anderer Plattformen dort registrieren – sonst entsteht Schatten-AI neben der Plattform.",
+   "en": "Register agents from other platforms there too, or shadow AI grows beside the platform."
+  },
+  "quelle": "https://www.servicenow.com/docs/r/intelligent-experiences/working-with-mcp-server-records.html",
+  "qn": "ServiceNow Docs"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "tk-autonomy",
+  "rel_score": 3,
+  "added": "2026-09-16",
+  "datum": "2026-09",
+  "region": "DE",
+  "metric": null,
+  "titel": {
+   "de": "Wie viel darf ein KI-Agent allein entscheiden?",
+   "en": "How much should an AI agent decide on its own?"
+  },
+  "kurz": {
+   "de": "Der CTO AI & Data von T-Systems empfiehlt, mit einem Agenten für eine klar begrenzte, überprüfbare Aufgabe zu starten. Sobald Agenten in mehreren Bereichen auf verschiedene Systeme zugreifen, müssen Identitäten, Rechte, Nachvollziehbarkeit, Sicherheit und menschliche Freigaben von Anfang an eingeplant sein.",
+   "en": "T-Systems' CTO AI & Data recommends starting with an agent for a narrow, verifiable task. Once agents in several areas access different systems, identities, permissions, traceability, security and human approvals must be designed in from the start."
+  },
+  "rel": {
+   "de": "Gute Vorlage für eine Autonomie-Stufenmatrix: welche Aufgaben ein Agent allein, mit Freigabe oder gar nicht erledigt.",
+   "en": "A good template for an autonomy matrix: which tasks an agent handles alone, with approval, or not at all."
+  },
+  "quelle": "https://www.telekom.com/de/newsroom/aktuelles/news/2026/09/wie-viel-darf-ein-ki-agent-allein-entscheiden",
+  "qn": "Deutsche Telekom"
+ },
+ {
+  "tab": "tech",
+  "cat": "dev",
+  "id": "build-agent",
+  "rel_score": 2,
+  "added": "2026-09-15",
+  "datum": "2026-09-15",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "Build Agent aktualisiert sich selbst, IDE geht in Studio auf",
+   "en": "Build Agent now self-updates, IDE merges into Studio"
+  },
+  "kurz": {
+   "de": "Das September-Store-Release für Otto for Creator läuft auf Zurich Patch 12 und Australia Patch 6. Manuelle Upgrades des Build Agent entfallen, die ServiceNow IDE ist in Studio integriert. Brazil Early Availability folgt am 24. September.",
+   "en": "The September store release for Otto for Creator runs on Zurich Patch 12 and Australia Patch 6. Manual Build Agent upgrades are gone and the ServiceNow IDE is merged into Studio. Brazil Early Availability follows on 24 September."
+  },
+  "rel": {
+   "de": "Entwicklungsrichtlinien und Code-Reviews auf Studio umstellen; KI-generierten Code weiter mit ATF absichern.",
+   "en": "Move development guidelines and code review to Studio; keep securing AI-generated code with ATF."
+  },
+  "quelle": "https://www.servicenow.com/community/servicenow-otto-for-creator/what-s-new-in-servicenow-otto-for-creator-brazil-ea-release/ta-p/3596068",
+  "qn": "ServiceNow Community"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "amplify",
+  "rel_score": 1,
+  "datum": "2026-04",
+  "region": "Global",
+  "metric": null,
+  "titel": {
+   "de": "AI verstärkt, was schon da ist",
+   "en": "AI amplifies what's already there"
+  },
+  "kurz": {
+   "de": "Eine Praxisanalyse kommt zum Schluss, dass ServiceNow-AI starke Prozesse und saubere Daten deutlich wirksamer macht, schwache Grundlagen aber Fehler beschleunigt.",
+   "en": "A practitioner review concludes that ServiceNow AI makes strong processes and clean data far more effective, while weak foundations speed up mistakes."
+  },
+  "rel": {
+   "de": "Vor dem AI-Rollout lohnt ein Blick auf CMDB, Wissensbasis und Prozessreife.",
+   "en": "Before any AI rollout, check CMDB, knowledge base and process maturity."
+  },
+  "quelle": "https://stackscout.co/blog/servicenow-ai-review-2026/",
+  "qn": "StackScout"
+ }
+]

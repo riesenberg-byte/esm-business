@@ -1,0 +1,206 @@
+[
+ {
+  "datum": "2026-09-24",
+  "tag": {
+   "de": "ServiceNow",
+   "en": "ServiceNow"
+  },
+  "titel": {
+   "de": "Brazil Early Availability",
+   "en": "Brazil Early Availability"
+  },
+  "ort": {
+   "de": "Release-Meilenstein",
+   "en": "Release milestone"
+  },
+  "note": {
+   "de": "Build Agent ohne Installation ausprobieren.",
+   "en": "Try Build Agent with nothing to install."
+  },
+  "url": "https://www.servicenow.com/community/servicenow-otto-for-creator/what-s-new-in-servicenow-otto-for-creator-brazil-ea-release/ta-p/3596068"
+ },
+ {
+  "datum": "2026-09-30",
+  "tag": {
+   "de": "ServiceNow",
+   "en": "ServiceNow"
+  },
+  "titel": {
+   "de": "now[dev]26: Frühbucherfrist",
+   "en": "now[dev]26: early-bird deadline"
+  },
+  "ort": {
+   "de": "Entwicklerkonferenz",
+   "en": "Developer conference"
+  },
+  "note": {
+   "de": "Letzter Tag für den niedrigsten Preis.",
+   "en": "Last day for the lowest rate."
+  },
+  "url": "https://www.servicenow.com/events.html"
+ },
+ {
+  "datum": "2026-10-11",
+  "bis": "2026-10-13",
+  "tag": {
+   "de": "Gesundheit",
+   "en": "Health care"
+  },
+  "titel": {
+   "de": "World Health Summit",
+   "en": "World Health Summit"
+  },
+  "ort": {
+   "de": "Berlin",
+   "en": "Berlin"
+  },
+  "note": {
+   "de": "Leitmotiv 2026: von der Krise zur Resilienz.",
+   "en": "2026 theme: from crisis to resilience."
+  },
+  "url": "https://www.tmf-ev.de/en/events"
+ },
+ {
+  "datum": "2026-10-13",
+  "bis": "2026-10-15",
+  "tag": {
+   "de": "Öffentlicher Sektor",
+   "en": "Public sector"
+  },
+  "titel": {
+   "de": "Smart Country Convention",
+   "en": "Smart Country Convention"
+  },
+  "ort": {
+   "de": "Berlin, hub27",
+   "en": "Berlin, hub27"
+  },
+  "note": {
+   "de": "Leitmesse für digitale Verwaltung, KI und souveräne Cloud im öffentlichen Sektor.",
+   "en": "Leading fair for digital government, AI and sovereign cloud in the public sector."
+  },
+  "url": "https://public.telekom.de/en/events/messen/smart-country-convention"
+ },
+ {
+  "datum": "2026-10-20",
+  "tag": {
+   "de": "ServiceNow",
+   "en": "ServiceNow"
+  },
+  "titel": {
+   "de": "World Forum London",
+   "en": "World Forum London"
+  },
+  "ort": {
+   "de": "London",
+   "en": "London"
+  },
+  "note": {
+   "de": "Eintägige Konferenz, kostenlos.",
+   "en": "One-day conference, free to attend."
+  },
+  "url": "https://www.servicenow.com/events/world-forum/london.html"
+ },
+ {
+  "datum": "2026-10-27",
+  "bis": "2026-10-29",
+  "tag": {
+   "de": "Security",
+   "en": "Security"
+  },
+  "titel": {
+   "de": "it-sa Expo&Congress",
+   "en": "it-sa Expo&Congress"
+  },
+  "ort": {
+   "de": "Nürnberg",
+   "en": "Nuremberg"
+  },
+  "note": {
+   "de": "Eine der größten IT-Security-Messen Europas.",
+   "en": "One of Europe's largest IT security fairs."
+  },
+  "url": "https://mittler-report.de/messen/it-sa-expocongress-2026/"
+ },
+ {
+  "datum": "2026-10-28",
+  "tag": {
+   "de": "ServiceNow",
+   "en": "ServiceNow"
+  },
+  "titel": {
+   "de": "World Forum Amsterdam",
+   "en": "World Forum Amsterdam"
+  },
+  "ort": {
+   "de": "Amsterdam",
+   "en": "Amsterdam"
+  },
+  "note": {
+   "de": "Nächstgelegener World Forum für DACH – 2026 gibt es keinen Termin in München. Am selben Tag erscheinen die Q3-Zahlen.",
+   "en": "Closest World Forum to DACH – no Munich date in 2026. Q3 results are published the same day."
+  },
+  "url": "https://www.servicenow.com/events/world-forum/amsterdam.html"
+ },
+ {
+  "datum": "2026-12-02",
+  "tag": {
+   "de": "ServiceNow",
+   "en": "ServiceNow"
+  },
+  "titel": {
+   "de": "World Forum Paris",
+   "en": "World Forum Paris"
+  },
+  "ort": {
+   "de": "Paris",
+   "en": "Paris"
+  },
+  "note": {
+   "de": "Letzter World Forum des Jahres.",
+   "en": "Last World Forum of the year."
+  },
+  "url": "https://www.servicenow.com/events/world-forum/paris.html"
+ },
+ {
+  "datum": "2026-12-15",
+  "tag": {
+   "de": "Gesundheit",
+   "en": "Health care"
+  },
+  "titel": {
+   "de": "Nationales Digital Health Symposium",
+   "en": "National Digital Health Symposium"
+  },
+  "ort": {
+   "de": "Berlin",
+   "en": "Berlin"
+  },
+  "note": {
+   "de": "Treffpunkt von Versorgung, Kostenträgern und Forschung zur Digitalisierung im Gesundheitswesen.",
+   "en": "Providers, payers and researchers on digital health."
+  },
+  "url": "https://www.tmf-ev.de/en/events"
+ },
+ {
+  "datum": "2027-04-13",
+  "bis": "2027-04-15",
+  "tag": {
+   "de": "Gesundheit",
+   "en": "Health care"
+  },
+  "titel": {
+   "de": "DMEA",
+   "en": "DMEA"
+  },
+  "ort": {
+   "de": "München",
+   "en": "Munich"
+  },
+  "note": {
+   "de": "Europas Leitveranstaltung für Digital Health.",
+   "en": "Europe's leading digital health event."
+  },
+  "url": "https://www.tmf-ev.de/en/events"
+ }
+]

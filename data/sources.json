@@ -1,0 +1,115 @@
+{
+ "_hinweis": "Feeds sind ungeprüft. Der Vorfilter meldet nicht erreichbare Feeds in data/feed_status.json – dort nachsehen und hier korrigieren. Stichworte mit * am Ende treffen auch Wortformen (souverän* → souveräne, Souveränität).",
+ "max_age_days": 6,
+ "max_candidates": 40,
+ "feeds": [
+  {
+   "name": "heise online",
+   "url": "https://www.heise.de/rss/heise-atom.xml"
+  },
+  {
+   "name": "Computerwoche",
+   "url": "https://www.computerwoche.de/feed/"
+  },
+  {
+   "name": "CIO.de",
+   "url": "https://www.cio.de/feed/"
+  },
+  {
+   "name": "IT Finanzmagazin",
+   "url": "https://www.it-finanzmagazin.de/feed/"
+  },
+  {
+   "name": "Bing News: ServiceNow",
+   "url": "https://www.bing.com/news/search?q=ServiceNow&format=rss&setlang=de"
+  },
+  {
+   "name": "Bing News: ServiceNow EN",
+   "url": "https://www.bing.com/news/search?q=ServiceNow+AI&format=rss&setlang=en"
+  },
+  {
+   "name": "Bing News: KI-Agenten Unternehmen",
+   "url": "https://www.bing.com/news/search?q=KI-Agenten+Unternehmen&format=rss&setlang=de"
+  },
+  {
+   "name": "Bing News: Agentic AI enterprise",
+   "url": "https://www.bing.com/news/search?q=agentic+AI+enterprise+deployment&format=rss&setlang=en"
+  },
+  {
+   "name": "Bing News: souveräne Cloud",
+   "url": "https://www.bing.com/news/search?q=souver%C3%A4ne+Cloud&format=rss&setlang=de"
+  },
+  {
+   "name": "Bing News: Control Tower Agenten",
+   "url": "https://www.bing.com/news/search?q=%22Agent+365%22+OR+Agentforce+OR+%22Gemini+Enterprise%22&format=rss&setlang=en"
+  },
+  {
+   "name": "Bing News: ITSM ESM",
+   "url": "https://www.bing.com/news/search?q=ITSM+OR+%22Enterprise+Service+Management%22&format=rss&setlang=en"
+  }
+ ],
+ "keywords": {
+  "3": [
+   "servicenow",
+   "now assist",
+   "ai control tower",
+   "moveworks",
+   "armis",
+   "veza",
+   "agentic",
+   "ki-agent*",
+   "ai agent",
+   "ai-agent",
+   "agenten*",
+   "enterprise service management",
+   "esm",
+   "itsm",
+   "souverän*",
+   "sovereign*",
+   "stackit",
+   "t cloud",
+   "delos"
+  ],
+  "2": [
+   "agent 365",
+   "agentforce",
+   "gemini enterprise",
+   "watsonx orchestrate",
+   "jira service management",
+   "rovo",
+   "bmc helix",
+   "freshservice",
+   "mcp",
+   "model context protocol",
+   "governance",
+   "ki-einsatz",
+   "generative ki",
+   "genai",
+   "copilot",
+   "automatisier*",
+   "digitale souveränität"
+  ],
+  "1": [
+   "ki",
+   "künstliche intelligenz",
+   "ai",
+   "cloud",
+   "verwaltung",
+   "bank",
+   "versicherung",
+   "handel",
+   "industrie",
+   "krankenhaus",
+   "telekom"
+  ]
+ },
+ "exclude": [
+  "aktie kaufen",
+  "kursziel",
+  "gewinnspiel",
+  "sponsored",
+  "anzeige",
+  "podcast-folge",
+  "stellenangebot"
+ ]
+}
