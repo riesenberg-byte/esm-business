@@ -192,6 +192,20 @@ aside{display:none}
 .aibadge{font-size:10px;font-weight:800;letter-spacing:.04em;border:1px solid var(--line);border-radius:4px;padding:0 4px;color:var(--muted)}
 .aitag{font-size:12.5px;color:var(--muted);margin:-4px 0 12px;display:flex;gap:6px;align-items:center}
 .indep{font-size:12.5px}
+/* Search controls stay above the topics on small screens and in the sidebar on desktop. */
+.search-controls{margin-top:16px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.search-controls label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+.search-row{display:flex;gap:6px}
+.search-row input{min-width:0;flex:1;width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px}
+.search-row button{border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:5px 9px;cursor:pointer}
+.search-controls .archive-option{display:flex;gap:7px;align-items:center;margin:10px 0 0;font-weight:400}
+.archive-option input{accent-color:var(--ai);width:17px;height:17px}
+.archive-status{font-size:12px;color:var(--muted);margin:5px 0 0}
+.search-filters{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.search-filters label{font-size:13px;display:grid;gap:4px}
+.search-filters select{max-width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px}
+.search-result-count{color:var(--muted);font-size:14px}
+.archive-tag{font-weight:500;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -207,6 +221,13 @@ aside{display:none}
     <div class="sub" id="sub"></div>
     <div class="updated" id="updated"></div>
     <div class="ainote"><span class="aibadge">KI</span><span data-i="aiNote"></span></div>
+    <div class="search-controls" role="search" aria-label="Artikelsuche / Article search">
+      <label for="article-query" data-i="searchLabel"></label>
+      <div class="search-row"><input id="article-query" type="search" autocomplete="off" maxlength="200"><button id="clear-search" type="button" aria-label="Suche löschen / Clear search">×</button></div>
+      <label class="archive-option"><input id="include-archive" type="checkbox"><span data-i="includeArchive"></span></label>
+      <p id="archive-status" class="archive-status" role="status"></p>
+      <button id="archive-retry" type="button" class="linkbtn" hidden data-i="retryArchive"></button>
+    </div>
   </header>
 
   <nav class="tabs" role="tablist">
@@ -218,6 +239,15 @@ aside{display:none}
     <button class="tab"        role="tab" data-tab="saved"><span data-i="tab_saved"></span><span class="cnt" id="savedCnt"></span></button>
   </nav>
 
+  <section id="search-results" hidden aria-label="Suchergebnisse / Search results">
+    <h2 data-i="searchHeading"></h2>
+    <div class="search-filters">
+      <label><span data-i="searchTopic"></span><select id="search-topic"></select></label>
+      <label><span data-i="searchCategory"></span><select id="search-category"></select></label>
+    </div>
+    <p id="search-count" class="search-result-count" role="status"></p>
+    <div id="search-cards" class="cards"></div>
+  </section>
   <section id="ai"></section>
   <section id="esm" hidden></section>
   <section id="sov" hidden></section>
@@ -233,9 +263,11 @@ aside{display:none}
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></div>
 <div class="toast" id="toast"></div>
 
+<script src="article-search.js"></script>
 <script>
 const UI = {
-de:{title:"esm.business",
+de:{searchLabel:"Artikel durchsuchen",searchHeading:"Suchergebnisse",includeArchive:"Archiv einbeziehen",searchTopic:"Thema",searchCategory:"Kategorie",allTopics:"Alle Themen",allCategories:"Alle Kategorien",searchHint:"Titel, Inhalt oder Quelle …",searchCount:"{n} Treffer",noResults:"Keine passenden Artikel gefunden.",archiveLoading:"Archiv wird geladen …",archiveFailed:"Archiv derzeit nicht verfügbar. Angezeigt werden nur verfügbare Artikel.",archiveReady:"Archiv einbezogen",archiveEmpty:"Noch keine archivierten Artikel.",retryArchive:"Archiv erneut laden",archiveTag:"Archiv",savedMissing:"{n} gemerkte Artikel sind derzeit nicht verfügbar.",
+  title:"esm.business",
   sub:"Agentic AI Adoption und ESM-Transformation",
   tab_ai:"AI Adoption",tab_sov:"Souveränität",intro_sov:"Souveräne Cloud, souveräne KI und was das für Plattformen wie ServiceNow bedeutet – vom Rechenzentrum bis zum Arbeitsplatz.",tab_esm:"ESM & ServiceNow",tab_tech:"Tech-Praxis",tab_events:"Events",tab_saved:"Merkliste",
   intro_ai:"Wie Unternehmen Agentic AI vom Pilot in den Betrieb bringen – konkrete Anwendungen mit messbarer Wirkung, Schwerpunkt Deutschland, sortiert nach Branchen.",
@@ -249,7 +281,8 @@ de:{title:"esm.business",
   opensAt:"Öffnet {d} – mit Zurück kommst du hierher.",upcoming:"Kommende Events",past:"vorbei",todayW:"heute",tomorrow:"morgen",inDays:"in {n} Tagen",details:"Zur Veranstaltung",
   foot1:"Öffentliche Quellen, eigene Kurzfassungen.",
   foot2:"Merkliste und Gelesen-Status bleiben in deinem Browser. <a href=\"impressum.html\">Impressum</a> · <a href=\"datenschutz.html\">Datenschutz</a>"},
-en:{title:"esm.business",
+en:{searchLabel:"Search articles",searchHeading:"Search results",includeArchive:"Include archive",searchTopic:"Topic",searchCategory:"Category",allTopics:"All topics",allCategories:"All categories",searchHint:"Title, content or source …",searchCount:"{n} results",noResults:"No matching articles found.",archiveLoading:"Loading archive …",archiveFailed:"Archive unavailable. Showing available articles only.",archiveReady:"Archive included",archiveEmpty:"No archived articles yet.",retryArchive:"Retry archive",archiveTag:"Archive",savedMissing:"{n} saved articles are currently unavailable.",
+  title:"esm.business",
   sub:"Agentic AI adoption and ESM transformation",
   tab_ai:"AI adoption",tab_sov:"Sovereignty",intro_sov:"Sovereign cloud, sovereign AI and what it means for platforms such as ServiceNow – from data centre to workplace.",tab_esm:"ESM & ServiceNow",tab_tech:"Tech in practice",tab_events:"Events",tab_saved:"Saved",
   intro_ai:"How companies move agentic AI from pilot to production – concrete applications with measurable impact, focused on Germany, sorted by industry.",
@@ -276,6 +309,47 @@ const CATS = {
 };
 
 let ITEMS=[], EVENTS=[], META=null;
+let ARCHIVE=[], archiveState="idle", archivePromise=null, includeArchive=false;
+let searchQuery="", searchTopic="", searchCategory="";
+const allArticles=()=>ArticleSearch.merge(ITEMS,ARCHIVE);
+const visibleArticles=()=>includeArchive?allArticles():ITEMS;
+const isArchived=i=>!ITEMS.some(current=>current.id===i.id);
+async function ensureArchive(){
+  if(archiveState==="loaded") return;
+  if(archivePromise) return archivePromise;
+  archiveState="loading"; updateArchiveStatus();
+  archivePromise=(async()=>{
+    try{
+      const response=await fetch("data/archive.json?v="+Date.now());
+      if(!response.ok) throw new Error("Archive HTTP "+response.status);
+      const value=await response.json();
+      if(!ArticleSearch.validArchive(value)) throw new Error("Invalid archive");
+      ARCHIVE=value; archiveState="loaded";
+    }catch(error){archiveState="error";console.warn("Archive unavailable",error);}
+    finally{archivePromise=null;refreshLists();updateArchiveStatus();}
+  })();
+  return archivePromise;
+}
+function updateArchiveStatus(){
+  const wanted=includeArchive||(tab==="saved"&&savedIds.some(id=>!ITEMS.some(i=>i.id===id)));
+  const key=!wanted?null:archiveState==="loading"?"archiveLoading":archiveState==="error"?"archiveFailed":archiveState==="loaded"&&includeArchive?(ARCHIVE.length?"archiveReady":"archiveEmpty"):null;
+  document.getElementById("archive-status").textContent=key?T(key):"";
+  document.getElementById("archive-retry").hidden=!(wanted&&archiveState==="error");
+}
+function searchActive(){return searchQuery.trim().length>0;}
+function renderSearchFilters(){
+  const topics=document.getElementById("search-topic"), categories=document.getElementById("search-category");
+  topics.innerHTML='<option value="">'+T("allTopics")+'</option>'+["ai","esm","sov","tech"].map(k=>'<option value="'+k+'">'+esc(T("tab_"+k))+'</option>').join("");
+  topics.value=searchTopic;
+  categories.innerHTML='<option value="">'+T("allCategories")+'</option>'+(searchTopic?Object.entries(CATS[searchTopic]).map(([k,v])=>'<option value="'+k+'">'+esc(L(v))+'</option>').join(""):"");
+  categories.value=searchCategory; categories.disabled=!searchTopic;
+}
+function renderSearch(){
+  const results=ArticleSearch.search(visibleArticles(),searchQuery,searchTopic,searchCategory);
+  document.getElementById("search-count").textContent=T("searchCount").replace("{n}",results.length);
+  document.getElementById("search-cards").innerHTML=results.length?results.map(cardHTML).join(""):'<p class="empty">'+T("noResults")+'</p>';
+}
+
 /* ---------- Zustand ---------- */
 let lang=(navigator.language||"de").toLowerCase().startsWith("de")?"de":"en";
 let tab="ai", filt={ai:null,esm:null,tech:null}, savedIds=[], readIds=[];
@@ -299,10 +373,10 @@ function fmt(s){const p=s.split("-"),x=toDate(s);
   return x.toLocaleDateString(loc(),{day:"numeric",month:"short",year:"numeric"});}
 const domain=u=>{try{return new URL(u).hostname.replace(/^www\./,"");}catch(e){return u;}};
 const tcls={ai:"t-ai",sov:"t-sov",esm:"t-esm",tech:"t-tech"};
-const byId=id=>ITEMS.find(i=>i.id===id);
+const byId=id=>ITEMS.find(i=>i.id===id)||ARCHIVE.find(i=>i.id===id);
 const NEW_DAYS=7;
 function isNew(i){
-  if(readIds.includes(i.id)) return false;
+  if(isArchived(i)||readIds.includes(i.id)) return false;
   const src=i.added||(i.datum.split("-").length===3?i.datum:null); if(!src) return false;
   const n=new Date(), today=new Date(n.getFullYear(),n.getMonth(),n.getDate());
   return (today-toDate(src))/86400000<=NEW_DAYS;
@@ -314,7 +388,7 @@ function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t
 function cardHTML(i){
   const cat=CATS[i.tab][i.cat];
   return `<button class="card ${tcls[i.tab]} ${readIds.includes(i.id)?"read":""} ${isNew(i)?"isnew":""}" data-id="${i.id}">
-    <span class="kicker">${isNew(i)?`<span class="newpill">${T("newL")}</span>`:""}${esc(L(cat))}${i.sub?" · "+esc(L(i.sub)):""}${savedIds.includes(i.id)?' <span class="saved-dot" aria-label="'+T("saved")+'">★</span>':""}</span>
+    <span class="kicker">${isNew(i)?`<span class="newpill">${T("newL")}</span>`:""}${esc(L(cat))}${isArchived(i)?' <span class="archive-tag">· '+T("archiveTag")+'</span>':""}${i.sub?" · "+esc(L(i.sub)):""}${savedIds.includes(i.id)?' <span class="saved-dot" aria-label="'+T("saved")+'">★</span>':""}</span>
     <span class="ttl">${esc(L(i.titel))}</span>
     <span class="src"><span>${esc(i.qn)}</span><span>${fmt(i.datum)}</span><span class="badge">${esc(i.region)}</span></span>
     ${i.metric?`<span class="m">${esc(L(i.metric))}<small>${esc(L(i.msub))}</small></span>`:""}
@@ -325,7 +399,7 @@ function renderList(t){
   const chips=`<div class="chips" role="group"><button class="chip" data-f="" aria-pressed="${!f}">${T("all")}</button>`+
     Object.keys(cats).map(k=>`<button class="chip" data-f="${k}" aria-pressed="${f===k}">${esc(L(cats[k]))}</button>`).join("")+`</div>`;
   const ord=(a,b)=>(isNew(b)-isNew(a))||(toDate(b.added||b.datum)-toDate(a.added||a.datum));
-  const list=ITEMS.filter(i=>i.tab===t&&(!f||i.cat===f));
+  const list=visibleArticles().filter(i=>i.tab===t&&(!f||i.cat===f));
   const top=list.filter(i=>(i.rel_score||1)>=3).sort(ord), rest=list.filter(i=>(i.rel_score||1)<3).sort(ord);
   const nNew=list.filter(isNew).length;
   const tools=`<div class="toolrow ${tcls[t]}"><span class="nc">${nNew?T("newCount").replace("{n}",nNew):""}</span>${nNew?`<button class="linkbtn" data-markall="${t}">${T("markAll")}</button>`:""}</div>`;
@@ -340,7 +414,8 @@ function renderList(t){
 function updateCounts(){ ["ai","esm","sov","tech"].forEach(k=>{ const n=ITEMS.filter(i=>i.tab===k&&isNew(i)).length; const el=document.getElementById("new-"+k); if(el) el.textContent=n?String(n):""; }); }
 function renderSaved(){
   const list=savedIds.map(byId).filter(Boolean);
-  document.getElementById("saved").innerHTML=`<p class="intro">${T("intro_saved")}</p><div class="cards">${list.map(cardHTML).join("")}</div>${list.length?"":`<div class="empty">${T("empty")}</div>`}`;
+  const missing=savedIds.length-list.length;
+  document.getElementById("saved").innerHTML=`<p class="intro">${T("intro_saved")}</p><div class="cards">${list.map(cardHTML).join("")}</div>${missing?`<p class="empty">${T("savedMissing").replace("{n}",missing)}</p>`:""}${savedIds.length?"":`<div class="empty">${T("empty")}</div>`}`;
   document.getElementById("savedCnt").textContent=savedIds.length?String(savedIds.length):"";
 }
 function renderEvents(){
@@ -365,7 +440,7 @@ function renderAside(){
   document.getElementById("aside").innerHTML=
    (counts?`<h2>${T("newL")}</h2><ul class="newlist">${counts}</ul>`:"")+
    `<h2>${T("upcoming")}</h2>`+up.map(e=>{const x=toDate(e.datum);return `<a class="mini t-evt" href="${e.url}" target="_blank" rel="noopener"><span class="md">${x.getDate()}. ${x.toLocaleDateString(loc(),{month:"short"})}</span><span class="mt">${esc(L(e.titel))}</span><span class="mo">${esc(L(e.ort))}</span></a>`;}).join("");
-  document.querySelectorAll("#aside [data-go]").forEach(b=>b.addEventListener("click",()=>{tab=b.dataset.go;save();syncTabs();window.scrollTo({top:0});}));
+  document.querySelectorAll("#aside [data-go]").forEach(b=>b.addEventListener("click",()=>{searchQuery="";document.getElementById("article-query").value="";tab=b.dataset.go;save();syncTabs();window.scrollTo({top:0});}));
 }
 /* ---------- Lese-Blatt ---------- */
 const sheet=document.getElementById("sheet"),scrim=document.getElementById("scrim");
@@ -426,11 +501,14 @@ document.addEventListener("click",e=>{
 });
 
 /* ---------- Steuerung ---------- */
-function refreshLists(){ ["ai","esm","sov","tech"].forEach(renderList); renderSaved(); updateCounts(); if(typeof renderAside==="function"&&document.getElementById("aside")) renderAside(); }
+function refreshLists(){ renderSearch(); ["ai","esm","sov","tech"].forEach(renderList); renderSaved(); updateCounts(); if(typeof renderAside==="function"&&document.getElementById("aside")) renderAside(); }
 function applyLang(){
   document.documentElement.lang=lang; document.title="esm.business";
   document.querySelectorAll("[data-i]").forEach(el=>{ if(el.dataset.i==="foot2") el.innerHTML=T("foot2"); else el.textContent=T(el.dataset.i); });
   document.getElementById("sub").textContent=T("sub");
+  renderSearchFilters(); updateArchiveStatus();
+  document.getElementById("article-query").placeholder=T("searchHint");
+  document.getElementById("clear-search").setAttribute("aria-label",lang==="de"?"Suche löschen":"Clear search");
   const up=document.getElementById("updated");
   const stamp=META&&META.letzte_recherche;
   up.textContent=stamp?((lang==="de"?"Recherche: ":"Research: ")+new Date(stamp).toLocaleString(loc())):(lang==="de"?"Recherchezeitpunkt nicht bestätigt":"Research time not confirmed");
@@ -440,12 +518,22 @@ function applyLang(){
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===lang));
 }
 function syncTabs(){
-  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
-  ["ai","esm","sov","tech","events","saved"].forEach(id=>document.getElementById(id).hidden=id!==tab);
+  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",!searchActive()&&b.dataset.tab===tab));
+  ["ai","esm","sov","tech","events","saved"].forEach(id=>document.getElementById(id).hidden=searchActive()||id!==tab);
+  document.getElementById("search-results").hidden=!searchActive();
+  if(tab==="saved"&&savedIds.some(id=>!byId(id))&&archiveState==="idle") ensureArchive();
+  updateArchiveStatus();
 }
 function renderAll(){ applyLang(); refreshLists(); renderEvents(); syncTabs(); if(openId){const i=byId(openId);sheet.innerHTML=sheetHTML(i);openSheet._bind(i);} }
-document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{tab=b.dataset.tab;save();syncTabs();window.scrollTo({top:0});}));
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{searchQuery="";document.getElementById("article-query").value="";tab=b.dataset.tab;save();syncTabs();window.scrollTo({top:0});}));
 document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>{lang=b.dataset.lang;save();renderAll();}));
+
+document.getElementById("article-query").addEventListener("input",e=>{searchQuery=e.target.value;renderSearch();syncTabs();});
+document.getElementById("clear-search").addEventListener("click",()=>{searchQuery="";document.getElementById("article-query").value="";syncTabs();document.getElementById("article-query").focus();});
+document.getElementById("search-topic").addEventListener("change",e=>{searchTopic=e.target.value;searchCategory="";renderSearchFilters();renderSearch();});
+document.getElementById("search-category").addEventListener("change",e=>{searchCategory=e.target.value;renderSearch();});
+document.getElementById("include-archive").addEventListener("change",e=>{includeArchive=e.target.checked;refreshLists();updateArchiveStatus();if(includeArchive) ensureArchive();});
+document.getElementById("archive-retry").addEventListener("click",ensureArchive);
 
 async function loadData(){
   try{

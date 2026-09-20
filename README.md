@@ -61,3 +61,11 @@ Die vollständigen Schreibbefehle und Statusregeln stehen in ROUTINE.md.
 Bei `Tunnel connection failed: 403 Forbidden` zunächst die erlaubten Netzwerkziele der Routine-Umgebung prüfen. Danach dort einen manuellen Feed-Abruf testen. Änderungen im Repository können diese Umgebungseinstellungen nicht freischalten. Der Websuche-Ersatzweg funktioniert nur, wenn entsprechende Werkzeuge verfügbar sind.
 
 Metadaten unterscheiden letzten Versuch, letzte erfolgreiche (ggf. eingeschränkte) Recherche und Laufstatus. Ein technischer Ausfall aktualisiert den Recherchezeitpunkt nicht. `letzter_artikel` zeigt das letzte bekannte Aufnahmedatum; Eventänderungen stehen zusätzlich im Laufprotokoll.
+
+## Suche und Archiv
+
+Das Suchfeld durchsucht Titel, Kurztext, Einordnung, Teilsektor und Quellenname in beiden Sprachen über alle Artikelthemen. Mehrere Suchwörter müssen alle vorkommen; Groß-/Kleinschreibung und Akzente werden ignoriert. Thema und Kategorie begrenzen die Treffer. Suchbegriffe werden weder gespeichert noch übertragen.
+
+„Archiv einbeziehen“ lädt `data/archive.json` bei Bedarf und erweitert Suche und Themenansichten. Die Merkliste lädt das Archiv unabhängig vom Schalter, wenn gespeicherte IDs nicht mehr in den aktuellen Artikeln stehen. Fehler werden mit Wiederholungsmöglichkeit angezeigt; gespeicherte IDs bleiben erhalten. Bereits geladene Archivdaten stehen über den Service Worker auch offline zur Verfügung. Die bestehende 120-Tage-Archivierung bleibt unverändert.
+
+Prüfen: `node tests/search.test.cjs`, `node tests/search-integration.test.cjs` und `node tests/archive-cache.test.cjs`. Die Integrationstests führen den Anwendungscode mit einer simulierten DOM- und Netzwerkumgebung aus; sie ersetzen keine visuelle Browserprüfung.

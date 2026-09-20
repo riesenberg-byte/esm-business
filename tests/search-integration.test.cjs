@@ -1,0 +1,52 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const inline=html.split('<script>')[1].split('</script>')[0];
+const article={id:'current',tab:'ai',cat:'fs',datum:'2026-09-20',region:'DE',rel_score:2,titel:{de:'Bank Agenten',en:'Bank agents'},kurz:{de:'Produktivbetrieb',en:'Production'},rel:{de:'Effizienz',en:'Efficiency'},qn:'Quelle',quelle:'https://example.com/a'};
+const old={...article,id:'archived',datum:'2025-01',titel:{de:'Archivfund',en:'Archive find'}};
+function setup(saved=[]){
+ const elements=new Map();
+ function element(id){if(!elements.has(id))elements.set(id,{id,innerHTML:'',textContent:'',hidden:false,value:'',checked:false,dataset:{},events:{},classList:{add(){},remove(){}},setAttribute(k,v){this[k]=v},addEventListener(k,v){this.events[k]=v},querySelector(){return null},querySelectorAll(){return []},focus(){}});return elements.get(id)}
+ const tabs=['ai','esm','sov','tech','events','saved'].map(tab=>{const e=element('tab-'+tab);e.dataset.tab=tab;return e});
+ const language=['de','en'].map(lang=>{const e=element('lang-'+lang);e.dataset.lang=lang;return e});
+ const requests=[];let archiveResponse={ok:true,json:async()=>[old]};
+ const storage=new Map([['esmbusiness-v1',JSON.stringify({saved})]]);
+ const ctx=vm.createContext({ArticleSearch:require('../article-search.js'),console:{log(){},error(){},warn(){}},URL,Date,Map,Set,setTimeout,clearTimeout,requestAnimationFrame:fn=>fn(),navigator:{language:'de'},location:{pathname:'/',search:''},history:{replaceState(){},pushState(){},back(){}},window:{addEventListener(){},scrollTo(){}},document:{documentElement:{},body:{classList:{add(){},remove(){}}},getElementById:element,querySelector:()=>null,querySelectorAll:q=>q==='.tab'?tabs:q==='.lang button'?language:[],addEventListener(){}},localStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},fetch:async url=>{requests.push(url);if(url.startsWith('data/archive.json'))return archiveResponse;return {ok:true,json:async()=>url.startsWith('data/items')?[article]:url.startsWith('data/events')?[]:null}}});
+ vm.runInContext(inline,ctx);
+ return {ctx,element,requests,storage,run:s=>vm.runInContext(s,ctx),setArchive:r=>archiveResponse=r,flush:()=>new Promise(r=>setImmediate(r))};
+}
+(async()=>{
+ const app=setup(['archived']);await app.flush();
+ assert.equal(app.requests.filter(u=>u.includes('archive')).length,0,'archive must not load at startup');
+ app.element('article-query').events.input({target:{value:'efficiency'}});
+ assert.match(app.element('search-cards').innerHTML,/Bank Agenten/);
+ assert.equal(app.element('search-results').hidden,false);
+ assert.equal(app.element('ai').hidden,true);
+ assert.equal(app.requests.length,3,'search must not transmit query');
+ assert(!app.storage.get('esmbusiness-v1').includes('efficiency'));
+ app.element('search-topic').events.change({target:{value:'esm'}});
+ assert.match(app.element('search-count').textContent,/0/);
+ app.element('tab-saved').events.click();await app.flush();
+ assert.equal(app.requests.filter(u=>u.includes('archive')).length,1);
+ assert.match(app.element('saved').innerHTML,/Archivfund/);
+ assert.equal(app.run("byId('archived').id"),'archived');
+ app.run("openSheet('archived')");assert.match(app.element('sheet').innerHTML,/Archivfund/);
+ app.element('include-archive').events.change({target:{checked:true}});await app.flush();
+ assert.equal(app.requests.filter(u=>u.includes('archive')).length,1,'loaded archive reused');
+ assert.match(app.element('ai').innerHTML,/Archivfund/);
+ app.element('include-archive').events.change({target:{checked:false}});
+ assert(!app.element('ai').innerHTML.includes('Archivfund'));
+ assert.match(app.element('saved').innerHTML,/Archivfund/,'saved archive survives toggle');
+ app.element('lang-en').events.click();assert.equal(app.element('article-query').placeholder,'Title, content or source …');
+ const error=setup(['archived']);await error.flush();error.setArchive({ok:false,status:503});
+ error.element('tab-saved').events.click();await error.flush();
+ assert.equal(error.element('archive-retry').hidden,false);
+ assert.deepEqual(JSON.parse(error.storage.get('esmbusiness-v1')).saved,['archived']);
+ error.setArchive({ok:true,json:async()=>[old]});await error.element('archive-retry').events.click();
+ assert.match(error.element('saved').innerHTML,/Archivfund/);
+ assert.equal(error.element('archive-retry').hidden,true);
+ console.log('Integration passed: lazy loading, global bilingual search, no query transmission/storage, topic filters, saved archive detail, archive toggle, language switch, failure and retry.');
+})().catch(e=>{console.error(e);process.exit(1)});

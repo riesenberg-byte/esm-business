@@ -1,6 +1,6 @@
 // esm.business – Service Worker: App-Hülle aus dem Cache, Daten immer frisch mit Offline-Rückfall
-const CACHE = "esm-business-v2";
-const SHELL = ["./", "index.html", "manifest.webmanifest", "fonts/SchibstedGrotesk.woff2",
+const CACHE = "esm-business-v3";
+const SHELL = ["./", "index.html", "article-search.js", "manifest.webmanifest", "fonts/SchibstedGrotesk.woff2",
   "icons/favicon.svg", "icons/icon-192.png", "icons/icon-512.png"];
 
 self.addEventListener("install", e => {
@@ -16,7 +16,8 @@ self.addEventListener("fetch", e => {
   if (url.pathname.includes("/data/")) {
     // Netzwerk zuerst, damit neue Artikel sofort erscheinen
     e.respondWith(fetch(e.request).then(r => {
-      const copy = r.clone(); caches.open(CACHE).then(c => c.put(url.pathname, copy)); return r;
+      if(!r.ok) throw new Error("HTTP "+r.status);
+      const copy = r.clone(); e.waitUntil(caches.open(CACHE).then(c => c.put(url.pathname, copy))); return r;
     }).catch(() => caches.match(url.pathname)));
     return;
   }

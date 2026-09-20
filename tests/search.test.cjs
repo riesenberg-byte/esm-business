@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict');
+const {merge,search,validArchive}=require('../article-search.js');
+const a={id:'current',tab:'ai',cat:'fs',datum:'2026-09-20',titel:{de:'Souveränität bei Banken',en:'Sovereignty in banking'},kurz:{de:'Agenten im Betrieb',en:'Agents in production'},rel:{de:'Effizienz steigt',en:'Efficiency improves'},qn:'Fachmedium',quelle:'https://example.com/a'};
+const b={...a,id:'old',tab:'esm',cat:'sn',datum:'2025-01',titel:{de:'Alte Plattform',en:'Legacy platform'}};
+assert.equal(merge([a],[{...a,qn:'stale'},b]).length,2);
+assert.equal(merge([a],[{...a,qn:'stale'}])[0].qn,'Fachmedium');
+assert.deepEqual(search([a,b],'souveranitat BANKEN').map(i=>i.id),['current']);
+assert.deepEqual(search([a,b],'production','esm','sn').map(i=>i.id),['old']);
+assert.equal(search([a,b],'fachmedium').length,2);
+assert.equal(search([a,b],'missing').length,0);
+assert.equal(search([a,b],'production','ai','consumer').length,0);
+assert.equal(validArchive([a,b]),true);
+assert.equal(validArchive({}),false);
+assert.equal(validArchive([{...b,quelle:'javascript:alert(1)'}]),false);
+console.log('Search tests passed: bilingual matching, filters, deduplication and archive validation');
