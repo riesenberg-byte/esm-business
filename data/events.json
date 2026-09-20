@@ -143,6 +143,27 @@
   "url": "https://www.servicenow.com/events/world-forum/amsterdam.html"
  },
  {
+  "datum": "2026-11-24",
+  "bis": "2026-11-25",
+  "tag": {
+   "de": "Digitale Souveränität",
+   "en": "Digital sovereignty"
+  },
+  "titel": {
+   "de": "IT Summit 2026",
+   "en": "IT Summit 2026"
+  },
+  "ort": {
+   "de": "München",
+   "en": "Munich"
+  },
+  "note": {
+   "de": "heise-Konferenz zu souveränem Arbeitsplatz, souveräner KI und Infrastruktur.",
+   "en": "heise conference on sovereign workplace, sovereign AI and infrastructure."
+  },
+  "url": "https://it-summit.heise.de/"
+ },
+ {
   "datum": "2026-12-02",
   "tag": {
    "de": "ServiceNow",
@@ -161,6 +182,27 @@
    "en": "Last World Forum of the year."
   },
   "url": "https://www.servicenow.com/events/world-forum/paris.html"
+ },
+ {
+  "datum": "2026-12-07",
+  "bis": "2026-12-10",
+  "tag": {
+   "de": "Digitale Souveränität",
+   "en": "Digital sovereignty"
+  },
+  "titel": {
+   "de": "Forum Digitale Souveränität (IT-Tage)",
+   "en": "Forum on Digital Sovereignty (IT-Tage)"
+  },
+  "ort": {
+   "de": "Frankfurt am Main, Kap Europa",
+   "en": "Frankfurt am Main, Kap Europa"
+  },
+  "note": {
+   "de": "Teil der IT-Tage: Kontrolle über Daten, Software und Infrastruktur, Open Source und europäische Standards.",
+   "en": "Part of IT-Tage: control over data, software and infrastructure, open source and European standards."
+  },
+  "url": "https://ittage.informatik-aktuell.de/"
  },
  {
   "datum": "2026-12-15",
