@@ -1,6 +1,97 @@
 [
  {
   "tab": "ai",
+  "cat": "cross",
+  "sub": {
+   "de": "Branchenübergreifend",
+   "en": "Cross-industry"
+  },
+  "id": "ki-agenten-als-manager-handelsblatt",
+  "rel_score": 3,
+  "added": "2026-09-21",
+  "datum": "2026-09-21",
+  "region": "DE",
+  "metric": {
+   "de": "100+ Agenten",
+   "en": "100+ agents"
+  },
+  "msub": {
+   "de": "von neun Mitarbeitenden gesteuert",
+   "en": "managed by nine employees"
+  },
+  "titel": {
+   "de": "Praxistest: Neun Mitarbeitende steuern über 100 KI-Agenten im Unternehmen",
+   "en": "Real-world test: nine employees manage over 100 AI agents in a company"
+  },
+  "kurz": {
+   "de": "Im Bericht erprobt ein Team aus neun Menschen, wie sich mehr als 100 KI-Agenten als digitale Mitarbeitende führen und skalieren lassen. Im Mittelpunkt steht, welche Führungsstrukturen nötig sind, damit Agenten-Flotten dieser Größe zuverlässig arbeiten.",
+   "en": "The report describes a nine-person team testing how to manage and scale more than 100 AI agents as digital staff. The focus is on the leadership structures needed to keep an agent fleet this size reliable."
+  },
+  "rel": {
+   "de": "Praxisbeispiel für die Steuerung großer Agenten-Flotten – zeigt, welche Führungs- und Kontrollstrukturen Agentic AI im großen Maßstab erfordert.",
+   "en": "A practical example of managing large agent fleets – shows what leadership and control structures agentic AI needs at scale."
+  },
+  "quelle": "https://www.handelsblatt.com/unternehmen/ki-fuehrungskraefte-wenn-ki-agenten-zu-managern-werden-02/100252551.html",
+  "qn": "Handelsblatt"
+ },
+ {
+  "tab": "sov",
+  "cat": "ai",
+  "id": "lawzero-deutschland-kanada-berlin",
+  "rel_score": 3,
+  "added": "2026-09-21",
+  "datum": "2026-09-17",
+  "region": "DE",
+  "metric": {
+   "de": "100 Mio. €",
+   "en": "€100m"
+  },
+  "msub": {
+   "de": "geplante deutsche Förderung für LawZero",
+   "en": "planned German funding for LawZero"
+  },
+  "titel": {
+   "de": "Deutschland und Kanada fördern KI-Sicherheitsprojekt LawZero mit Standort Berlin",
+   "en": "Germany and Canada fund AI safety project LawZero, with a Berlin site"
+  },
+  "kurz": {
+   "de": "Deutschland plant rund 100 Mio. Euro, Kanada bis zu 150 Mio. kanadische Dollar Förderung für LawZero, das gemeinnützige KI-Sicherheitsprojekt von Turingpreisträger Yoshua Bengio. Es entwickelt mit dem Konzept „Scientist AI\" einen sicherheitsorientierten Gegenentwurf zu autonomen KI-Agenten und baut einen neuen Standort in Berlin auf, in Kanada sind 360 Vollzeitstellen geplant.",
+   "en": "Germany plans around €100m, Canada up to CA$150m in funding for LawZero, the non-profit AI safety project led by Turing laureate Yoshua Bengio. Its \"Scientist AI\" concept is a safety-oriented alternative to autonomous AI agents; the project is opening a new Berlin site, with 360 full-time jobs planned in Canada."
+  },
+  "rel": {
+   "de": "Staatliche Förderung für unabhängige, sicherheitsorientierte KI-Forschung mit deutschem Standort – relevant für die Debatte um KI- und digitale Souveränität.",
+   "en": "State funding for independent, safety-focused AI research with a German site – relevant to the debate on AI and digital sovereignty."
+  },
+  "quelle": "https://www.heise.de/news/Deutschland-und-Kanada-investieren-gemeinsam-in-sichere-KI-11457301.html",
+  "qn": "heise online"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "dsgvo-mythos-ki-innovation",
+  "rel_score": 2,
+  "added": "2026-09-21",
+  "datum": "2026-09-21",
+  "region": "DE",
+  "metric": null,
+  "msub": null,
+  "titel": {
+   "de": "Studie: Datenschutzregulierung hat KI-Innovation in Deutschland nicht gebremst",
+   "en": "Study: data protection rules haven't held back AI innovation in Germany"
+  },
+  "kurz": {
+   "de": "Ein Grundsatzpapier von Fraunhofer ISI und Universität Kassel (Projekt „Plattform Privatheit\") widerspricht der These, weniger Datenschutz bringe mehr KI-Innovation. Statt pauschaler Deregulierung fordern die Autoren gezielte Entlastungen für Start-ups und KMU sowie Pflichten, die sich am tatsächlichen Verarbeitungsrisiko orientieren.",
+   "en": "A position paper from Fraunhofer ISI and the University of Kassel (\"Plattform Privatheit\" project) challenges the claim that less data protection means more AI innovation. Instead of blanket deregulation, the authors call for targeted relief for start-ups and SMEs and obligations tied to actual processing risk."
+  },
+  "rel": {
+   "de": "Liefert Argumente für die laufende Debatte um DSGVO- und KI-Act-Vereinfachung – wichtig für alle, die Compliance-Vorgaben mitgestalten.",
+   "en": "Provides arguments for the ongoing debate on simplifying GDPR and the AI Act – relevant for anyone shaping compliance requirements."
+  },
+  "quelle": "https://www.cio.de/article/4224271/dsgvo-mythos-entlarvt-datenschutz-befeuert-ki-innovation.html",
+  "qn": "CIO.de"
+ },
+ {
+  "tab": "ai",
   "cat": "gps",
   "sub": {
    "de": "Öffentlicher Sektor",
