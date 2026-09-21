@@ -1,6 +1,235 @@
 [
  {
   "tab": "ai",
+  "cat": "gps",
+  "sub": {
+   "de": "Öffentlicher Sektor",
+   "en": "Public sector"
+  },
+  "id": "agentic-ai-hub-kommunen-piloten",
+  "rel_score": 2,
+  "added": "2026-09-21",
+  "datum": "2026-09-07",
+  "region": "DE",
+  "metric": {
+   "de": ">90%",
+   "en": ">90%"
+  },
+  "msub": {
+   "de": "kürzere Durchlaufzeit bei Anträgen",
+   "en": "shorter application processing time"
+  },
+  "titel": {
+   "de": "Agentic AI Hub: KI-Agenten senken Durchlaufzeiten in 19 Kommunen um über 90%",
+   "en": "Agentic AI Hub: AI agents cut processing times over 90% in 19 German municipalities"
+  },
+  "kurz": {
+   "de": "Im Agentic AI Hub des Bundes testeten 19 Kommunen mit neun KI-Start-ups 20 Pilotprojekte für KI-Agenten in der Verwaltung. Die Durchlaufzeit komplexer Anträge sank um über 90%, 95% der Kommunen waren zufrieden. Seit 7. September läuft die zweite, dreimonatige Pilotphase.",
+   "en": "In the federal Agentic AI Hub, 19 municipalities and nine AI start-ups ran 20 pilot projects for AI agents in public administration. Processing times for complex applications fell by over 90%, and 95% of municipalities were satisfied. A second three-month pilot phase started on 7 September."
+  },
+  "rel": {
+   "de": "Zeigt mit belastbaren Zahlen, wie KI-Agenten Verwaltungsprozesse beschleunigen können – ein Referenzfall für Governance und Skalierung von Agenten im öffentlichen Sektor.",
+   "en": "Shows with solid figures how AI agents can speed up administrative processes – a reference case for governance and scaling of agents in the public sector."
+  },
+  "quelle": "https://bmds.bund.de/aktuelles/pressemitteilungen/detail/agentic-ai-hub-pilotierung-in-kommunen-startet",
+  "qn": "BMDS"
+ },
+ {
+  "tab": "ai",
+  "cat": "fs",
+  "sub": {
+   "de": "Banken",
+   "en": "Banking"
+  },
+  "id": "banken-agenten-produktivsprung",
+  "rel_score": 3,
+  "added": "2026-09-21",
+  "datum": "2026-09-18",
+  "region": "DACH",
+  "metric": {
+   "de": "19%",
+   "en": "19%"
+  },
+  "msub": {
+   "de": "produktiv in Einzelaufgaben",
+   "en": "live in single tasks"
+  },
+  "titel": {
+   "de": "Lünendonk-Studie: Banken schaffen selten den Sprung vom KI-Pilot in die Produktion",
+   "en": "Lünendonk study: banks rarely make the leap from AI pilot to production"
+  },
+  "kurz": {
+   "de": "Laut einer Lünendonk-Studie testen 58% der Banken KI-Agenten in Pilotprojekten, aber nur 19% nutzen sie bereits produktiv in Einzelaufgaben und lediglich 1% end-to-end über mehrere Kernprozesse. Bei 66% der Unternehmen schaffte weniger als ein Viertel der Pilotprojekte den Sprung in die Produktion.",
+   "en": "A Lünendonk study finds 58% of banks are piloting AI agents, but only 19% run them live for single tasks and just 1% end-to-end across core processes. At 66% of firms, fewer than a quarter of pilots reached production."
+  },
+  "rel": {
+   "de": "Zeigt, wie groß die Lücke zwischen KI-Ankündigung und echtem ESM-Produktivbetrieb im Finanzsektor noch ist – wichtig für Erwartungsmanagement bei Agentic-AI-Projekten.",
+   "en": "Shows how wide the gap between AI announcements and real ESM production still is in financial services – useful for expectation management on agentic AI projects."
+  },
+  "quelle": "https://www.it-finanzmagazin.de/ki-agenten-banken-stehen-vor-dem-sprung-vom-piloten-in-den-produktivbetrieb-250994/",
+  "qn": "IT Finanzmagazin"
+ },
+ {
+  "tab": "ai",
+  "cat": "cross",
+  "sub": {
+   "de": "Studien",
+   "en": "Studies"
+  },
+  "id": "ki-paradox-agenten-workflow-luecke",
+  "rel_score": 2,
+  "added": "2026-09-21",
+  "datum": "2026-09-16",
+  "region": "DE",
+  "metric": {
+   "de": "60%",
+   "en": "60%"
+  },
+  "msub": {
+   "de": "haben KI-Agenten im Einsatz",
+   "en": "already use AI agents"
+  },
+  "titel": {
+   "de": "KI-Paradox: 60% der deutschen Unternehmen nutzen Agenten, nur 5% ändern Workflows",
+   "en": "AI paradox: 60% of German firms use agents, only 5% redesign workflows"
+  },
+  "kurz": {
+   "de": "Eine Umfrage zeigt: 60% der deutschen Unternehmen setzen bereits KI-Agenten ein, doch nur 5% haben ihre Arbeitsabläufe dafür grundlegend angepasst. Als Bremsen gelten fehlende Expertise, Sicherheitsbedenken und unveränderte Prozesse.",
+   "en": "A survey finds 60% of German companies already use AI agents, yet only 5% have fundamentally adapted their workflows. Cited brakes are missing expertise, security concerns and unchanged processes."
+  },
+  "rel": {
+   "de": "Verdeutlicht, dass Tool-Einführung allein nicht reicht – ohne Prozess- und Governance-Anpassung bleibt der Nutzen von KI-Agenten begrenzt.",
+   "en": "Shows that adopting tools alone isn't enough – without process and governance changes, the benefit of AI agents stays limited."
+  },
+  "quelle": "https://borncity.com/news/ki-paradox-60-haben-agenten-aber-nur-5-reformieren-workflows/",
+  "qn": "Born City"
+ },
+ {
+  "tab": "esm",
+  "cat": "market",
+  "id": "salesforce-dreamforce-ausfall-cloud-risiko",
+  "rel_score": 2,
+  "added": "2026-09-21",
+  "datum": "2026-09-18",
+  "region": "Global",
+  "metric": {
+   "de": "7,5 Std.",
+   "en": "7.5 hrs"
+  },
+  "msub": {
+   "de": "Ausfalldauer während Dreamforce",
+   "en": "outage during Dreamforce"
+  },
+  "titel": {
+   "de": "Salesforce-Ausfall während der Dreamforce zeigt Risiken der Cloud-Abhängigkeit",
+   "en": "Salesforce outage during Dreamforce exposes cloud-dependency risk"
+  },
+  "kurz": {
+   "de": "Während der eigenen Hausmesse Dreamforce fiel Salesforce rund siebeneinhalb Stunden aus. Der Vorfall macht deutlich, wie stark Unternehmen von der Verfügbarkeit einzelner Cloud-Plattformen abhängen.",
+   "en": "Salesforce suffered roughly seven and a half hours of downtime during its own Dreamforce event. The incident highlights how dependent companies are on the availability of individual cloud platforms."
+  },
+  "rel": {
+   "de": "Eine Erinnerung, dass Ausfallsicherheit und Multi-Vendor-Strategien bei jeder ESM- oder CRM-Plattform mitgedacht werden müssen – nicht nur bei ServiceNow.",
+   "en": "A reminder that resilience and multi-vendor strategies matter for any ESM or CRM platform – not only ServiceNow."
+  },
+  "quelle": "https://www.computerwoche.de/article/4223700/salesforce-grosausfall-offenbart-riskante-cloud-abhangigkeiten.html",
+  "qn": "Computerwoche"
+ },
+ {
+  "tab": "sov",
+  "cat": "ai",
+  "id": "bmd-foerderung-marktreife-ki-souveraenitaet",
+  "rel_score": 2,
+  "added": "2026-09-21",
+  "datum": "2026-09-17",
+  "region": "DE",
+  "metric": {
+   "de": "5 Mio. €",
+   "en": "€5m"
+  },
+  "msub": {
+   "de": "Förderung je Vorhaben möglich",
+   "en": "funding available per project"
+  },
+  "titel": {
+   "de": "Digitalministerium fördert marktreife Tech-Produkte und sichere KI mit bis zu 5 Mio. Euro",
+   "en": "Digital ministry backs market-ready tech and secure AI with up to €5m"
+  },
+  "kurz": {
+   "de": "Das Bundesdigitalministerium unterstützt kleine und mittlere Unternehmen mit bis zu 5 Mio. Euro dabei, digitale Innovationen zur Marktreife zu bringen. Zusätzlich treibt es mit Kanada gemeinsame Standards für sichere KI voran.",
+   "en": "Germany's federal digital ministry is backing small and mid-sized firms with up to €5m to bring digital innovations to market readiness, while also advancing joint secure-AI standards with Canada."
+  },
+  "rel": {
+   "de": "Zeigt konkrete Förderwege für souveräne Tech- und KI-Vorhaben in Deutschland – relevant für Anbieter und Kunden, die auf staatliche Unterstützung setzen.",
+   "en": "Shows concrete funding routes for sovereign tech and AI projects in Germany – relevant for vendors and customers relying on state support."
+  },
+  "quelle": "https://www.heise.de/news/Souveraenitaet-Wildberger-foerdert-marktreife-Tech-Produkte-und-sichere-KI-11457136.html",
+  "qn": "heise online"
+ },
+ {
+  "tab": "tech",
+  "cat": "dev",
+  "id": "linkedin-ki-agenten-entwicklung-produktivitaet",
+  "rel_score": 2,
+  "added": "2026-09-21",
+  "datum": "2026-09-20",
+  "region": "Global",
+  "metric": {
+   "de": "+20%",
+   "en": "+20%"
+  },
+  "msub": {
+   "de": "Produktivitätsgewinn laut LinkedIn",
+   "en": "productivity gain per LinkedIn"
+  },
+  "titel": {
+   "de": "LinkedIn, IBM und DoorDash steigern Entwicklungsproduktivität mit KI-Agenten um 20%",
+   "en": "LinkedIn, IBM and DoorDash lift dev productivity 20% with AI agents"
+  },
+  "kurz": {
+   "de": "LinkedIn, IBM, DoorDash und weitere Unternehmen setzen KI-Agenten produktiv für Entwicklung, Tests und Wartung ein – meist unter menschlicher Kontrolle. LinkedIn beziffert den Produktivitätsgewinn in der Softwareentwicklung auf 20%.",
+   "en": "LinkedIn, IBM, DoorDash and other companies are running AI agents in production for development, testing and maintenance – mostly under human oversight. LinkedIn puts the productivity gain in software development at 20%."
+  },
+  "rel": {
+   "de": "Konkretes Beispiel für produktiven Agenteneinsatz in der Software-Entwicklung – mit Kontrollmechanismus statt vollautonomem Betrieb.",
+   "en": "A concrete example of AI agents in production in software development – with human oversight rather than full autonomy."
+  },
+  "quelle": "https://borncity.com/news/ki-agenten-in-der-entwicklung-linkedin-steigert-produktivitaet-um-20/",
+  "qn": "Born City"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "vornac-ki-agent-pentest-produktivbetrieb",
+  "rel_score": 3,
+  "added": "2026-09-21",
+  "datum": "2026-09-18",
+  "region": "DE",
+  "metric": {
+   "de": "97%",
+   "en": "97%"
+  },
+  "msub": {
+   "de": "Abdeckung der Angriffsfläche laut VORNAC",
+   "en": "attack-surface coverage per VORNAC"
+  },
+  "titel": {
+   "de": "KI-Agent als Pentester: VORNAC deckt laut Anbieter über 97% der Angriffsfläche ab",
+   "en": "AI agent as pentester: VORNAC claims over 97% attack-surface coverage"
+  },
+  "kurz": {
+   "de": "Der KI-Agent von VORNAC läuft bereits produktiv, unter anderem bei einem großen deutschen Versicherer. Laut Anbieter deckt das System mehr als 97% der Angriffsfläche ab, klassische Pentests kommen nur auf 5–20%.",
+   "en": "VORNAC's AI agent already runs in production, including at a large German insurer. The vendor claims over 97% attack-surface coverage, versus 5–20% for classic pentests."
+  },
+  "rel": {
+   "de": "Zeigt, wie KI-Agenten in sicherheitskritischen Prozessen produktiv laufen können – mit menschlicher Rückfragemöglichkeit statt Blackbox-Automatisierung.",
+   "en": "Shows how AI agents can run in production in security-critical processes – with human follow-up rather than black-box automation."
+  },
+  "quelle": "https://www.computerwoche.de/article/4222687/wenn-der-ki-agent-zum-pentester-wird.html",
+  "qn": "Computerwoche"
+ },
+ {
+  "tab": "ai",
   "cat": "consumer",
   "sub": {
    "de": "Automotive",

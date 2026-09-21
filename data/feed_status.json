@@ -1,49 +1,50 @@
 {
- "stand": "2026-09-20T16:21+00:00",
+ "stand": "2026-09-21T05:40+00:00",
+ "status": "partial",
  "feeds": {
   "heise online": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 9
   },
   "Computerwoche": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 12
   },
   "CIO.de": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 8
   },
   "IT Finanzmagazin": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 1
   },
   "Bing News: ServiceNow": {
    "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "fehler": "not well-formed (invalid token): line 1, column 41"
   },
   "Bing News: ServiceNow EN": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 2
   },
   "Bing News: KI-Agenten Unternehmen": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 10
   },
   "Bing News: Agentic AI enterprise": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 5
   },
   "Bing News: souveräne Cloud": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 0
   },
   "Bing News: Control Tower Agenten": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 0
   },
   "Bing News: ITSM ESM": {
-   "ok": false,
-   "fehler": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "neu": 0
   }
  }
 }
