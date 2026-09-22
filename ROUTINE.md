@@ -62,12 +62,12 @@ Nicht aufnehmen: Börsenkurse und Kursziele, reine Marketingmeldungen ohne Subst
  "qn": "Name des Mediums"
 }
 ```
-`sub` nur bei `tab: ai`. `metric`/`msub` weglassen (auf `null` setzen), wenn die Quelle keine belastbare Zahl nennt – nie schätzen.
+`sub` ist optional und nur bei `tab: ai` erlaubt: nur setzen, wenn es einen feineren Teilsektor nennt (z. B. Automotive, Energie, Kommunalverwaltung), nie die Kategorie wiederholen; bei `cross` weglassen. `metric`/`msub` weglassen (auf `null` setzen), wenn die Quelle keine belastbare Zahl nennt – nie schätzen.
 
 **Kategorien**
-- `ai` (nach Branchen): `consumer` (Automotive, Handel, Konsumgüter, Transport), `eri` (Energie, Ressourcen, Industrie), `fs` (Banken, Versicherungen, Zahlungsverkehr), `gps` (öffentlicher Sektor), `lshc` (Gesundheit, Pharma), `tmt` (Technologie, Medien, Telko), `cross` (Studien, branchenübergreifend)
-- `esm`: `sn` (ServiceNow-Plattform), `ma` (Acquisitions, z. B. Moveworks, Armis, Veza), `results` (belegte Projektergebnisse), `industry` (Branchenlösungen), `market` (Wettbewerber, andere AI Control Towers)
-- `sov`: `snsov` (ServiceNow souverän betrieben), `cloud` (souveräne Cloud & Plattformen), `ai` (souveräne KI-Modelle), `work` (Arbeitsplatz & Verwaltung)
+- `ai` (nach Branchen): `ind` (Industrie & Handel: Automotive, Handel, Konsumgüter, Transport, Energie, Ressourcen), `fs` (Banken & Versicherungen, Zahlungsverkehr), `gps` (öffentlicher Sektor), `lshc` (Gesundheit, Pharma), `tmt` (Telko & IT, Medien), `cross` (Studien, branchenübergreifend)
+- `esm`: `sn` (ServiceNow: Plattform, Releases, Übernahmen wie Moveworks, Armis, Veza, Branchenlösungen), `results` (belegte Kundenergebnisse), `market` (Markt & Wettbewerb, andere AI Control Towers)
+- `sov`: `snsov` (ServiceNow souverän betrieben), `cloud` (souveräne Cloud, Plattformen und Arbeitsplatz), `ai` (souveräne KI-Modelle)
 - `tech`: `mcp` (MCP & Integration), `gov` (Governance, Sicherheit, Architekturmuster), `dev` (Entwicklung, Releases)
 
 ## Schreibregeln

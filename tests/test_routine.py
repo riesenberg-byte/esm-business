@@ -38,6 +38,14 @@ class RoutineTests(unittest.TestCase):
                 item=copy.deepcopy(self.item);item[key]=value
                 self.assertTrue(validate.validate([item],[],{})[0])
 
+    def test_sub_is_optional_but_must_add_detail(self):
+        item=copy.deepcopy(self.item);item.update(tab='ai',cat='gps')
+        self.assertEqual(validate.validate([item],[],{})[0],[])
+        item['sub']={'de':'Kommunalverwaltung','en':'Local government'}
+        self.assertEqual(validate.validate([item],[],{})[0],[])
+        item['sub']={'de':'Öffentlicher Sektor','en':'Public sector'}
+        self.assertTrue(validate.validate([item],[],{})[0])
+
     def test_legacy_cannot_grant_new_article_exception(self):
         item=copy.deepcopy(self.item);item['id']='new-story';item.pop('added');item['datum']='2026-09'
         self.assertTrue(validate.validate([item],[],self.legacy)[0])

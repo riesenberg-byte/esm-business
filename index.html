@@ -99,7 +99,17 @@ h2{font-size:14px;font-weight:700;margin:14px 0 8px;color:var(--muted)}
 .card .src{grid-column:1;font-size:13px;color:var(--muted);margin-top:4px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .card .m{grid-column:2;grid-row:1/4;align-self:center;text-align:right;font-size:24px;font-weight:800;letter-spacing:-0.03em;line-height:1;color:var(--c);max-width:110px}
 .card .m small{display:block;font-size:11px;font-weight:600;letter-spacing:0;color:var(--muted);margin-top:4px;line-height:1.25}
+.card.read{background:transparent;box-shadow:inset 0 0 0 1px var(--line);border-left-color:var(--line)}
+.card.read:hover{background:var(--surface)}
+.card.read .kicker,.card.read .m{color:var(--muted)}
 .card.read .ttl{color:var(--muted);font-weight:600}
+.sheet .readtoggle{margin-top:12px}
+.readgrp{margin-top:14px}
+.readgrp>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--muted);min-height:44px;padding:0 8px 0 0;margin-bottom:2px}
+.readgrp>summary::-webkit-details-marker{display:none}
+.readgrp>summary::before{content:"▸";display:inline-block;transition:transform .15s}
+.readgrp[open]>summary::before{transform:rotate(90deg)}
+@media (prefers-reduced-motion:reduce){.readgrp>summary::before{transition:none}}
 .badge{font-size:11px;font-weight:700;border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--muted)}
 .saved-dot{color:var(--c);font-weight:800}
 .newpill{display:inline-block;font-size:11px;font-weight:800;color:#fff;background:var(--c);border-radius:5px;padding:0 6px;margin-right:6px;vertical-align:1px}
@@ -277,10 +287,10 @@ de:{openSearch:"Suche öffnen",closeSearch:"Suche schließen",searchLabel:"Artik
   sub:"Agentic AI Adoption und ESM-Transformation",
   tab_ai:"AI Adoption",tab_sov:"Souveränität",intro_sov:"Souveräne Cloud, souveräne KI und was das für Plattformen wie ServiceNow bedeutet – vom Rechenzentrum bis zum Arbeitsplatz.",tab_esm:"ESM & ServiceNow",tab_tech:"Tech-Praxis",tab_events:"Events",tab_saved:"Merkliste",
   intro_ai:"Wie Unternehmen Agentic AI vom Pilot in den Betrieb bringen – konkrete Anwendungen mit messbarer Wirkung, Schwerpunkt Deutschland, sortiert nach Branchen.",
-  intro_esm:"ESM-Transformation rund um ServiceNow: Plattform und Acquisitions, Ergebnisse aus Projekten, Branchenlösungen und der Markt drumherum – inklusive der AI Control Towers anderer Anbieter.",
+  intro_esm:"ESM-Transformation rund um ServiceNow: Plattform und Übernahmen, Ergebnisse aus Projekten, Branchenlösungen und der Markt drumherum – inklusive der AI Control Towers anderer Anbieter.",
   intro_tech:"Für Techies und Architektinnen: Schnittstellen, Governance und Muster, die in Projekten gerade relevant werden.",
   intro_saved:"Nur auf diesem Gerät gespeichert.",
-  updatedL:"Aktualisiert am {d}",all:"Alle",top:"Wichtig",more:"Weitere",newL:"Neu",markAll:"Alle als gelesen markieren",newCount:"{n} neu",sowhat:"Warum relevant?",forArch:"Warum relevant für die Architektur?",aiNote:"Kurzfassungen und Einordnungen KI-gestützt erstellt",aiTag:"KI-gestützte Zusammenfassung – maßgeblich ist der Originalartikel.",indep:"Unabhängiges Angebot, nicht mit den genannten Unternehmen verbunden.",
+  updatedL:"Aktualisiert am {d}",all:"Alle",top:"Wichtig",more:"Weitere",newL:"Neu",markAll:"Alle als gelesen markieren",newCount:"{n} neu",unreadCount:"{n} ungelesen",readL:"Gelesen",readGrp:"Gelesen ({n})",allRead:"Alles gelesen – neue Meldungen erscheinen hier oben.",markUnread:"Als ungelesen markieren",markReadB:"Als gelesen markieren",unreadT:"Als ungelesen markiert",readT:"Als gelesen markiert",sowhat:"Warum relevant?",forArch:"Warum relevant für die Architektur?",aiNote:"Kurzfassungen und Einordnungen KI-gestützt erstellt",aiTag:"KI-gestützte Zusammenfassung – maßgeblich ist der Originalartikel.",indep:"Unabhängiges Angebot, nicht mit den genannten Unternehmen verbunden.",
   read:"Artikel lesen",save:"Merken",saved:"Gemerkt",share:"Teilen",close:"Schließen",
   copied:"Link kopiert",savedT:"Zur Merkliste hinzugefügt",unsavedT:"Von der Merkliste entfernt",
   empty:"Hier ist noch nichts. Tippe bei einem Artikel auf „Merken“.",emptyF:"Für diesen Filter gibt es gerade keine Artikel.",
@@ -295,7 +305,7 @@ en:{openSearch:"Open search",closeSearch:"Close search",searchLabel:"Search arti
   intro_esm:"ESM transformation around ServiceNow: platform and acquisitions, project results, industry solutions and the wider market – including other vendors' AI control towers.",
   intro_tech:"For techies and architects: interfaces, governance and patterns that are becoming relevant in projects.",
   intro_saved:"Stored on this device only.",
-  updatedL:"Updated {d}",all:"All",top:"Top stories",more:"More",newL:"New",markAll:"Mark all as read",newCount:"{n} new",sowhat:"Why it matters",forArch:"Why it matters for architecture",aiNote:"Summaries and context written with AI assistance",aiTag:"AI-assisted summary – the original article is authoritative.",indep:"Independent service, not affiliated with the companies mentioned.",
+  updatedL:"Updated {d}",all:"All",top:"Top stories",more:"More",newL:"New",markAll:"Mark all as read",newCount:"{n} new",unreadCount:"{n} unread",readL:"Read",readGrp:"Read ({n})",allRead:"All caught up – new stories will appear up here.",markUnread:"Mark as unread",markReadB:"Mark as read",unreadT:"Marked as unread",readT:"Marked as read",sowhat:"Why it matters",forArch:"Why it matters for architecture",aiNote:"Summaries and context written with AI assistance",aiTag:"AI-assisted summary – the original article is authoritative.",indep:"Independent service, not affiliated with the companies mentioned.",
   read:"Read article",save:"Save",saved:"Saved",share:"Share",close:"Close",
   copied:"Link copied",savedT:"Added to saved",unsavedT:"Removed from saved",
   empty:"Nothing here yet. Tap “Save” on an article.",emptyF:"No articles for this filter right now.",
@@ -305,12 +315,11 @@ en:{openSearch:"Open search",closeSearch:"Close search",searchLabel:"Search arti
 };
 
 const CATS = {
-  ai:{consumer:{de:"Consumer",en:"Consumer"},eri:{de:"Energie, Ressourcen & Industrie",en:"Energy, resources & industrials"},
-      fs:{de:"Finanzdienstleistungen",en:"Financial services"},gps:{de:"Öffentlicher Sektor",en:"Government & public services"},
-      lshc:{de:"Life Sciences & Gesundheit",en:"Life sciences & health care"},tmt:{de:"Technologie, Medien & Telko",en:"Technology, media & telecom"},
-      cross:{de:"Branchenübergreifend",en:"Cross-industry"}},
-  sov:{snsov:{de:"ServiceNow souverän",en:"Sovereign ServiceNow"},cloud:{de:"Cloud & Plattformen",en:"Cloud & platforms"},ai:{de:"Souveräne KI",en:"Sovereign AI"},work:{de:"Arbeitsplatz & Verwaltung",en:"Workplace & government"}},
-  esm:{sn:{de:"ServiceNow",en:"ServiceNow"},ma:{de:"Acquisitions",en:"Acquisitions"},results:{de:"Ergebnisse",en:"Results"},industry:{de:"Branchenlösungen",en:"Industry solutions"},market:{de:"Markt & Control Towers",en:"Market & control towers"}},
+  ai:{ind:{de:"Industrie & Handel",en:"Industry & retail"},fs:{de:"Banken & Versicherungen",en:"Banking & insurance"},
+      gps:{de:"Öffentlicher Sektor",en:"Public sector"},lshc:{de:"Gesundheit",en:"Health care"},tmt:{de:"Telko & IT",en:"Telecom & IT"},
+      cross:{de:"Studien",en:"Research"}},
+  sov:{snsov:{de:"ServiceNow souverän",en:"Sovereign ServiceNow"},cloud:{de:"Cloud & Arbeitsplatz",en:"Cloud & workplace"},ai:{de:"Souveräne KI",en:"Sovereign AI"}},
+  esm:{sn:{de:"ServiceNow",en:"ServiceNow"},results:{de:"Kundenergebnisse",en:"Customer results"},market:{de:"Markt & Wettbewerb",en:"Market & competitors"}},
   tech:{mcp:{de:"MCP & Integration",en:"MCP & integration"},gov:{de:"Governance",en:"Governance"},dev:{de:"Entwicklung",en:"Development"}}
 };
 
@@ -371,15 +380,16 @@ function renderSearch(){
 
 /* ---------- Zustand ---------- */
 let lang=(navigator.language||"de").toLowerCase().startsWith("de")?"de":"en";
-let tab="ai", filt={ai:null,esm:null,tech:null}, savedIds=[], readIds=[];
+let tab="ai", filt={ai:null,esm:null,tech:null}, savedIds=[], readIds=[], readOpen=false;
 try{
   const s=JSON.parse(localStorage.getItem("esmbusiness-v1")||"{}");
   if(["de","en"].includes(s.lang)) lang=s.lang;
   if(["ai","esm","sov","tech","events","saved"].includes(s.tab)) tab=s.tab;
   if(Array.isArray(s.saved)) savedIds=s.saved;
   if(Array.isArray(s.read)) readIds=s.read;
+  readOpen=s.readOpen===true;
 }catch(e){}
-function save(){ try{ localStorage.setItem("esmbusiness-v1",JSON.stringify({lang,tab,saved:savedIds,read:readIds})); }catch(e){} }
+function save(){ try{ localStorage.setItem("esmbusiness-v1",JSON.stringify({lang,tab,saved:savedIds,read:readIds,readOpen})); }catch(e){} }
 
 /* ---------- Hilfen ---------- */
 const T=k=>UI[lang][k], L=o=>(o&&typeof o==="object")?o[lang]:o;
@@ -404,10 +414,11 @@ function markRead(id){ if(!readIds.includes(id)){readIds.push(id);save();} }
 function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("on");clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove("on"),1600);}
 
 /* ---------- Listen ---------- */
+const subOf=(i,cat)=>i.sub&&L(i.sub).trim().toLowerCase()!==L(cat).trim().toLowerCase()?L(i.sub):"";
 function cardHTML(i){
-  const cat=CATS[i.tab][i.cat];
-  return `<button class="card ${tcls[i.tab]} ${readIds.includes(i.id)?"read":""} ${isNew(i)?"isnew":""}" data-id="${i.id}">
-    <span class="kicker">${isNew(i)?`<span class="newpill">${T("newL")}</span>`:""}${esc(L(cat))}${isArchived(i)?' <span class="archive-tag">· '+T("archiveTag")+'</span>':""}${i.sub?" · "+esc(L(i.sub)):""}${savedIds.includes(i.id)?' <span class="saved-dot" aria-label="'+T("saved")+'">★</span>':""}</span>
+  const cat=CATS[i.tab][i.cat], sub=subOf(i,cat), read=readIds.includes(i.id);
+  return `<button class="card ${tcls[i.tab]} ${read?"read":""} ${isNew(i)?"isnew":""}" data-id="${i.id}">
+    <span class="kicker">${isNew(i)?`<span class="newpill">${T("newL")}</span>`:""}${read?`✓ ${T("readL")} · `:""}${esc(L(cat))}${isArchived(i)?' <span class="archive-tag">· '+T("archiveTag")+'</span>':""}${sub?" · "+esc(sub):""}${savedIds.includes(i.id)?' <span class="saved-dot" aria-label="'+T("saved")+'">★</span>':""}</span>
     <span class="ttl">${esc(L(i.titel))}</span>
     <span class="src"><span>${esc(i.qn)}</span><span>${fmt(i.datum)}</span><span class="badge">${esc(i.region)}</span></span>
     ${i.metric?`<span class="m">${esc(L(i.metric))}<small>${esc(L(i.msub))}</small></span>`:""}
@@ -417,18 +428,23 @@ function renderList(t){
   const cats=CATS[t], f=filt[t];
   const chips=`<div class="chips" role="group"><button class="chip" data-f="" aria-pressed="${!f}">${T("all")}</button>`+
     Object.keys(cats).map(k=>`<button class="chip" data-f="${k}" aria-pressed="${f===k}">${esc(L(cats[k]))}</button>`).join("")+`</div>`;
-  const ord=(a,b)=>(isNew(b)-isNew(a))||(toDate(b.added||b.datum)-toDate(a.added||a.datum));
+  const byDate=(a,b)=>toDate(b.added||b.datum)-toDate(a.added||a.datum);
+  const ord=(a,b)=>(isNew(b)-isNew(a))||byDate(a,b);
   const list=ITEMS.filter(i=>i.tab===t&&(!f||i.cat===f));
-  const top=list.filter(i=>(i.rel_score||1)>=3).sort(ord), rest=list.filter(i=>(i.rel_score||1)<3).sort(ord);
+  const unread=list.filter(i=>!readIds.includes(i.id)), read=list.filter(i=>readIds.includes(i.id)).sort(byDate);
+  const top=unread.filter(i=>(i.rel_score||1)>=3).sort(ord), rest=unread.filter(i=>(i.rel_score||1)<3).sort(ord);
   const nNew=list.filter(isNew).length;
-  const tools=`<div class="toolrow ${tcls[t]}"><span class="nc">${nNew?T("newCount").replace("{n}",nNew):""}</span>${nNew?`<button class="linkbtn" data-markall="${t}">${T("markAll")}</button>`:""}</div>`;
+  const tools=unread.length?`<div class="toolrow ${tcls[t]}"><span class="nc">${nNew?T("newCount").replace("{n}",nNew):T("unreadCount").replace("{n}",unread.length)}</span><button class="linkbtn" data-markall="${t}">${T("markAll")}</button></div>`:"";
   let body=list.length?"":`<div class="empty">${T("emptyF")}</div>`;
+  if(list.length&&!unread.length) body+=`<div class="empty">${T("allRead")}</div>`;
   if(top.length) body+=`<h2>${T("top")}</h2><div class="cards">`+top.map(cardHTML).join("")+`</div>`;
   if(rest.length) body+=`<h2>${T("more")}</h2><div class="cards">`+rest.map(cardHTML).join("")+`</div>`;
+  if(read.length) body+=`<details class="readgrp"${readOpen?" open":""}><summary>${T("readGrp").replace("{n}",read.length)}</summary><div class="cards">`+read.map(cardHTML).join("")+`</div></details>`;
   const el=document.getElementById(t);
   el.innerHTML=`${chips}${tools}${body}`;
   el.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{filt[t]=b.dataset.f||null;renderList(t);}));
-  const mb=el.querySelector("[data-markall]"); if(mb) mb.addEventListener("click",()=>{ list.filter(isNew).forEach(i=>markRead(i.id)); refreshLists(); });
+  const mb=el.querySelector("[data-markall]"); if(mb) mb.addEventListener("click",()=>{ unread.forEach(i=>markRead(i.id)); refreshLists(); });
+  const rg=el.querySelector(".readgrp"); if(rg) rg.addEventListener("toggle",()=>{ if(readOpen!==rg.open){readOpen=rg.open;save();} });
 }
 function updateCounts(){ ["ai","esm","sov","tech"].forEach(k=>{ const n=ITEMS.filter(i=>i.tab===k&&isNew(i)).length; const el=document.getElementById("new-"+k); if(el) el.textContent=n?String(n):""; }); }
 function renderSaved(){
@@ -465,9 +481,9 @@ function renderAside(){
 const sheet=document.getElementById("sheet"),scrim=document.getElementById("scrim");
 let openId=null,lastFocus=null;
 function sheetHTML(i){
-  const cat=CATS[i.tab][i.cat],isSaved=savedIds.includes(i.id);
+  const cat=CATS[i.tab][i.cat],isSaved=savedIds.includes(i.id),sub=subOf(i,cat);
   return `<div class="grab"></div>
-   <div class="sheet-top"><span class="kicker">${esc(L(cat))}${i.sub?" · "+esc(L(i.sub)):""} · ${esc(i.region)}</span>
+   <div class="sheet-top"><span class="kicker">${esc(L(cat))}${sub?" · "+esc(sub):""} · ${esc(i.region)}</span>
      <button class="x" id="sx" aria-label="${T("close")}">×</button></div>
    ${i.metric?`<div class="big">${esc(L(i.metric))}</div><div class="bigsub">${esc(L(i.msub))}</div>`:""}
    <h3 id="sheetTitle">${esc(L(i.titel))}</h3>
@@ -479,7 +495,8 @@ function sheetHTML(i){
      <a class="btn primary" id="sread" href="${i.quelle}" target="_blank" rel="noopener">${T("read")}</a>
      <button class="btn" id="ssave" aria-pressed="${isSaved}">${isSaved?"★ "+T("saved"):"☆ "+T("save")}</button>
      <button class="btn" id="sshare">${T("share")}</button>
-   </div>`;
+   </div>
+   <button class="linkbtn readtoggle" id="sunread">${readIds.includes(i.id)?T("markUnread"):T("markReadB")}</button>`;
 }
 function openSheet(id,push=true){
   const i=byId(id); if(!i) return;
@@ -493,7 +510,12 @@ function openSheet(id,push=true){
 }
 openSheet._bind=function(i){
   const sx=document.getElementById("sx"); sx.onclick=()=>history.back();
-  document.getElementById("sread").onclick=()=>{ if(!readIds.includes(i.id)){readIds.push(i.id);save();refreshLists();} };
+  document.getElementById("sread").onclick=()=>{ if(!readIds.includes(i.id)){readIds.push(i.id);save();refreshLists();document.getElementById("sunread").textContent=T("markUnread");} };
+  document.getElementById("sunread").onclick=()=>{
+    const k=readIds.indexOf(i.id);
+    if(k>=0){readIds.splice(k,1);toast(T("unreadT"));} else {readIds.push(i.id);toast(T("readT"));}
+    save(); sheet.innerHTML=sheetHTML(i); openSheet._bind(i); refreshLists(); document.getElementById("sunread").focus();
+  };
   document.getElementById("ssave").onclick=()=>{
     const k=savedIds.indexOf(i.id);
     if(k>=0){savedIds.splice(k,1);toast(T("unsavedT"));} else {savedIds.unshift(i.id);toast(T("savedT"));}

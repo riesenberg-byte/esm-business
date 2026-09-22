@@ -10,9 +10,10 @@ from common import norm_url, write_json
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
-CATS = {'ai': {'consumer','eri','fs','gps','lshc','tmt','cross'},
-        'esm': {'sn','ma','results','industry','market'},
-        'sov': {'snsov','cloud','ai','work'}, 'tech': {'mcp','gov','dev'}}
+AI_LABELS = {'ind': 'Industrie & Handel', 'fs': 'Banken & Versicherungen', 'gps': 'Öffentlicher Sektor',
+             'lshc': 'Gesundheit', 'tmt': 'Telko & IT', 'cross': 'Studien'}
+CATS = {'ai': set(AI_LABELS), 'esm': {'sn','results','market'},
+        'sov': {'snsov','cloud','ai'}, 'tech': {'mcp','gov','dev'}}
 REGIONS = {'DE','DACH','EU','US','Global','CH','AT'}
 
 
@@ -66,8 +67,12 @@ def validate(items, events, legacy):
         else: urls.setdefault(norm_url(item['quelle']), []).append(iid)
         if not isinstance(item.get('qn'), str) or not item['qn'].strip(): errors.append(f'{iid}: qn fehlt')
         for field, limit in [('titel',90),('kurz',400),('rel',220)]: bi(item.get(field),field,limit,iid)
-        if item.get('tab') == 'ai': bi(item.get('sub'),'sub',30,iid)
-        elif item.get('sub') is not None: errors.append(f'{iid}: sub nur bei ai')
+        if item.get('sub') is not None:
+            if item.get('tab') != 'ai': errors.append(f'{iid}: sub nur bei ai')
+            else:
+                bi(item['sub'],'sub',30,iid)
+                if isinstance(item['sub'], dict) and str(item['sub'].get('de','')).strip().casefold() == AI_LABELS.get(item.get('cat'),'').casefold():
+                    errors.append(f'{iid}: sub wiederholt nur die Kategorie')
         if (item.get('metric') is None) != (item.get('msub') is None): errors.append(f'{iid}: metric/msub nur gemeinsam')
         if item.get('metric') is not None:
             bi(item['metric'],'metric',14,iid); bi(item.get('msub'),'msub',50,iid)

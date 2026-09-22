@@ -15,7 +15,7 @@
     }).sort((a,b)=>String(b.added||b.datum||'').localeCompare(String(a.added||a.datum||'')));
   }
   function validArchive(value){
-    const cats={ai:['consumer','eri','fs','gps','lshc','tmt','cross'],esm:['sn','ma','results','industry','market'],sov:['snsov','cloud','ai','work'],tech:['mcp','gov','dev']};
+    const cats={ai:['ind','fs','gps','lshc','tmt','cross'],esm:['sn','results','market'],sov:['snsov','cloud','ai'],tech:['mcp','gov','dev']};
     const bi=o=>o&&typeof o.de==='string'&&typeof o.en==='string';
     return Array.isArray(value)&&value.every(i=>i&&typeof i.id==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(i.id)&&cats[i.tab]?.includes(i.cat)&&typeof i.datum==='string'&&/^\d{4}(?:-\d{2})?(?:-\d{2})?$/.test(i.datum)&&(!i.added||typeof i.added==='string')&&bi(i.titel)&&bi(i.kurz)&&bi(i.rel)&&(!i.metric||(bi(i.metric)&&bi(i.msub)))&&(!i.sub||bi(i.sub))&&typeof i.quelle==='string'&&/^https:\/\/[^\s"<>]+$/.test(i.quelle));
   }

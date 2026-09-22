@@ -2,10 +2,6 @@
  {
   "tab": "ai",
   "cat": "cross",
-  "sub": {
-   "de": "Branchenübergreifend",
-   "en": "Cross-industry"
-  },
   "id": "ki-agenten-als-manager-handelsblatt",
   "rel_score": 3,
   "added": "2026-09-21",
@@ -94,8 +90,8 @@
   "tab": "ai",
   "cat": "gps",
   "sub": {
-   "de": "Öffentlicher Sektor",
-   "en": "Public sector"
+   "de": "Kommunalverwaltung",
+   "en": "Local government"
   },
   "id": "agentic-ai-hub-kommunen-piloten",
   "rel_score": 2,
@@ -163,10 +159,6 @@
  {
   "tab": "ai",
   "cat": "cross",
-  "sub": {
-   "de": "Studien",
-   "en": "Studies"
-  },
   "id": "ki-paradox-agenten-workflow-luecke",
   "rel_score": 2,
   "added": "2026-09-21",
@@ -321,7 +313,7 @@
  },
  {
   "tab": "ai",
-  "cat": "consumer",
+  "cat": "ind",
   "sub": {
    "de": "Automotive",
    "en": "Automotive"
@@ -355,7 +347,7 @@
  },
  {
   "tab": "ai",
-  "cat": "consumer",
+  "cat": "ind",
   "sub": {
    "de": "Automotive",
    "en": "Automotive"
@@ -382,7 +374,7 @@
  },
  {
   "tab": "ai",
-  "cat": "consumer",
+  "cat": "ind",
   "sub": {
    "de": "Automotive",
    "en": "Automotive"
@@ -416,7 +408,7 @@
  },
  {
   "tab": "ai",
-  "cat": "consumer",
+  "cat": "ind",
   "sub": {
    "de": "Handel",
    "en": "Retail"
@@ -451,7 +443,7 @@
  },
  {
   "tab": "ai",
-  "cat": "consumer",
+  "cat": "ind",
   "sub": {
    "de": "Handel",
    "en": "Retail"
@@ -478,7 +470,7 @@
  },
  {
   "tab": "ai",
-  "cat": "eri",
+  "cat": "ind",
   "sub": {
    "de": "Industrie",
    "en": "Industrial products"
@@ -813,10 +805,6 @@
  {
   "tab": "ai",
   "cat": "cross",
-  "sub": {
-   "de": "Studie",
-   "en": "Study"
-  },
   "id": "bitkom",
   "rel_score": 2,
   "datum": "2026",
@@ -847,10 +835,6 @@
  {
   "tab": "ai",
   "cat": "cross",
-  "sub": {
-   "de": "Studie",
-   "en": "Study"
-  },
   "id": "deloitte-soai",
   "rel_score": 3,
   "datum": "2026-06-23",
@@ -881,10 +865,6 @@
  {
   "tab": "ai",
   "cat": "cross",
-  "sub": {
-   "de": "Studie",
-   "en": "Study"
-  },
   "id": "mckinsey-2026",
   "rel_score": 2,
   "datum": "2026-08",
@@ -1028,7 +1008,7 @@
  },
  {
   "tab": "esm",
-  "cat": "ma",
+  "cat": "sn",
   "id": "armis",
   "rel_score": 3,
   "datum": "2026-04-20",
@@ -1058,7 +1038,7 @@
  },
  {
   "tab": "esm",
-  "cat": "ma",
+  "cat": "sn",
   "id": "veza",
   "rel_score": 2,
   "datum": "2026-03",
@@ -1081,7 +1061,7 @@
  },
  {
   "tab": "esm",
-  "cat": "ma",
+  "cat": "sn",
   "id": "moveworks",
   "rel_score": 2,
   "datum": "2025-12",
@@ -1340,7 +1320,7 @@
  },
  {
   "tab": "esm",
-  "cat": "industry",
+  "cat": "sn",
   "id": "forrester-ps",
   "rel_score": 1,
   "datum": "2026",
@@ -1370,7 +1350,7 @@
  },
  {
   "tab": "esm",
-  "cat": "industry",
+  "cat": "sn",
   "id": "australia-ind",
   "rel_score": 1,
   "datum": "2026-05",
@@ -1447,7 +1427,7 @@
  },
  {
   "tab": "sov",
-  "cat": "work",
+  "cat": "cloud",
   "id": "opendesk-ch",
   "rel_score": 1,
   "added": "2026-09-14",
