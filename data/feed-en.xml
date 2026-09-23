@@ -224,16 +224,16 @@ Why it matters Sovereign clouds are going mainstream through large integrators. 
 Source: Dr. Web Magazin</description>
   </item>
   <item>
-   <title>Swiss federal administration moves to openDesk</title>
+   <title>Swiss federal administration launches openDesk programme</title>
    <link>https://esm.business/#opendesk-ch</link>
    <guid isPermaLink="false">esm-business-opendesk-ch</guid>
    <category>Sovereignty</category>
    <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
-   <description>Switzerland is moving its federal administration to the open-source suite openDesk – a sign the public sector is speeding up on sovereign workplaces.
+   <description>According to the Federal Chancellery, the federal administration's digital workplace can in principle run on open-source software. From the end of 2027, around 3,000 staff in particularly critical processes are to use email, calendar, documents and video conferencing based on openDesk; the first phase is estimated at CHF 9m.
 
 Why it matters ESM processes will need to connect to sovereign workplace suites too, not just Microsoft 365.
 
-Source: Dr. Web Magazin</description>
+Source: Schweizerische Bundeskanzlei</description>
   </item>
   <item>
    <title>AI Control Tower as registry and cost control</title>
@@ -260,40 +260,28 @@ Why it matters Retail invests at the customer front first. Returns, store servic
 Source: etailment</description>
   </item>
   <item>
-   <title>ServiceNow lifts AI target as usage grows ninefold</title>
+   <title>ServiceNow AI passes $1bn in annual contract value</title>
    <link>https://esm.business/#sn-target</link>
    <guid isPermaLink="false">esm-business-sn-target</guid>
    <category>ESM &amp; ServiceNow</category>
    <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-   <description>AI usage grew ninefold from Q1 to Q2 and more than 50 customers pay over $1m for the new AI packages. The annual target rose from $1bn to $1.5bn.
+   <description>According to ServiceNow, its AI business passed $1bn in annual contract value for the first time in Q2 2026. Agentic deployments grew ninefold within nine months.
 
 Why it matters The debate shifts from 'whether' to 'how do we govern cost and value' – consumption pricing makes it more urgent.
 
-Source: MarketBeat via Yahoo Finance</description>
+Source: ServiceNow Newsroom</description>
   </item>
   <item>
-   <title>Raleigh cuts IT service desk cost by 65%</title>
+   <title>Raleigh cuts IT service desk cost by 66%</title>
    <link>https://esm.business/#raleigh</link>
    <guid isPermaLink="false">esm-business-raleigh</guid>
    <category>ESM &amp; ServiceNow</category>
    <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-   <description>ServiceNow reports a 65% reduction in IT service desk costs for Raleigh through agentic workflows.
+   <description>According to ServiceNow, the city of Raleigh, North Carolina, now routes 98% of tickets correctly on the first attempt using AI agents. That cuts IT service desk cost by 66% and frees up more than 1,300 staff hours a year.
 
 Why it matters A strong public-sector figure – but as a vendor claim only comparable with the baseline in view.
 
-Source: MarketBeat via Yahoo Finance</description>
-  </item>
-  <item>
-   <title>European energy company expects multi-million savings</title>
-   <link>https://esm.business/#energy</link>
-   <guid isPermaLink="false">esm-business-energy</guid>
-   <category>ESM &amp; ServiceNow</category>
-   <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-   <description>An unnamed European energy company expects potential savings of more than $5m from agentic workflows.
-
-Why it matters Utilities face cost and skills pressure; service automation is an obvious lever there.
-
-Source: MarketBeat via Yahoo Finance</description>
+Source: ServiceNow</description>
   </item>
   <item>
    <title>CMDB MCP Server: CMDB access for external AI clients</title>
@@ -366,6 +354,18 @@ Source: Computerwoche</description>
 Why it matters Mid-sized data centre operators are entering too. That lowers the barrier to sovereign operation but multiplies the variants to compare.
 
 Source: Presse Control</description>
+  </item>
+  <item>
+   <title>Sovereign ServiceNow on T Cloud</title>
+   <link>https://esm.business/#sn-tcloud</link>
+   <guid isPermaLink="false">esm-business-sn-tcloud</guid>
+   <category>Sovereignty</category>
+   <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+   <description>T-Systems runs the ServiceNow platform on its sovereign T Cloud in Germany. Customer data stays in Telekom data centres under German/EU operational control; supported areas include ITSM, ITOM, CSM and HR.
+
+Why it matters For regulated industries ServiceNow becomes an option where public cloud was previously ruled out. Feature scope and release cadence versus the standard cloud deserve a close comparison.
+
+Source: T-Systems</description>
   </item>
  </channel>
 </rss>

@@ -224,16 +224,16 @@ Warum relevant? Souveräne Clouds kommen über große Integratoren in die Breite
 Quelle: Dr. Web Magazin</description>
   </item>
   <item>
-   <title>Schweizer Bundesverwaltung wechselt zu openDesk</title>
+   <title>Schweizer Bundesverwaltung startet Programm mit openDesk</title>
    <link>https://esm.business/#opendesk-ch</link>
    <guid isPermaLink="false">esm-business-opendesk-ch</guid>
    <category>Souveränität</category>
    <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
-   <description>Die Schweiz stellt ihre Bundesverwaltung auf die Open-Source-Suite openDesk um – ein Zeichen, dass die öffentliche Hand bei souveränen Arbeitsplätzen Tempo aufnimmt.
+   <description>Laut Bundeskanzlei funktioniert der digitale Arbeitsplatz der Bundesverwaltung grundsätzlich auch mit Open-Source-Software. Ab Ende 2027 sollen rund 3.000 Mitarbeitende in besonders kritischen Prozessen E-Mail, Kalender, Dokumente und Videokonferenzen auf Basis von openDesk nutzen; die erste Phase kostet geschätzt 9 Mio. Franken.
 
 Warum relevant? ESM-Prozesse müssen sich künftig auch an souveräne Arbeitsplatz-Suiten anbinden lassen, nicht nur an Microsoft 365.
 
-Quelle: Dr. Web Magazin</description>
+Quelle: Schweizerische Bundeskanzlei</description>
   </item>
   <item>
    <title>AI Control Tower als Register und Kostensteuerung</title>
@@ -260,40 +260,28 @@ Warum relevant? Der Handel investiert zuerst vorne beim Kunden. Retouren, Filial
 Quelle: etailment</description>
   </item>
   <item>
-   <title>ServiceNow hebt AI-Ziel an, Nutzung verneunfacht</title>
+   <title>ServiceNow AI übersteigt 1 Mrd. Dollar Jahresvertragswert</title>
    <link>https://esm.business/#sn-target</link>
    <guid isPermaLink="false">esm-business-sn-target</guid>
    <category>ESM &amp; ServiceNow</category>
    <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-   <description>Die AI-Nutzung stieg vom ersten zum zweiten Quartal um das Neunfache, mehr als 50 Kunden zahlen über eine Million Dollar für die neuen AI-Pakete. Das Jahresziel wurde von 1 auf 1,5 Mrd. Dollar angehoben.
+   <description>Laut ServiceNow hat das AI-Geschäft im zweiten Quartal 2026 erstmals mehr als 1 Mrd. Dollar Jahresvertragswert erreicht. Die Zahl agentischer Einsätze hat sich innerhalb von neun Monaten verneunfacht.
 
 Warum relevant? Die Diskussion verschiebt sich von „ob“ zu „wie steuern wir Kosten und Nutzen“ – verbrauchsabhängige Preise machen das dringlicher.
 
-Quelle: MarketBeat via Yahoo Finance</description>
+Quelle: ServiceNow Newsroom</description>
   </item>
   <item>
-   <title>Raleigh senkt IT-Service-Desk-Kosten um 65 Prozent</title>
+   <title>Raleigh senkt IT-Service-Desk-Kosten um 66 Prozent</title>
    <link>https://esm.business/#raleigh</link>
    <guid isPermaLink="false">esm-business-raleigh</guid>
    <category>ESM &amp; ServiceNow</category>
    <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-   <description>ServiceNow nennt für Raleigh eine Reduktion der IT-Service-Desk-Kosten um 65 Prozent durch agentische Workflows.
+   <description>Laut ServiceNow ordnet die Stadt Raleigh in North Carolina mit KI-Agenten 98 Prozent der Tickets schon beim ersten Versuch richtig zu. Das senkt die Kosten des IT-Service-Desks um 66 Prozent und bringt jährlich mehr als 1.300 Arbeitsstunden zurück.
 
 Warum relevant? Starke Zahl für den öffentlichen Sektor – als Herstellerangabe aber nur mit Blick auf die Ausgangsbasis vergleichbar.
 
-Quelle: MarketBeat via Yahoo Finance</description>
-  </item>
-  <item>
-   <title>Europäischer Energieversorger erwartet Millioneneinsparung</title>
-   <link>https://esm.business/#energy</link>
-   <guid isPermaLink="false">esm-business-energy</guid>
-   <category>ESM &amp; ServiceNow</category>
-   <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-   <description>Ein nicht genannter europäischer Energieversorger rechnet durch agentische Workflows mit möglichen Einsparungen von über fünf Millionen Dollar.
-
-Warum relevant? Versorger stehen unter Kosten- und Fachkräftedruck; Service-Automatisierung ist dort ein naheliegender Hebel.
-
-Quelle: MarketBeat via Yahoo Finance</description>
+Quelle: ServiceNow</description>
   </item>
   <item>
    <title>CMDB MCP Server: CMDB-Zugriff für externe AI-Clients</title>
@@ -366,6 +354,18 @@ Quelle: Computerwoche</description>
 Warum relevant? Auch mittelständische Rechenzentrumsbetreiber steigen ein. Das senkt die Einstiegshürde für souveränen Betrieb, erhöht aber die Zahl der Varianten, die man vergleichen muss.
 
 Quelle: Presse Control</description>
+  </item>
+  <item>
+   <title>Sovereign ServiceNow auf der T Cloud</title>
+   <link>https://esm.business/#sn-tcloud</link>
+   <guid isPermaLink="false">esm-business-sn-tcloud</guid>
+   <category>Souveränität</category>
+   <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+   <description>T-Systems betreibt die ServiceNow-Plattform auf seiner souveränen T Cloud in Deutschland. Kundendaten bleiben in Telekom-Rechenzentren und unter deutscher bzw. europäischer Betriebskontrolle; unterstützt werden unter anderem ITSM, ITOM, CSM und HR.
+
+Warum relevant? Für regulierte Branchen wird ServiceNow damit auch dort eine Option, wo die Public Cloud bisher ausgeschlossen war. Funktionsumfang und Release-Takt gegenüber der Standard-Cloud sollte man genau vergleichen.
+
+Quelle: T-Systems</description>
   </item>
  </channel>
 </rss>

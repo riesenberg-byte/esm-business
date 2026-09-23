@@ -1157,7 +1157,7 @@
   "cat": "sn",
   "id": "moveworks",
   "rel_score": 2,
-  "datum": "2025-12",
+  "datum": "2025-12-15",
   "region": "Global",
   "metric": {
    "de": "2,85 Mrd. $",
@@ -1179,8 +1179,8 @@
    "de": "Der Wettbewerb um den „ersten Klick“ der Mitarbeitenden – Copilot, Gemini oder ServiceNow – entscheidet mit, wo Serviceanfragen künftig landen.",
    "en": "The race for employees' first click – Copilot, Gemini or ServiceNow – will help decide where service requests land."
   },
-  "quelle": "https://www.darkreading.com/cybersecurity-operations/servicenow-buys-armis-gets-ai-control-tower",
-  "qn": "Dark Reading"
+  "quelle": "https://newsroom.servicenow.com/press-releases/details/2025/ServiceNow-completes-acquisition-of-Moveworks/default.aspx",
+  "qn": "ServiceNow Newsroom"
  },
  {
   "tab": "esm",
@@ -1232,8 +1232,8 @@
    "de": "Alle großen Plattformen bauen dieselben Grundbausteine: Agenten-Identität, Gateway, Register. Unterschiede liegen in Reichweite über fremde Plattformen.",
    "en": "All major platforms are building the same building blocks: agent identity, gateway, registry. The differences lie in reach across other platforms."
   },
-  "quelle": "https://www.forbes.com/sites/janakirammsv/2026/06/09/microsoft-makes-governance-the-gate-for-enterprise-ai-agents/",
-  "qn": "Forbes"
+  "quelle": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+  "qn": "Google Cloud Blog"
  },
  {
   "tab": "esm",
@@ -1264,30 +1264,30 @@
   "id": "sn-target",
   "rel_score": 3,
   "added": "2026-09-12",
-  "datum": "2026-09",
+  "datum": "2026-07-22",
   "region": "Global",
   "metric": {
-   "de": "1,5 Mrd. $",
-   "en": "$1.5bn"
+   "de": "1 Mrd. $",
+   "en": "$1bn"
   },
   "msub": {
-   "de": "neues AI-Ziel 2026",
-   "en": "new 2026 AI target"
+   "de": "Jahresvertragswert ServiceNow AI",
+   "en": "ServiceNow AI annual contract value"
   },
   "titel": {
-   "de": "ServiceNow hebt AI-Ziel an, Nutzung verneunfacht",
-   "en": "ServiceNow lifts AI target as usage grows ninefold"
+   "de": "ServiceNow AI übersteigt 1 Mrd. Dollar Jahresvertragswert",
+   "en": "ServiceNow AI passes $1bn in annual contract value"
   },
   "kurz": {
-   "de": "Die AI-Nutzung stieg vom ersten zum zweiten Quartal um das Neunfache, mehr als 50 Kunden zahlen über eine Million Dollar für die neuen AI-Pakete. Das Jahresziel wurde von 1 auf 1,5 Mrd. Dollar angehoben.",
-   "en": "AI usage grew ninefold from Q1 to Q2 and more than 50 customers pay over $1m for the new AI packages. The annual target rose from $1bn to $1.5bn."
+   "de": "Laut ServiceNow hat das AI-Geschäft im zweiten Quartal 2026 erstmals mehr als 1 Mrd. Dollar Jahresvertragswert erreicht. Die Zahl agentischer Einsätze hat sich innerhalb von neun Monaten verneunfacht.",
+   "en": "According to ServiceNow, its AI business passed $1bn in annual contract value for the first time in Q2 2026. Agentic deployments grew ninefold within nine months."
   },
   "rel": {
    "de": "Die Diskussion verschiebt sich von „ob“ zu „wie steuern wir Kosten und Nutzen“ – verbrauchsabhängige Preise machen das dringlicher.",
    "en": "The debate shifts from 'whether' to 'how do we govern cost and value' – consumption pricing makes it more urgent."
   },
-  "quelle": "https://finance.yahoo.com/technology/ai/articles/servicenow-ai-control-tower-targets-060206182.html",
-  "qn": "MarketBeat via Yahoo Finance"
+  "quelle": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+  "qn": "ServiceNow Newsroom"
  },
  {
   "tab": "esm",
@@ -1328,58 +1328,27 @@
   "datum": "2026-09",
   "region": "US",
   "metric": {
-   "de": "−65 %",
-   "en": "−65%"
+   "de": "−66 %",
+   "en": "−66%"
   },
   "msub": {
    "de": "Kosten Service Desk",
    "en": "service desk cost"
   },
   "titel": {
-   "de": "Raleigh senkt IT-Service-Desk-Kosten um 65 Prozent",
-   "en": "Raleigh cuts IT service desk cost by 65%"
+   "de": "Raleigh senkt IT-Service-Desk-Kosten um 66 Prozent",
+   "en": "Raleigh cuts IT service desk cost by 66%"
   },
   "kurz": {
-   "de": "ServiceNow nennt für Raleigh eine Reduktion der IT-Service-Desk-Kosten um 65 Prozent durch agentische Workflows.",
-   "en": "ServiceNow reports a 65% reduction in IT service desk costs for Raleigh through agentic workflows."
+   "de": "Laut ServiceNow ordnet die Stadt Raleigh in North Carolina mit KI-Agenten 98 Prozent der Tickets schon beim ersten Versuch richtig zu. Das senkt die Kosten des IT-Service-Desks um 66 Prozent und bringt jährlich mehr als 1.300 Arbeitsstunden zurück.",
+   "en": "According to ServiceNow, the city of Raleigh, North Carolina, now routes 98% of tickets correctly on the first attempt using AI agents. That cuts IT service desk cost by 66% and frees up more than 1,300 staff hours a year."
   },
   "rel": {
    "de": "Starke Zahl für den öffentlichen Sektor – als Herstellerangabe aber nur mit Blick auf die Ausgangsbasis vergleichbar.",
    "en": "A strong public-sector figure – but as a vendor claim only comparable with the baseline in view."
   },
-  "quelle": "https://finance.yahoo.com/technology/ai/articles/servicenow-ai-control-tower-targets-060206182.html",
-  "qn": "MarketBeat via Yahoo Finance"
- },
- {
-  "tab": "esm",
-  "cat": "results",
-  "id": "energy",
-  "rel_score": 1,
-  "added": "2026-09-12",
-  "datum": "2026-09",
-  "region": "EU",
-  "metric": {
-   "de": ">5 Mio. $",
-   "en": ">$5m"
-  },
-  "msub": {
-   "de": "mögliche Einsparung",
-   "en": "potential savings"
-  },
-  "titel": {
-   "de": "Europäischer Energieversorger erwartet Millioneneinsparung",
-   "en": "European energy company expects multi-million savings"
-  },
-  "kurz": {
-   "de": "Ein nicht genannter europäischer Energieversorger rechnet durch agentische Workflows mit möglichen Einsparungen von über fünf Millionen Dollar.",
-   "en": "An unnamed European energy company expects potential savings of more than $5m from agentic workflows."
-  },
-  "rel": {
-   "de": "Versorger stehen unter Kosten- und Fachkräftedruck; Service-Automatisierung ist dort ein naheliegender Hebel.",
-   "en": "Utilities face cost and skills pressure; service automation is an obvious lever there."
-  },
-  "quelle": "https://finance.yahoo.com/technology/ai/articles/servicenow-ai-control-tower-targets-060206182.html",
-  "qn": "MarketBeat via Yahoo Finance"
+  "quelle": "https://www.servicenow.com/customers/raleigh-north-carolina.html",
+  "qn": "ServiceNow"
  },
  {
   "tab": "esm",
@@ -1522,25 +1491,32 @@
   "tab": "sov",
   "cat": "cloud",
   "id": "opendesk-ch",
-  "rel_score": 1,
+  "rel_score": 2,
   "added": "2026-09-14",
   "datum": "2026-09",
   "region": "CH",
-  "metric": null,
+  "metric": {
+   "de": "3.000",
+   "en": "3,000"
+  },
   "titel": {
-   "de": "Schweizer Bundesverwaltung wechselt zu openDesk",
-   "en": "Swiss federal administration moves to openDesk"
+   "de": "Schweizer Bundesverwaltung startet Programm mit openDesk",
+   "en": "Swiss federal administration launches openDesk programme"
   },
   "kurz": {
-   "de": "Die Schweiz stellt ihre Bundesverwaltung auf die Open-Source-Suite openDesk um – ein Zeichen, dass die öffentliche Hand bei souveränen Arbeitsplätzen Tempo aufnimmt.",
-   "en": "Switzerland is moving its federal administration to the open-source suite openDesk – a sign the public sector is speeding up on sovereign workplaces."
+   "de": "Laut Bundeskanzlei funktioniert der digitale Arbeitsplatz der Bundesverwaltung grundsätzlich auch mit Open-Source-Software. Ab Ende 2027 sollen rund 3.000 Mitarbeitende in besonders kritischen Prozessen E-Mail, Kalender, Dokumente und Videokonferenzen auf Basis von openDesk nutzen; die erste Phase kostet geschätzt 9 Mio. Franken.",
+   "en": "According to the Federal Chancellery, the federal administration's digital workplace can in principle run on open-source software. From the end of 2027, around 3,000 staff in particularly critical processes are to use email, calendar, documents and video conferencing based on openDesk; the first phase is estimated at CHF 9m."
   },
   "rel": {
    "de": "ESM-Prozesse müssen sich künftig auch an souveräne Arbeitsplatz-Suiten anbinden lassen, nicht nur an Microsoft 365.",
    "en": "ESM processes will need to connect to sovereign workplace suites too, not just Microsoft 365."
   },
-  "quelle": "https://www.drweb.de/atos-stackit-souveraene-cloud/",
-  "qn": "Dr. Web Magazin"
+  "quelle": "https://www.admin.ch/de/newnsb/EgX1XHIfGtUN",
+  "qn": "Schweizerische Bundeskanzlei",
+  "msub": {
+   "de": "Mitarbeitende ab Ende 2027",
+   "en": "staff from end of 2027"
+  }
  },
  {
   "tab": "tech",
