@@ -1,14 +1,14 @@
 {
- "stand": "2026-09-21T17:38+00:00",
+ "stand": "2026-09-23T04:10+00:00",
  "status": "ok",
  "feeds": {
   "heise online": {
    "ok": true,
-   "neu": 4
+   "neu": 5
   },
   "Computerwoche": {
    "ok": true,
-   "neu": 0
+   "neu": 4
   },
   "CIO.de": {
    "ok": true,
@@ -20,15 +20,15 @@
   },
   "Bing News: ServiceNow": {
    "ok": true,
-   "neu": 1
+   "neu": 3
   },
   "Bing News: ServiceNow EN": {
    "ok": true,
-   "neu": 0
+   "neu": 2
   },
   "Bing News: KI-Agenten Unternehmen": {
    "ok": true,
-   "neu": 4
+   "neu": 5
   },
   "Bing News: Agentic AI enterprise": {
    "ok": true,
@@ -36,7 +36,7 @@
   },
   "Bing News: souveräne Cloud": {
    "ok": true,
-   "neu": 0
+   "neu": 1
   },
   "Bing News: Control Tower Agenten": {
    "ok": true,

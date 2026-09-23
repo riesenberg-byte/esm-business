@@ -2,6 +2,99 @@
  {
   "tab": "ai",
   "cat": "cross",
+  "id": "ki-investitionen-bitkom-idc-2026",
+  "rel_score": 3,
+  "added": "2026-09-23",
+  "datum": "2026-09-22",
+  "region": "DE",
+  "metric": {
+   "de": "28,7 Mrd. €",
+   "en": "€28.7bn"
+  },
+  "msub": {
+   "de": "KI-Investitionen deutscher Firmen 2026, +48%",
+   "en": "German firms' AI spending in 2026, +48%"
+  },
+  "titel": {
+   "de": "Bitkom/IDC: Deutsche Unternehmen steigern KI-Investitionen 2026 um 48 Prozent",
+   "en": "Bitkom/IDC: German companies raise AI spending 48% in 2026"
+  },
+  "kurz": {
+   "de": "Laut einer Erhebung von Bitkom und IDC geben deutsche Unternehmen 2026 rund 28,7 Mrd. Euro für KI aus, 48% mehr als 2025 (19,4 Mrd.). Die Ausgaben für generative KI verdoppeln sich auf 11,5 Mrd. Euro, für 2027 wird ein weiterer Anstieg auf 40,3 Mrd. Euro erwartet.",
+   "en": "According to a Bitkom/IDC survey, German companies will spend around €28.7bn on AI in 2026, up 48% from €19.4bn in 2025. Spending on generative AI doubles to €11.5bn, and a further rise to €40.3bn is expected for 2027."
+  },
+  "rel": {
+   "de": "Belegt mit Zahlen den Übergang von KI-Pilotprojekten zu breitem produktivem Einsatz in deutschen Unternehmen aller Branchen.",
+   "en": "Provides hard figures for the shift from AI pilots to broad production use across German companies of all industries."
+  },
+  "quelle": "https://www.cio.de/article/4224785/deutsche-unternehmen-investieren-milliarden-in-generative-ki.html",
+  "qn": "CIO.de"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "google-gemini-agent-sicherheitstest-irregular",
+  "rel_score": 3,
+  "added": "2026-09-23",
+  "datum": "2026-09-22",
+  "region": "Global",
+  "metric": {
+   "de": "3 Firmen",
+   "en": "3 companies"
+  },
+  "msub": {
+   "de": "von Googles KI-Agent kompromittiert",
+   "en": "breached by Google's AI agent"
+  },
+  "titel": {
+   "de": "Google verschwieg Sicherheitsvorfall mit eigenem KI-Agenten laut WSJ-Bericht",
+   "en": "Google reportedly withheld disclosure of AI agent security incident, WSJ says"
+  },
+  "kurz": {
+   "de": "Laut Wall Street Journal drang ein auf Googles Gemini-Modell basierender KI-Agent in einem Test der Sicherheitsfirma Irregular in drei simulierte Zielunternehmen ein, indem er Zugangsdaten erriet oder offen im Netz fand. Google informierte erst nach Presseanfrage; auch Agenten von Anthropic, OpenAI und Meta hatten in vergleichbaren Tests Sicherheitsvorfälle.",
+   "en": "Per the Wall Street Journal, an AI agent based on Google's Gemini model breached three simulated target companies in a test by security firm Irregular, guessing credentials or finding them exposed online. Google disclosed the incident only after press inquiries; agents from Anthropic, OpenAI and Meta reportedly had similar incidents in comparable tests."
+  },
+  "rel": {
+   "de": "Zeigt reale Sicherheitsrisiken autonomer KI-Agenten und wirft Fragen zu Offenlegungspflichten und Governance bei allen großen KI-Anbietern auf.",
+   "en": "Highlights real security risks of autonomous AI agents and raises disclosure and governance questions for all major AI vendors."
+  },
+  "quelle": "https://www.computerwoche.de/article/4224687/google-erntet-massive-kritik-fur-verschwiegenen-ki-hack.html",
+  "qn": "Computerwoche"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "schatten-ki-bitkom-ciso",
+  "rel_score": 2,
+  "added": "2026-09-23",
+  "datum": "2026-09-22",
+  "region": "DE",
+  "metric": {
+   "de": "8 %",
+   "en": "8%"
+  },
+  "msub": {
+   "de": "Unternehmen mit verbreiteter Schatten-KI",
+   "en": "companies with widespread shadow AI"
+  },
+  "titel": {
+   "de": "Bitkom-Erhebung: Schatten-KI in deutschen Unternehmen nimmt spürbar zu",
+   "en": "Bitkom survey: shadow AI use rising noticeably in German companies"
+  },
+  "kurz": {
+   "de": "Laut einer Bitkom-Erhebung sagen 8% der deutschen Unternehmen, private KI-Tools würden bei ihnen weit verbreitet und unkontrolliert genutzt – doppelt so viele wie im Vorjahr (4%). Weitere 17% vermuten dies, ohne es sicher zu wissen.",
+   "en": "According to a Bitkom survey, 8% of German companies say private AI tools are used widely and without central control internally, double the 4% recorded a year earlier. A further 17% suspect this is the case without being certain."
+  },
+  "rel": {
+   "de": "Unkontrollierte KI-Nutzung durch Mitarbeitende wird zu einem wachsenden Governance- und Datenschutzrisiko für Sicherheitsverantwortliche.",
+   "en": "Uncontrolled AI use by employees is becoming a growing governance and data-protection risk for security teams."
+  },
+  "quelle": "https://www.cio.de/article/4223846/schatten-ki-risiko-und-chance-fuer-den-ciso.html",
+  "qn": "CIO.de"
+ },
+ {
+  "tab": "ai",
+  "cat": "cross",
   "id": "ki-agenten-als-manager-handelsblatt",
   "rel_score": 3,
   "added": "2026-09-21",
