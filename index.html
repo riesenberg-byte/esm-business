@@ -8,6 +8,8 @@
 <link rel="icon" href="icons/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="esm.business (Deutsch)" href="data/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="esm.business (English)" href="data/feed-en.xml">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="esm.business">
 <meta name="theme-color" content="#18212C">
@@ -70,8 +72,12 @@ h1{margin:0;font-size:clamp(26px,7vw,38px);line-height:1;letter-spacing:-0.03em}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 
 nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);
-  display:flex;gap:4px;padding:10px 0;margin-top:10px;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
-nav.tabs::-webkit-scrollbar{display:none}
+  padding:10px 0;margin-top:10px;border-bottom:1px solid var(--line)}
+.tabrow{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.tabrow::-webkit-scrollbar{display:none}
+.scrollx{--fl:0px;--fr:0px;-webkit-mask-image:linear-gradient(to right,rgba(0,0,0,.2) 0,#000 var(--fl),#000 calc(100% - var(--fr)),rgba(0,0,0,.2) 100%);mask-image:linear-gradient(to right,rgba(0,0,0,.2) 0,#000 var(--fl),#000 calc(100% - var(--fr)),rgba(0,0,0,.2) 100%)}
+.scrollx.fl{--fl:28px}
+.scrollx.fr{--fr:28px}
 .tab{appearance:none;border:0;background:none;font-weight:600;color:var(--muted);padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap;flex:0 0 auto}
 .tab[aria-selected="true"]{background:var(--c,var(--ink));color:#fff}
 .tab .cnt{font-size:12px;opacity:.8;margin-left:4px}
@@ -177,7 +183,8 @@ aside{display:none}
   .brand{flex-direction:column;align-items:flex-start;gap:14px}
   h1{font-size:26px}
   .sub{font-size:13.5px}
-  nav.tabs{grid-column:1;grid-row:2;flex-direction:column;align-items:stretch;border:0;padding:16px 0 0;top:0;position:sticky;align-self:start;overflow:visible;background:none}
+  nav.tabs{grid-column:1;grid-row:2;border:0;padding:16px 0 0;top:0;position:sticky;align-self:start;background:none}
+  .tabrow{flex-direction:column;align-items:stretch;overflow:visible;margin:0;padding:0}
   .tab{text-align:left;padding:9px 12px;border-radius:10px;display:flex;justify-content:space-between;align-items:center}
   .tab:hover{background:var(--surface)}
   main,section{grid-column:2;grid-row:1 / span 3;padding-top:22px;min-width:0}
@@ -249,14 +256,14 @@ aside{display:none}
     <button id="archive-retry" type="button" class="linkbtn" hidden data-i="retryArchive"></button>
   </header>
 
-  <nav class="tabs" role="tablist">
+  <nav class="tabs"><div class="tabrow scrollx" role="tablist">
     <button class="tab t-ai"   role="tab" data-tab="ai"><span data-i="tab_ai"></span><span class="cnt new" id="new-ai"></span></button>
     <button class="tab t-esm"  role="tab" data-tab="esm"><span data-i="tab_esm"></span><span class="cnt new" id="new-esm"></span></button>
     <button class="tab t-sov" role="tab" data-tab="sov"><span data-i="tab_sov"></span><span class="cnt new" id="new-sov"></span></button>
     <button class="tab t-tech" role="tab" data-tab="tech"><span data-i="tab_tech"></span><span class="cnt new" id="new-tech"></span></button>
     <button class="tab t-evt"  role="tab" data-tab="events"><span data-i="tab_events"></span></button>
     <button class="tab"        role="tab" data-tab="saved"><span data-i="tab_saved"></span><span class="cnt" id="savedCnt"></span></button>
-  </nav>
+  </div></nav>
 
   <section id="search-results" hidden aria-label="Suchergebnisse / Search results">
     <h2 data-i="searchHeading"></h2>
@@ -293,13 +300,13 @@ de:{openSearch:"Suche öffnen",closeSearch:"Suche schließen",searchLabel:"Artik
   intro_esm:"ESM-Transformation rund um ServiceNow: Plattform und Übernahmen, Ergebnisse aus Projekten, Branchenlösungen und der Markt drumherum – inklusive der AI Control Towers anderer Anbieter.",
   intro_tech:"Für Techies und Architektinnen: Schnittstellen, Governance und Muster, die in Projekten gerade relevant werden.",
   intro_saved:"Nur auf diesem Gerät gespeichert.",
-  updatedL:"Aktualisiert am {d}",all:"Alle",top:"Wichtig",more:"Weitere",newL:"Neu",markAll:"Alle als gelesen markieren",unreadL:"Ungelesen",sortL:"Sortierung",sortRel:"Relevanz",sortNew:"Neueste",readL:"Gelesen",readGrp:"Gelesen ({n})",allRead:"Alles gelesen – neue Meldungen erscheinen hier oben.",markUnread:"Als ungelesen markieren",markReadB:"Als gelesen markieren",unreadT:"Als ungelesen markiert",readT:"Als gelesen markiert",sowhat:"Warum relevant?",forArch:"Warum relevant für die Architektur?",aiNote:"Kurzfassungen und Einordnungen KI-gestützt erstellt",aiTag:"KI-gestützte Zusammenfassung – maßgeblich ist der Originalartikel.",indep:"Unabhängiges Angebot, nicht mit den genannten Unternehmen verbunden.",
+  updatedL:"Aktualisiert am {d}",all:"Alle",top:"Wichtig",more:"Weitere",newL:"Neu",markAll:"Alle als gelesen markieren",unreadL:"Ungelesen",sinceL:"Seit deinem letzten Besuch",sortL:"Sortierung",sortRel:"Relevanz",sortNew:"Neueste",readL:"Gelesen",readGrp:"Gelesen ({n})",allRead:"Alles gelesen – neue Meldungen erscheinen hier oben.",markUnread:"Als ungelesen markieren",markReadB:"Als gelesen markieren",unreadT:"Als ungelesen markiert",readT:"Als gelesen markiert",sowhat:"Warum relevant?",forArch:"Warum relevant für die Architektur?",aiNote:"Kurzfassungen und Einordnungen KI-gestützt erstellt",aiTag:"KI-gestützte Zusammenfassung – maßgeblich ist der Originalartikel.",indep:"Unabhängiges Angebot, nicht mit den genannten Unternehmen verbunden.",
   read:"Artikel lesen",save:"Merken",saved:"Gemerkt",share:"Teilen",close:"Schließen",
   copied:"Link kopiert",savedT:"Zur Merkliste hinzugefügt",unsavedT:"Von der Merkliste entfernt",
   empty:"Hier ist noch nichts. Tippe bei einem Artikel auf „Merken“.",emptyF:"Für diesen Filter gibt es gerade keine Artikel.",
   opensAt:"Öffnet {d} – mit Zurück kommst du hierher.",upcoming:"Kommende Events",past:"vorbei",todayW:"heute",tomorrow:"morgen",inDays:"in {n} Tagen",details:"Zur Veranstaltung",
   foot1:"Öffentliche Quellen, eigene Kurzfassungen.",
-  foot2:"Merkliste und Gelesen-Status bleiben in deinem Browser. <a href=\"impressum.html\">Impressum</a> · <a href=\"datenschutz.html\">Datenschutz</a>"},
+  foot2:"Merkliste und Gelesen-Status bleiben in deinem Browser. <a href=\"impressum.html\">Impressum</a> · <a href=\"datenschutz.html\">Datenschutz</a> · <a href=\"data/feed.xml\">RSS-Feed</a>"},
 en:{openSearch:"Open search",closeSearch:"Close search",searchLabel:"Search articles",searchHeading:"Search results",searchTopic:"Topic",searchCategory:"Category",allTopics:"All topics",allCategories:"All categories",searchHint:"Title, content or source …",searchCount:"{n} results",noResults:"No matching articles found.",archiveLoading:"Loading archive …",archiveFailed:"Archive unavailable. Showing available articles only.",archiveReady:"Archive included",archiveEmpty:"No archived articles yet.",retryArchive:"Retry archive",archiveTag:"Archive",savedMissing:"{n} saved articles are currently unavailable.",
   title:"esm.business",
   sub:"Agentic AI adoption and ESM transformation",
@@ -308,13 +315,13 @@ en:{openSearch:"Open search",closeSearch:"Close search",searchLabel:"Search arti
   intro_esm:"ESM transformation around ServiceNow: platform and acquisitions, project results, industry solutions and the wider market – including other vendors' AI control towers.",
   intro_tech:"For techies and architects: interfaces, governance and patterns that are becoming relevant in projects.",
   intro_saved:"Stored on this device only.",
-  updatedL:"Updated {d}",all:"All",top:"Top stories",more:"More",newL:"New",markAll:"Mark all as read",unreadL:"Unread",sortL:"Sort",sortRel:"Relevance",sortNew:"Newest",readL:"Read",readGrp:"Read ({n})",allRead:"All caught up – new stories will appear up here.",markUnread:"Mark as unread",markReadB:"Mark as read",unreadT:"Marked as unread",readT:"Marked as read",sowhat:"Why it matters",forArch:"Why it matters for architecture",aiNote:"Summaries and context written with AI assistance",aiTag:"AI-assisted summary – the original article is authoritative.",indep:"Independent service, not affiliated with the companies mentioned.",
+  updatedL:"Updated {d}",all:"All",top:"Top stories",more:"More",newL:"New",markAll:"Mark all as read",unreadL:"Unread",sinceL:"Since your last visit",sortL:"Sort",sortRel:"Relevance",sortNew:"Newest",readL:"Read",readGrp:"Read ({n})",allRead:"All caught up – new stories will appear up here.",markUnread:"Mark as unread",markReadB:"Mark as read",unreadT:"Marked as unread",readT:"Marked as read",sowhat:"Why it matters",forArch:"Why it matters for architecture",aiNote:"Summaries and context written with AI assistance",aiTag:"AI-assisted summary – the original article is authoritative.",indep:"Independent service, not affiliated with the companies mentioned.",
   read:"Read article",save:"Save",saved:"Saved",share:"Share",close:"Close",
   copied:"Link copied",savedT:"Added to saved",unsavedT:"Removed from saved",
   empty:"Nothing here yet. Tap “Save” on an article.",emptyF:"No articles for this filter right now.",
   opensAt:"Opens {d} – use back to return here.",upcoming:"Upcoming events",past:"past",todayW:"today",tomorrow:"tomorrow",inDays:"in {n} days",details:"Event page",
   foot1:"Public sources, own summaries.",
-  foot2:"Saved and read status stay in your browser. <a href=\"impressum.html\">Imprint</a> · <a href=\"datenschutz.html\">Privacy</a>"}
+  foot2:"Saved and read status stay in your browser. <a href=\"impressum.html\">Imprint</a> · <a href=\"datenschutz.html\">Privacy</a> · <a href=\"data/feed-en.xml\">RSS feed</a>"}
 };
 
 const CATS = {
@@ -383,7 +390,7 @@ function renderSearch(){
 
 /* ---------- Zustand ---------- */
 let lang=(navigator.language||"de").toLowerCase().startsWith("de")?"de":"en";
-let tab="ai", filt={ai:null,esm:null,tech:null}, savedIds=[], readIds=[], readOpen=false, sortMode="rel";
+let tab="ai", filt={ai:null,esm:null,tech:null}, savedIds=[], readIds=[], readOpen=false, sortMode="rel", knownIds=null, sinceIds=[];
 try{
   const s=JSON.parse(localStorage.getItem("esmbusiness-v1")||"{}");
   if(["de","en"].includes(s.lang)) lang=s.lang;
@@ -392,8 +399,18 @@ try{
   if(Array.isArray(s.read)) readIds=s.read;
   readOpen=s.readOpen===true;
   if(["rel","new"].includes(s.sort)) sortMode=s.sort;
+  if(Array.isArray(s.known)) knownIds=s.known;
+  if(Array.isArray(s.since)) sinceIds=s.since;
 }catch(e){}
-function save(){ try{ localStorage.setItem("esmbusiness-v1",JSON.stringify({lang,tab,saved:savedIds,read:readIds,readOpen,sort:sortMode})); }catch(e){} }
+function save(){ try{ localStorage.setItem("esmbusiness-v1",JSON.stringify({lang,tab,saved:savedIds,read:readIds,readOpen,sort:sortMode,known:knownIds,since:sinceIds})); }catch(e){} }
+function trackVisit(){
+  if(!ITEMS.length) return;
+  const ids=ITEMS.map(i=>i.id);
+  if(knownIds) sinceIds=[...new Set([...sinceIds,...ids.filter(id=>!knownIds.includes(id))])];
+  sinceIds=sinceIds.filter(id=>ids.includes(id)&&!readIds.includes(id));
+  knownIds=ids; save();
+}
+const isSince=i=>sinceIds.includes(i.id)&&!readIds.includes(i.id);
 
 /* ---------- Hilfen ---------- */
 const T=k=>UI[lang][k], L=o=>(o&&typeof o==="object")?o[lang]:o;
@@ -415,6 +432,12 @@ function isNew(i){
   return (today-toDate(src))/86400000<=NEW_DAYS;
 }
 function markRead(id){ if(!readIds.includes(id)){readIds.push(id);save();} }
+function edgeFade(el){
+  const upd=()=>{const max=el.scrollWidth-el.clientWidth;el.classList.toggle("fl",el.scrollLeft>2);el.classList.toggle("fr",el.scrollLeft<max-2);};
+  if(!el._fade){el._fade=true;el.addEventListener("scroll",upd,{passive:true});}
+  upd();
+}
+window.addEventListener("resize",()=>document.querySelectorAll(".scrollx").forEach(edgeFade));
 function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("on");clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove("on"),1600);}
 
 /* ---------- Listen ---------- */
@@ -430,7 +453,7 @@ function cardHTML(i){
 }
 function renderList(t){
   const cats=CATS[t], f=filt[t];
-  const chips=`<div class="chips" role="group"><button class="chip" data-f="" aria-pressed="${!f}">${T("all")}</button>`+
+  const chips=`<div class="chips scrollx" role="group"><button class="chip" data-f="" aria-pressed="${!f}">${T("all")}</button>`+
     Object.keys(cats).map(k=>`<button class="chip" data-f="${k}" aria-pressed="${f===k}">${esc(L(cats[k]))}</button>`).join("")+`</div>`;
   const byDate=(a,b)=>toDate(b.added||b.datum)-toDate(a.added||a.datum);
   const ord=(a,b)=>(isNew(b)-isNew(a))||byDate(a,b);
@@ -440,17 +463,21 @@ function renderList(t){
   const tools=unread.length?`<div class="toolrow ${tcls[t]}">${seg}<button class="linkbtn" data-markall="${t}">${T("markAll")}</button></div>`:"";
   let body=list.length?"":`<div class="empty">${T("emptyF")}</div>`;
   if(list.length&&!unread.length) body+=`<div class="empty">${T("allRead")}</div>`;
+  const byPub=(a,b)=>(toDate(b.datum)-toDate(a.datum))||byDate(a,b);
+  const since=unread.filter(isSince).sort(byPub), others=unread.filter(i=>!isSince(i));
+  if(since.length) body+=`<h2>${T("sinceL")}</h2><div class="cards">`+since.map(cardHTML).join("")+`</div>`;
   if(sortMode==="new"){
-    const byPub=(a,b)=>(toDate(b.datum)-toDate(a.datum))||byDate(a,b);
-    if(unread.length) body+=`<div class="cards">`+unread.slice().sort(byPub).map(cardHTML).join("")+`</div>`;
+    if(others.length) body+=(since.length?`<h2>${T("more")}</h2>`:"")+`<div class="cards">`+others.sort(byPub).map(cardHTML).join("")+`</div>`;
   } else {
-    const top=unread.filter(i=>(i.rel_score||1)>=3).sort(ord), rest=unread.filter(i=>(i.rel_score||1)<3).sort(ord);
+    const top=others.filter(i=>(i.rel_score||1)>=3).sort(ord), rest=others.filter(i=>(i.rel_score||1)<3).sort(ord);
     if(top.length) body+=`<h2>${T("top")}</h2><div class="cards">`+top.map(cardHTML).join("")+`</div>`;
     if(rest.length) body+=`<h2>${T("more")}</h2><div class="cards">`+rest.map(cardHTML).join("")+`</div>`;
   }
   if(read.length) body+=`<details class="readgrp"${readOpen?" open":""}><summary>${T("readGrp").replace("{n}",read.length)}</summary><div class="cards">`+read.map(cardHTML).join("")+`</div></details>`;
   const el=document.getElementById(t);
+  const chipScroll=el.querySelector(".chips")?.scrollLeft||0;
   el.innerHTML=`${chips}${tools}${body}`;
+  const chipRow=el.querySelector(".chips"); if(chipRow){ chipRow.scrollLeft=chipScroll; edgeFade(chipRow); }
   el.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{filt[t]=b.dataset.f||null;renderList(t);}));
   const mb=el.querySelector("[data-markall]"); if(mb) mb.addEventListener("click",()=>{ unread.forEach(i=>markRead(i.id)); refreshLists(); });
   const rg=el.querySelector(".readgrp"); if(rg) rg.addEventListener("toggle",()=>{ if(readOpen!==rg.open){readOpen=rg.open;save();} });
@@ -537,9 +564,10 @@ openSheet._bind=function(i){
     save(); sheet.innerHTML=sheetHTML(i); openSheet._bind(i); refreshLists();
   };
   document.getElementById("sshare").onclick=async()=>{
-    const data={title:L(i.titel),text:L(i.titel)+" – "+i.qn,url:i.quelle};
+    const url=location.origin+location.pathname+"#"+encodeURIComponent(i.id);
+    const data={title:L(i.titel),text:L(i.titel),url};
     try{ if(navigator.share){await navigator.share(data);return;} }catch(e){ if(e&&e.name==="AbortError") return; }
-    try{ await navigator.clipboard.writeText(i.quelle); toast(T("copied")); }catch(e){ prompt("URL",i.quelle); }
+    try{ await navigator.clipboard.writeText(url); toast(T("copied")); }catch(e){ prompt("URL",url); }
   };
 };
 function closeSheet(){
@@ -578,6 +606,7 @@ function syncTabs(){
   document.getElementById("search-results").hidden=!searchActive();
   if(tab==="saved"&&savedIds.some(id=>!byId(id))&&archiveState==="idle") ensureArchive();
   updateArchiveStatus();
+  document.querySelectorAll(".scrollx").forEach(edgeFade);
 }
 function renderAll(){ applyLang(); refreshLists(); renderEvents(); syncTabs(); if(openId){const i=byId(openId);sheet.innerHTML=sheetHTML(i);openSheet._bind(i);} }
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{searchQuery="";document.getElementById("article-query").value="";tab=b.dataset.tab;save();syncTabs();window.scrollTo({top:0});}));
@@ -591,13 +620,19 @@ document.getElementById("search-toggle").addEventListener("click",()=>toggleSear
 document.getElementById("search-panel").addEventListener("keydown",e=>{if(e.key==="Escape"){e.stopPropagation();toggleSearch(false);}});
 document.getElementById("archive-retry").addEventListener("click",ensureArchive);
 
+const startId=(()=>{try{return decodeURIComponent(location.hash.slice(1));}catch(e){return "";}})();
 async function loadData(){
   try{
     const v="?v="+Date.now();
     const [a,b,m]=await Promise.all([fetch("data/items.json"+v).then(r=>r.json()),fetch("data/events.json"+v).then(r=>r.json()),fetch("data/meta.json"+v).then(r=>r.ok?r.json():null).catch(()=>null)]);
     ITEMS=a; EVENTS=b; META=m;
   }catch(e){ console.error("Daten konnten nicht geladen werden",e); }
+  trackVisit();
   renderAll();
+  if(startId){
+    if(!byId(startId)) await ensureArchive();
+    if(byId(startId)) openSheet(startId);
+  }
 }
 loadData();
 if("serviceWorker" in navigator){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }

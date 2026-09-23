@@ -18,14 +18,17 @@ def norm_url(value):
     return urlunparse((q.scheme.lower(), q.netloc.lower(), q.path, '', urlencode(params), ''))
 
 
-def write_json(path, value):
+def write_text(path, text):
     path = Path(path)
     fd, name = tempfile.mkstemp(dir=path.parent, prefix='.' + path.name)
     try:
         with os.fdopen(fd, 'w', encoding='utf-8') as stream:
-            json.dump(value, stream, ensure_ascii=False, indent=1)
-            stream.write('\n')
+            stream.write(text)
         os.replace(name, path)
     finally:
         if os.path.exists(name):
             os.unlink(name)
+
+
+def write_json(path, value):
+    write_text(path, json.dumps(value, ensure_ascii=False, indent=1) + '\n')

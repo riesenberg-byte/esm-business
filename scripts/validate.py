@@ -6,7 +6,8 @@ import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
-from common import norm_url, write_json
+from common import norm_url, write_json, write_text
+from feed import FEEDS, build_feed
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
@@ -135,6 +136,7 @@ def main():
         write_json(DATA/'items.json', items); write_json(DATA/'events.json', events)
         if old: write_json(DATA/'archive.json', archive)
         write_json(DATA/'seen.json', seen); write_json(DATA/'meta.json', meta)
+        for lang, name in FEEDS.items(): write_text(DATA/name, build_feed(items, lang))
     print(f'OK: {len(items)} Artikel, {len(events)} Events' + ('; gespeichert' if args.apply else '; nur geprüft'))
 
 if __name__ == '__main__':

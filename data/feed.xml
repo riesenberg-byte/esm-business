@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ <channel>
+  <title>esm.business</title>
+  <link>https://esm.business/</link>
+  <atom:link href="https://esm.business/data/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Relevante Meldungen zu Agentic AI, ESM rund um ServiceNow, digitaler Souveränität und Tech-Praxis.</description>
+  <language>de</language>
+  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <item>
+   <title>Bitkom/IDC: Deutsche Unternehmen steigern KI-Investitionen 2026 um 48 Prozent</title>
+   <link>https://esm.business/#ki-investitionen-bitkom-idc-2026</link>
+   <guid isPermaLink="false">esm-business-ki-investitionen-bitkom-idc-2026</guid>
+   <category>AI Adoption</category>
+   <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Laut einer Erhebung von Bitkom und IDC geben deutsche Unternehmen 2026 rund 28,7 Mrd. Euro für KI aus, 48% mehr als 2025 (19,4 Mrd.). Die Ausgaben für generative KI verdoppeln sich auf 11,5 Mrd. Euro, für 2027 wird ein weiterer Anstieg auf 40,3 Mrd. Euro erwartet.
+
+Warum relevant? Belegt mit Zahlen den Übergang von KI-Pilotprojekten zu breitem produktivem Einsatz in deutschen Unternehmen aller Branchen.
+
+Quelle: CIO.de</description>
+  </item>
+  <item>
+   <title>Google verschwieg Sicherheitsvorfall mit eigenem KI-Agenten laut WSJ-Bericht</title>
+   <link>https://esm.business/#google-gemini-agent-sicherheitstest-irregular</link>
+   <guid isPermaLink="false">esm-business-google-gemini-agent-sicherheitstest-irregular</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Laut Wall Street Journal drang ein auf Googles Gemini-Modell basierender KI-Agent in einem Test der Sicherheitsfirma Irregular in drei simulierte Zielunternehmen ein, indem er Zugangsdaten erriet oder offen im Netz fand. Google informierte erst nach Presseanfrage; auch Agenten von Anthropic, OpenAI und Meta hatten in vergleichbaren Tests Sicherheitsvorfälle.
+
+Warum relevant? Zeigt reale Sicherheitsrisiken autonomer KI-Agenten und wirft Fragen zu Offenlegungspflichten und Governance bei allen großen KI-Anbietern auf.
+
+Quelle: Computerwoche</description>
+  </item>
+  <item>
+   <title>Bitkom-Erhebung: Schatten-KI in deutschen Unternehmen nimmt spürbar zu</title>
+   <link>https://esm.business/#schatten-ki-bitkom-ciso</link>
+   <guid isPermaLink="false">esm-business-schatten-ki-bitkom-ciso</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Laut einer Bitkom-Erhebung sagen 8% der deutschen Unternehmen, private KI-Tools würden bei ihnen weit verbreitet und unkontrolliert genutzt – doppelt so viele wie im Vorjahr (4%). Weitere 17% vermuten dies, ohne es sicher zu wissen.
+
+Warum relevant? Unkontrollierte KI-Nutzung durch Mitarbeitende wird zu einem wachsenden Governance- und Datenschutzrisiko für Sicherheitsverantwortliche.
+
+Quelle: CIO.de</description>
+  </item>
+  <item>
+   <title>Praxistest: Neun Mitarbeitende steuern über 100 KI-Agenten im Unternehmen</title>
+   <link>https://esm.business/#ki-agenten-als-manager-handelsblatt</link>
+   <guid isPermaLink="false">esm-business-ki-agenten-als-manager-handelsblatt</guid>
+   <category>AI Adoption</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Im Bericht erprobt ein Team aus neun Menschen, wie sich mehr als 100 KI-Agenten als digitale Mitarbeitende führen und skalieren lassen. Im Mittelpunkt steht, welche Führungsstrukturen nötig sind, damit Agenten-Flotten dieser Größe zuverlässig arbeiten.
+
+Warum relevant? Praxisbeispiel für die Steuerung großer Agenten-Flotten – zeigt, welche Führungs- und Kontrollstrukturen Agentic AI im großen Maßstab erfordert.
+
+Quelle: Handelsblatt</description>
+  </item>
+  <item>
+   <title>Deutschland und Kanada fördern KI-Sicherheitsprojekt LawZero mit Standort Berlin</title>
+   <link>https://esm.business/#lawzero-deutschland-kanada-berlin</link>
+   <guid isPermaLink="false">esm-business-lawzero-deutschland-kanada-berlin</guid>
+   <category>Souveränität</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Deutschland plant rund 100 Mio. Euro, Kanada bis zu 150 Mio. kanadische Dollar Förderung für LawZero, das gemeinnützige KI-Sicherheitsprojekt von Turingpreisträger Yoshua Bengio. Es entwickelt mit dem Konzept „Scientist AI" einen sicherheitsorientierten Gegenentwurf zu autonomen KI-Agenten und baut einen neuen Standort in Berlin auf, in Kanada sind 360 Vollzeitstellen geplant.
+
+Warum relevant? Staatliche Förderung für unabhängige, sicherheitsorientierte KI-Forschung mit deutschem Standort – relevant für die Debatte um KI- und digitale Souveränität.
+
+Quelle: heise online</description>
+  </item>
+  <item>
+   <title>Studie: Datenschutzregulierung hat KI-Innovation in Deutschland nicht gebremst</title>
+   <link>https://esm.business/#dsgvo-mythos-ki-innovation</link>
+   <guid isPermaLink="false">esm-business-dsgvo-mythos-ki-innovation</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Ein Grundsatzpapier von Fraunhofer ISI und Universität Kassel (Projekt „Plattform Privatheit") widerspricht der These, weniger Datenschutz bringe mehr KI-Innovation. Statt pauschaler Deregulierung fordern die Autoren gezielte Entlastungen für Start-ups und KMU sowie Pflichten, die sich am tatsächlichen Verarbeitungsrisiko orientieren.
+
+Warum relevant? Liefert Argumente für die laufende Debatte um DSGVO- und KI-Act-Vereinfachung – wichtig für alle, die Compliance-Vorgaben mitgestalten.
+
+Quelle: CIO.de</description>
+  </item>
+  <item>
+   <title>Agentic AI Hub: KI-Agenten senken Durchlaufzeiten in 19 Kommunen um über 90%</title>
+   <link>https://esm.business/#agentic-ai-hub-kommunen-piloten</link>
+   <guid isPermaLink="false">esm-business-agentic-ai-hub-kommunen-piloten</guid>
+   <category>AI Adoption</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Im Agentic AI Hub des Bundes testeten 19 Kommunen mit neun KI-Start-ups 20 Pilotprojekte für KI-Agenten in der Verwaltung. Die Durchlaufzeit komplexer Anträge sank um über 90%, 95% der Kommunen waren zufrieden. Seit 7. September läuft die zweite, dreimonatige Pilotphase.
+
+Warum relevant? Zeigt mit belastbaren Zahlen, wie KI-Agenten Verwaltungsprozesse beschleunigen können – ein Referenzfall für Governance und Skalierung von Agenten im öffentlichen Sektor.
+
+Quelle: BMDS</description>
+  </item>
+  <item>
+   <title>Lünendonk-Studie: Banken schaffen selten den Sprung vom KI-Pilot in die Produktion</title>
+   <link>https://esm.business/#banken-agenten-produktivsprung</link>
+   <guid isPermaLink="false">esm-business-banken-agenten-produktivsprung</guid>
+   <category>AI Adoption</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Laut einer Lünendonk-Studie testen 58% der Banken KI-Agenten in Pilotprojekten, aber nur 19% nutzen sie bereits produktiv in Einzelaufgaben und lediglich 1% end-to-end über mehrere Kernprozesse. Bei 66% der Unternehmen schaffte weniger als ein Viertel der Pilotprojekte den Sprung in die Produktion.
+
+Warum relevant? Zeigt, wie groß die Lücke zwischen KI-Ankündigung und echtem ESM-Produktivbetrieb im Finanzsektor noch ist – wichtig für Erwartungsmanagement bei Agentic-AI-Projekten.
+
+Quelle: IT Finanzmagazin</description>
+  </item>
+  <item>
+   <title>KI-Paradox: 60% der deutschen Unternehmen nutzen Agenten, nur 5% ändern Workflows</title>
+   <link>https://esm.business/#ki-paradox-agenten-workflow-luecke</link>
+   <guid isPermaLink="false">esm-business-ki-paradox-agenten-workflow-luecke</guid>
+   <category>AI Adoption</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Eine Umfrage zeigt: 60% der deutschen Unternehmen setzen bereits KI-Agenten ein, doch nur 5% haben ihre Arbeitsabläufe dafür grundlegend angepasst. Als Bremsen gelten fehlende Expertise, Sicherheitsbedenken und unveränderte Prozesse.
+
+Warum relevant? Verdeutlicht, dass Tool-Einführung allein nicht reicht – ohne Prozess- und Governance-Anpassung bleibt der Nutzen von KI-Agenten begrenzt.
+
+Quelle: Born City</description>
+  </item>
+  <item>
+   <title>Salesforce-Ausfall während der Dreamforce zeigt Risiken der Cloud-Abhängigkeit</title>
+   <link>https://esm.business/#salesforce-dreamforce-ausfall-cloud-risiko</link>
+   <guid isPermaLink="false">esm-business-salesforce-dreamforce-ausfall-cloud-risiko</guid>
+   <category>ESM &amp; ServiceNow</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Während der eigenen Hausmesse Dreamforce fiel Salesforce rund siebeneinhalb Stunden aus. Der Vorfall macht deutlich, wie stark Unternehmen von der Verfügbarkeit einzelner Cloud-Plattformen abhängen.
+
+Warum relevant? Eine Erinnerung, dass Ausfallsicherheit und Multi-Vendor-Strategien bei jeder ESM- oder CRM-Plattform mitgedacht werden müssen – nicht nur bei ServiceNow.
+
+Quelle: Computerwoche</description>
+  </item>
+  <item>
+   <title>Digitalministerium fördert marktreife Tech-Produkte und sichere KI mit bis zu 5 Mio. Euro</title>
+   <link>https://esm.business/#bmd-foerderung-marktreife-ki-souveraenitaet</link>
+   <guid isPermaLink="false">esm-business-bmd-foerderung-marktreife-ki-souveraenitaet</guid>
+   <category>Souveränität</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Das Bundesdigitalministerium unterstützt kleine und mittlere Unternehmen mit bis zu 5 Mio. Euro dabei, digitale Innovationen zur Marktreife zu bringen. Zusätzlich treibt es mit Kanada gemeinsame Standards für sichere KI voran.
+
+Warum relevant? Zeigt konkrete Förderwege für souveräne Tech- und KI-Vorhaben in Deutschland – relevant für Anbieter und Kunden, die auf staatliche Unterstützung setzen.
+
+Quelle: heise online</description>
+  </item>
+  <item>
+   <title>LinkedIn, IBM und DoorDash steigern Entwicklungsproduktivität mit KI-Agenten um 20%</title>
+   <link>https://esm.business/#linkedin-ki-agenten-entwicklung-produktivitaet</link>
+   <guid isPermaLink="false">esm-business-linkedin-ki-agenten-entwicklung-produktivitaet</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>LinkedIn, IBM, DoorDash und weitere Unternehmen setzen KI-Agenten produktiv für Entwicklung, Tests und Wartung ein – meist unter menschlicher Kontrolle. LinkedIn beziffert den Produktivitätsgewinn in der Softwareentwicklung auf 20%.
+
+Warum relevant? Konkretes Beispiel für produktiven Agenteneinsatz in der Software-Entwicklung – mit Kontrollmechanismus statt vollautonomem Betrieb.
+
+Quelle: Born City</description>
+  </item>
+  <item>
+   <title>KI-Agent als Pentester: VORNAC deckt laut Anbieter über 97% der Angriffsfläche ab</title>
+   <link>https://esm.business/#vornac-ki-agent-pentest-produktivbetrieb</link>
+   <guid isPermaLink="false">esm-business-vornac-ki-agent-pentest-produktivbetrieb</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Der KI-Agent von VORNAC läuft bereits produktiv, unter anderem bei einem großen deutschen Versicherer. Laut Anbieter deckt das System mehr als 97% der Angriffsfläche ab, klassische Pentests kommen nur auf 5–20%.
+
+Warum relevant? Zeigt, wie KI-Agenten in sicherheitskritischen Prozessen produktiv laufen können – mit menschlicher Rückfragemöglichkeit statt Blackbox-Automatisierung.
+
+Quelle: Computerwoche</description>
+  </item>
+  <item>
+   <title>Telekom setzt für Gesprächsnotizen auf Mistral in der T Cloud</title>
+   <link>https://esm.business/#tk-mistral</link>
+   <guid isPermaLink="false">esm-business-tk-mistral</guid>
+   <category>Souveränität</category>
+   <pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+   <description>„Voice AI Notes“ fasst Geschäftskundengespräche mit dem Modell Mistral Small 4 zusammen und verarbeitet die Daten in europäischen Rechenzentren. Ab 2027 sollen Gespräche automatisch Aufgaben, CRM-Einträge oder Service-Tickets auslösen.
+
+Warum relevant? Souveräne KI wandert vom Pilotprojekt ins Standardprodukt – und endet direkt im Service-Ticket. Schnittstellen zu ESM-Plattformen werden damit zum Souveränitätsthema.
+
+Quelle: Deutsche Telekom</description>
+  </item>
+  <item>
+   <title>T-Systems: eine Leitstelle für viele KI-Agenten</title>
+   <link>https://esm.business/#tk-hub</link>
+   <guid isPermaLink="false">esm-business-tk-hub</guid>
+   <category>AI Adoption</category>
+   <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Mit dem T-AI Agentic Hub bietet die Telekom eine Plattform, um viele Agenten kontrolliert zu betreiben. Banco Sabadell will damit agentische KI bereichsübergreifend verankern und das Erlebnis von rund sieben Millionen Kunden verbessern.
+
+Warum relevant? „Agent Control Towers“ werden eine eigene Produktkategorie – mit europäischen Anbietern, die über Souveränität punkten wollen.
+
+Quelle: Deutsche Telekom</description>
+  </item>
+  <item>
+   <title>Wie viel darf ein KI-Agent allein entscheiden?</title>
+   <link>https://esm.business/#tk-autonomy</link>
+   <guid isPermaLink="false">esm-business-tk-autonomy</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Der CTO AI &amp; Data von T-Systems empfiehlt, mit einem Agenten für eine klar begrenzte, überprüfbare Aufgabe zu starten. Sobald Agenten in mehreren Bereichen auf verschiedene Systeme zugreifen, müssen Identitäten, Rechte, Nachvollziehbarkeit, Sicherheit und menschliche Freigaben von Anfang an eingeplant sein.
+
+Warum relevant? Gute Vorlage für eine Autonomie-Stufenmatrix: welche Aufgaben ein Agent allein, mit Freigabe oder gar nicht erledigt.
+
+Quelle: Deutsche Telekom</description>
+  </item>
+  <item>
+   <title>Build Agent aktualisiert sich selbst, IDE geht in Studio auf</title>
+   <link>https://esm.business/#build-agent</link>
+   <guid isPermaLink="false">esm-business-build-agent</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Das September-Store-Release für Otto for Creator läuft auf Zurich Patch 12 und Australia Patch 6. Manuelle Upgrades des Build Agent entfallen, die ServiceNow IDE ist in Studio integriert. Brazil Early Availability folgt am 24. September.
+
+Warum relevant? Entwicklungsrichtlinien und Code-Reviews auf Studio umstellen; KI-generierten Code weiter mit ATF absichern.
+
+Quelle: ServiceNow Community</description>
+  </item>
+  <item>
+   <title>Atos vertreibt und integriert künftig STACKIT</title>
+   <link>https://esm.business/#atos-stackit</link>
+   <guid isPermaLink="false">esm-business-atos-stackit</guid>
+   <category>Souveränität</category>
+   <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Atos und Schwarz Digits haben in München eine Partnerschaft geschlossen: Atos verkauft die STACKIT-Plattform weiter und bindet sie in Kundenlandschaften ein.
+
+Warum relevant? Souveräne Clouds kommen über große Integratoren in die Breite. Service-Management muss hybride Landschaften mit US- und EU-Plattformen abdecken.
+
+Quelle: Dr. Web Magazin</description>
+  </item>
+  <item>
+   <title>Schweizer Bundesverwaltung wechselt zu openDesk</title>
+   <link>https://esm.business/#opendesk-ch</link>
+   <guid isPermaLink="false">esm-business-opendesk-ch</guid>
+   <category>Souveränität</category>
+   <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Die Schweiz stellt ihre Bundesverwaltung auf die Open-Source-Suite openDesk um – ein Zeichen, dass die öffentliche Hand bei souveränen Arbeitsplätzen Tempo aufnimmt.
+
+Warum relevant? ESM-Prozesse müssen sich künftig auch an souveräne Arbeitsplatz-Suiten anbinden lassen, nicht nur an Microsoft 365.
+
+Quelle: Dr. Web Magazin</description>
+  </item>
+  <item>
+   <title>AI Control Tower als Register und Kostensteuerung</title>
+   <link>https://esm.business/#act-registry</link>
+   <guid isPermaLink="false">esm-business-act-registry</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+   <description>MCP-Server werden im Inventar der AI Control Tower als AI-Assets geführt und überwacht. Laut ServiceNow lassen sich Kosten je Abteilung verfolgen, Agenten abschalten und günstigere Modelle je Aufgabe wählen.
+
+Warum relevant? Auch Agenten anderer Plattformen dort registrieren – sonst entsteht Schatten-AI neben der Plattform.
+
+Quelle: ServiceNow Docs</description>
+  </item>
+  <item>
+   <title>Handel: Agenten geplant, Kunden noch zögerlich</title>
+   <link>https://esm.business/#ehi-agentic</link>
+   <guid isPermaLink="false">esm-business-ehi-agentic</guid>
+   <category>AI Adoption</category>
+   <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+   <description>In einer EHI-Befragung aus dem deutschsprachigen Handel setzen 11,6 Prozent bereits Agentic-Commerce-Anwendungen ein, 48,4 Prozent planen es. Einen Shopping-Assistenten haben 22,8 Prozent. Die Stichprobe ist nicht repräsentativ.
+
+Warum relevant? Der Handel investiert zuerst vorne beim Kunden. Retouren, Filialservice und Lieferantenprozesse dahinter müssen nachziehen, sonst bremst die Servicekette den Agenten aus.
+
+Quelle: etailment</description>
+  </item>
+  <item>
+   <title>ServiceNow hebt AI-Ziel an, Nutzung verneunfacht</title>
+   <link>https://esm.business/#sn-target</link>
+   <guid isPermaLink="false">esm-business-sn-target</guid>
+   <category>ESM &amp; ServiceNow</category>
+   <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Die AI-Nutzung stieg vom ersten zum zweiten Quartal um das Neunfache, mehr als 50 Kunden zahlen über eine Million Dollar für die neuen AI-Pakete. Das Jahresziel wurde von 1 auf 1,5 Mrd. Dollar angehoben.
+
+Warum relevant? Die Diskussion verschiebt sich von „ob“ zu „wie steuern wir Kosten und Nutzen“ – verbrauchsabhängige Preise machen das dringlicher.
+
+Quelle: MarketBeat via Yahoo Finance</description>
+  </item>
+  <item>
+   <title>Raleigh senkt IT-Service-Desk-Kosten um 65 Prozent</title>
+   <link>https://esm.business/#raleigh</link>
+   <guid isPermaLink="false">esm-business-raleigh</guid>
+   <category>ESM &amp; ServiceNow</category>
+   <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+   <description>ServiceNow nennt für Raleigh eine Reduktion der IT-Service-Desk-Kosten um 65 Prozent durch agentische Workflows.
+
+Warum relevant? Starke Zahl für den öffentlichen Sektor – als Herstellerangabe aber nur mit Blick auf die Ausgangsbasis vergleichbar.
+
+Quelle: MarketBeat via Yahoo Finance</description>
+  </item>
+  <item>
+   <title>Europäischer Energieversorger erwartet Millioneneinsparung</title>
+   <link>https://esm.business/#energy</link>
+   <guid isPermaLink="false">esm-business-energy</guid>
+   <category>ESM &amp; ServiceNow</category>
+   <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Ein nicht genannter europäischer Energieversorger rechnet durch agentische Workflows mit möglichen Einsparungen von über fünf Millionen Dollar.
+
+Warum relevant? Versorger stehen unter Kosten- und Fachkräftedruck; Service-Automatisierung ist dort ein naheliegender Hebel.
+
+Quelle: MarketBeat via Yahoo Finance</description>
+  </item>
+  <item>
+   <title>CMDB MCP Server: CMDB-Zugriff für externe AI-Clients</title>
+   <link>https://esm.business/#cmdb-mcp</link>
+   <guid isPermaLink="false">esm-business-cmdb-mcp</guid>
+   <category>Tech-Praxis</category>
+   <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Im Australia-Release stellt ServiceNow CMDB-Funktionen wie Suche, CI-Anlage und Klassenvorschläge als MCP-Werkzeuge bereit. Externe AI-Clients arbeiten damit ohne direkten Datenbankzugriff; Zugang über OAuth und die Rollen sn_cmdb_user bzw. sn_cmdb_editor.
+
+Warum relevant? Schreibrechte für Agenten bewusst begrenzen und Agenten als eigene Maschinenidentitäten führen.
+
+Quelle: ServiceNow Docs</description>
+  </item>
+  <item>
+   <title>McKinsey: Großunternehmen skalieren Agenten – Erträge folgen noch nicht</title>
+   <link>https://esm.business/#mckinsey-2026</link>
+   <guid isPermaLink="false">esm-business-mckinsey-2026</guid>
+   <category>AI Adoption</category>
+   <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+   <description>Unter Unternehmen mit über einer Milliarde Dollar Umsatz skalieren 40 Prozent bereits KI-Agenten, nach 27 Prozent im Vorjahr. Rund ein Fünftel sieht die Nutzung durch Betriebskosten der Modelle begrenzt.
+
+Warum relevant? Skalierung allein bringt noch keinen Ertrag. Kosten je Agent und Prozess werden zur Steuerungsgröße.
+
+Quelle: brutkasten</description>
+  </item>
+  <item>
+   <title>Fraunhofer: KI-Assistent für Arzt- und Entlassbriefe</title>
+   <link>https://esm.business/#iais-arztbrief</link>
+   <guid isPermaLink="false">esm-business-iais-arztbrief</guid>
+   <category>AI Adoption</category>
+   <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+   <description>Das Fraunhofer IAIS hat einen Assistenten entwickelt, der Anamnese, Befunde und Untersuchungsergebnisse auswertet und in standardisierte Brief-Formate überführt. Eine beteiligte Klinik schreibt rund 2.500 Entlassbriefe pro Jahr.
+
+Warum relevant? Dokumentation ist im Gesundheitswesen der größte schnelle Hebel. Die ärztliche Prüfung bleibt Pflicht und muss im Prozess sichtbar sein.
+
+Quelle: Fraunhofer IAIS</description>
+  </item>
+  <item>
+   <title>Telekom automatisiert ganze Servicekette im Geschäftskundenservice</title>
+   <link>https://esm.business/#tk-service</link>
+   <guid isPermaLink="false">esm-business-tk-service</guid>
+   <category>AI Adoption</category>
+   <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+   <description>Ein Agent soll aus einer Störungsmeldung ein Ticket, daraus einen Technikertermin und schließlich die Rechnung machen – ohne Telefonat dazwischen. Grundlage sind Partnerschaften mit n8n und Parloa; bei komplexen Fällen bleibt der Mensch zuständig.
+
+Warum relevant? Der Maßstab verschiebt sich vom Chatbot zur Ende-zu-Ende-Automatisierung. Genau dort entscheidet sich, ob Service-Plattformen und Agenten sauber zusammenspielen.
+
+Quelle: digital-magazin.de</description>
+  </item>
+  <item>
+   <title>Mercedes-Benz skaliert KI über die Belegschaft</title>
+   <link>https://esm.business/#mb-scale</link>
+   <guid isPermaLink="false">esm-business-mb-scale</guid>
+   <category>AI Adoption</category>
+   <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+   <description>Mercedes will, dass Mitarbeitende KI nicht nur nutzen, sondern selbst gestalten, und unterscheidet dafür drei Kompetenzstufen. Auf der obersten bauen Fachbereiche eigene Workflows, etwa mit n8n. Ein Hackathon mit mehr als 1.500 Beschäftigten gab dem Rollout Schub.
+
+Warum relevant? Automatisierung wandert in die Fachbereiche. Das beschleunigt, erzeugt aber schnell parallele Workflow-Welten, die jemand zusammenhalten muss.
+
+Quelle: Computerwoche</description>
+  </item>
+  <item>
+   <title>noris network startet ServiceNow Sovereign Cloud mit Partnern</title>
+   <link>https://esm.business/#sn-noris</link>
+   <guid isPermaLink="false">esm-business-sn-noris</guid>
+   <category>Souveränität</category>
+   <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+   <description>noris network betreibt die vollständige ServiceNow-Plattform in eigenen Hochsicherheitsrechenzentren in Deutschland und vermarktet sie gemeinsam mit SOLVVision und der iTSM Group – Beratung, Plattform und Betrieb aus einer Hand.
+
+Warum relevant? Auch mittelständische Rechenzentrumsbetreiber steigen ein. Das senkt die Einstiegshürde für souveränen Betrieb, erhöht aber die Zahl der Varianten, die man vergleichen muss.
+
+Quelle: Presse Control</description>
+  </item>
+ </channel>
+</rss>

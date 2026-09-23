@@ -15,8 +15,9 @@ Agentic AI Adoption und ESM-Transformation – eine schlanke PWA mit Meldungen z
 | `data/seen.json` | bereits geprüfte Links (spart Tokens), wird automatisch gepflegt |
 | `data/feed_status.json` | Status der Feeds nach jedem Lauf |
 | `data/meta.json` | Zeitpunkt der letzten Aktualisierung (in der App angezeigt) |
+| `data/feed.xml`, `data/feed-en.xml` | RSS-Feeds (de/en) der 30 neuesten Artikel; Links führen per `#id` ins Lese-Blatt |
 | `scripts/fetch_candidates.py` | Vorfilter ohne KI |
-| `scripts/validate.py` | Prüfung, Archivierung, Pflege von `seen.json` |
+| `scripts/validate.py` | Prüfung, Archivierung, Pflege von `seen.json`; `--apply` erzeugt auch die RSS-Feeds (`scripts/feed.py`) |
 | `ROUTINE.md` | Arbeitsanweisung für die Claude-Routine |
 | `RUNLOG.md` | eine Zeile pro Lauf |
 
