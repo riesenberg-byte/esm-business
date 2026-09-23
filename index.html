@@ -117,9 +117,11 @@ h2{font-size:14px;font-weight:700;margin:14px 0 8px;color:var(--muted)}
 .tab .cnt.new{display:inline-block;min-width:18px;font-size:11px;font-weight:800;line-height:18px;border-radius:9px;background:var(--c,var(--ink));color:#fff;opacity:1;padding:0 5px;text-align:center}
 .tab .cnt.new:empty{display:none}
 .tab[aria-selected="true"] .cnt.new{background:#fff;color:var(--c,var(--ink))}
-.toolrow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px}
-.toolrow:has(.nc:empty){display:none}
-.toolrow .nc{font-size:13px;font-weight:700;color:var(--c)}
+.toolrow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 10px;margin-top:10px}
+.toolrow+.cards{margin-top:12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:var(--surface)}
+.seg button{appearance:none;border:0;background:none;font-size:13px;font-weight:700;color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--c);color:#fff}
 .linkbtn{appearance:none;border:0;background:none;font-size:13px;font-weight:600;color:var(--muted);text-decoration:underline;cursor:pointer;padding:4px 0}
 @media (max-width:400px){.card .m{font-size:20px;max-width:88px}}
 
@@ -290,7 +292,7 @@ de:{openSearch:"Suche öffnen",closeSearch:"Suche schließen",searchLabel:"Artik
   intro_esm:"ESM-Transformation rund um ServiceNow: Plattform und Übernahmen, Ergebnisse aus Projekten, Branchenlösungen und der Markt drumherum – inklusive der AI Control Towers anderer Anbieter.",
   intro_tech:"Für Techies und Architektinnen: Schnittstellen, Governance und Muster, die in Projekten gerade relevant werden.",
   intro_saved:"Nur auf diesem Gerät gespeichert.",
-  updatedL:"Aktualisiert am {d}",all:"Alle",top:"Wichtig",more:"Weitere",newL:"Neu",markAll:"Alle als gelesen markieren",newCount:"{n} neu",unreadCount:"{n} ungelesen",readL:"Gelesen",readGrp:"Gelesen ({n})",allRead:"Alles gelesen – neue Meldungen erscheinen hier oben.",markUnread:"Als ungelesen markieren",markReadB:"Als gelesen markieren",unreadT:"Als ungelesen markiert",readT:"Als gelesen markiert",sowhat:"Warum relevant?",forArch:"Warum relevant für die Architektur?",aiNote:"Kurzfassungen und Einordnungen KI-gestützt erstellt",aiTag:"KI-gestützte Zusammenfassung – maßgeblich ist der Originalartikel.",indep:"Unabhängiges Angebot, nicht mit den genannten Unternehmen verbunden.",
+  updatedL:"Aktualisiert am {d}",all:"Alle",top:"Wichtig",more:"Weitere",newL:"Neu",markAll:"Alle als gelesen markieren",unreadL:"Ungelesen",sortL:"Sortierung",sortRel:"Relevanz",sortNew:"Neueste",readL:"Gelesen",readGrp:"Gelesen ({n})",allRead:"Alles gelesen – neue Meldungen erscheinen hier oben.",markUnread:"Als ungelesen markieren",markReadB:"Als gelesen markieren",unreadT:"Als ungelesen markiert",readT:"Als gelesen markiert",sowhat:"Warum relevant?",forArch:"Warum relevant für die Architektur?",aiNote:"Kurzfassungen und Einordnungen KI-gestützt erstellt",aiTag:"KI-gestützte Zusammenfassung – maßgeblich ist der Originalartikel.",indep:"Unabhängiges Angebot, nicht mit den genannten Unternehmen verbunden.",
   read:"Artikel lesen",save:"Merken",saved:"Gemerkt",share:"Teilen",close:"Schließen",
   copied:"Link kopiert",savedT:"Zur Merkliste hinzugefügt",unsavedT:"Von der Merkliste entfernt",
   empty:"Hier ist noch nichts. Tippe bei einem Artikel auf „Merken“.",emptyF:"Für diesen Filter gibt es gerade keine Artikel.",
@@ -305,7 +307,7 @@ en:{openSearch:"Open search",closeSearch:"Close search",searchLabel:"Search arti
   intro_esm:"ESM transformation around ServiceNow: platform and acquisitions, project results, industry solutions and the wider market – including other vendors' AI control towers.",
   intro_tech:"For techies and architects: interfaces, governance and patterns that are becoming relevant in projects.",
   intro_saved:"Stored on this device only.",
-  updatedL:"Updated {d}",all:"All",top:"Top stories",more:"More",newL:"New",markAll:"Mark all as read",newCount:"{n} new",unreadCount:"{n} unread",readL:"Read",readGrp:"Read ({n})",allRead:"All caught up – new stories will appear up here.",markUnread:"Mark as unread",markReadB:"Mark as read",unreadT:"Marked as unread",readT:"Marked as read",sowhat:"Why it matters",forArch:"Why it matters for architecture",aiNote:"Summaries and context written with AI assistance",aiTag:"AI-assisted summary – the original article is authoritative.",indep:"Independent service, not affiliated with the companies mentioned.",
+  updatedL:"Updated {d}",all:"All",top:"Top stories",more:"More",newL:"New",markAll:"Mark all as read",unreadL:"Unread",sortL:"Sort",sortRel:"Relevance",sortNew:"Newest",readL:"Read",readGrp:"Read ({n})",allRead:"All caught up – new stories will appear up here.",markUnread:"Mark as unread",markReadB:"Mark as read",unreadT:"Marked as unread",readT:"Marked as read",sowhat:"Why it matters",forArch:"Why it matters for architecture",aiNote:"Summaries and context written with AI assistance",aiTag:"AI-assisted summary – the original article is authoritative.",indep:"Independent service, not affiliated with the companies mentioned.",
   read:"Read article",save:"Save",saved:"Saved",share:"Share",close:"Close",
   copied:"Link copied",savedT:"Added to saved",unsavedT:"Removed from saved",
   empty:"Nothing here yet. Tap “Save” on an article.",emptyF:"No articles for this filter right now.",
@@ -380,7 +382,7 @@ function renderSearch(){
 
 /* ---------- Zustand ---------- */
 let lang=(navigator.language||"de").toLowerCase().startsWith("de")?"de":"en";
-let tab="ai", filt={ai:null,esm:null,tech:null}, savedIds=[], readIds=[], readOpen=false;
+let tab="ai", filt={ai:null,esm:null,tech:null}, savedIds=[], readIds=[], readOpen=false, sortMode="rel";
 try{
   const s=JSON.parse(localStorage.getItem("esmbusiness-v1")||"{}");
   if(["de","en"].includes(s.lang)) lang=s.lang;
@@ -388,8 +390,9 @@ try{
   if(Array.isArray(s.saved)) savedIds=s.saved;
   if(Array.isArray(s.read)) readIds=s.read;
   readOpen=s.readOpen===true;
+  if(["rel","new"].includes(s.sort)) sortMode=s.sort;
 }catch(e){}
-function save(){ try{ localStorage.setItem("esmbusiness-v1",JSON.stringify({lang,tab,saved:savedIds,read:readIds,readOpen})); }catch(e){} }
+function save(){ try{ localStorage.setItem("esmbusiness-v1",JSON.stringify({lang,tab,saved:savedIds,read:readIds,readOpen,sort:sortMode})); }catch(e){} }
 
 /* ---------- Hilfen ---------- */
 const T=k=>UI[lang][k], L=o=>(o&&typeof o==="object")?o[lang]:o;
@@ -432,21 +435,32 @@ function renderList(t){
   const ord=(a,b)=>(isNew(b)-isNew(a))||byDate(a,b);
   const list=ITEMS.filter(i=>i.tab===t&&(!f||i.cat===f));
   const unread=list.filter(i=>!readIds.includes(i.id)), read=list.filter(i=>readIds.includes(i.id)).sort(byDate);
-  const top=unread.filter(i=>(i.rel_score||1)>=3).sort(ord), rest=unread.filter(i=>(i.rel_score||1)<3).sort(ord);
-  const nNew=list.filter(isNew).length;
-  const tools=unread.length?`<div class="toolrow ${tcls[t]}"><span class="nc">${nNew?T("newCount").replace("{n}",nNew):T("unreadCount").replace("{n}",unread.length)}</span><button class="linkbtn" data-markall="${t}">${T("markAll")}</button></div>`:"";
+  const seg=`<div class="seg" role="group" aria-label="${T("sortL")}">`+["rel","new"].map(m=>`<button data-sort="${m}" aria-pressed="${sortMode===m}">${T(m==="rel"?"sortRel":"sortNew")}</button>`).join("")+`</div>`;
+  const tools=unread.length?`<div class="toolrow ${tcls[t]}">${seg}<button class="linkbtn" data-markall="${t}">${T("markAll")}</button></div>`:"";
   let body=list.length?"":`<div class="empty">${T("emptyF")}</div>`;
   if(list.length&&!unread.length) body+=`<div class="empty">${T("allRead")}</div>`;
-  if(top.length) body+=`<h2>${T("top")}</h2><div class="cards">`+top.map(cardHTML).join("")+`</div>`;
-  if(rest.length) body+=`<h2>${T("more")}</h2><div class="cards">`+rest.map(cardHTML).join("")+`</div>`;
+  if(sortMode==="new"){
+    const byPub=(a,b)=>(toDate(b.datum)-toDate(a.datum))||byDate(a,b);
+    if(unread.length) body+=`<div class="cards">`+unread.slice().sort(byPub).map(cardHTML).join("")+`</div>`;
+  } else {
+    const top=unread.filter(i=>(i.rel_score||1)>=3).sort(ord), rest=unread.filter(i=>(i.rel_score||1)<3).sort(ord);
+    if(top.length) body+=`<h2>${T("top")}</h2><div class="cards">`+top.map(cardHTML).join("")+`</div>`;
+    if(rest.length) body+=`<h2>${T("more")}</h2><div class="cards">`+rest.map(cardHTML).join("")+`</div>`;
+  }
   if(read.length) body+=`<details class="readgrp"${readOpen?" open":""}><summary>${T("readGrp").replace("{n}",read.length)}</summary><div class="cards">`+read.map(cardHTML).join("")+`</div></details>`;
   const el=document.getElementById(t);
   el.innerHTML=`${chips}${tools}${body}`;
   el.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{filt[t]=b.dataset.f||null;renderList(t);}));
   const mb=el.querySelector("[data-markall]"); if(mb) mb.addEventListener("click",()=>{ unread.forEach(i=>markRead(i.id)); refreshLists(); });
   const rg=el.querySelector(".readgrp"); if(rg) rg.addEventListener("toggle",()=>{ if(readOpen!==rg.open){readOpen=rg.open;save();} });
+  el.querySelectorAll("[data-sort]").forEach(b=>b.addEventListener("click",()=>{
+    if(sortMode===b.dataset.sort) return;
+    sortMode=b.dataset.sort; save(); ["ai","esm","sov","tech"].forEach(renderList);
+    const again=document.querySelector(`#${t} [data-sort="${sortMode}"]`); if(again) again.focus();
+  }));
 }
-function updateCounts(){ ["ai","esm","sov","tech"].forEach(k=>{ const n=ITEMS.filter(i=>i.tab===k&&isNew(i)).length; const el=document.getElementById("new-"+k); if(el) el.textContent=n?String(n):""; }); }
+const unreadIn=k=>ITEMS.filter(i=>i.tab===k&&!readIds.includes(i.id)).length;
+function updateCounts(){ ["ai","esm","sov","tech"].forEach(k=>{ const n=unreadIn(k); const el=document.getElementById("new-"+k); if(el) el.textContent=n?String(n):""; }); }
 function renderSaved(){
   const list=savedIds.map(byId).filter(Boolean);
   const missing=savedIds.length-list.length;
@@ -471,9 +485,9 @@ function renderEvents(){
 function renderAside(){
   const n=new Date(),today=new Date(n.getFullYear(),n.getMonth(),n.getDate());
   const up=EVENTS.filter(e=>toDate(e.bis||e.datum)>=today).sort((a,b)=>toDate(a.datum)-toDate(b.datum)).slice(0,5);
-  const counts=["ai","esm","sov","tech"].map(k=>{const c=ITEMS.filter(i=>i.tab===k&&isNew(i)).length;return c?`<li class="${tcls[k]}"><button data-go="${k}"><span>${T("tab_"+k)}</span><b>${c}</b></button></li>`:"";}).join("");
+  const counts=["ai","esm","sov","tech"].map(k=>{const c=unreadIn(k);return c?`<li class="${tcls[k]}"><button data-go="${k}"><span>${T("tab_"+k)}</span><b>${c}</b></button></li>`:"";}).join("");
   document.getElementById("aside").innerHTML=
-   (counts?`<h2>${T("newL")}</h2><ul class="newlist">${counts}</ul>`:"")+
+   (counts?`<h2>${T("unreadL")}</h2><ul class="newlist">${counts}</ul>`:"")+
    `<h2>${T("upcoming")}</h2>`+up.map(e=>{const x=toDate(e.datum);return `<a class="mini t-evt" href="${e.url}" target="_blank" rel="noopener"><span class="md">${x.getDate()}. ${x.toLocaleDateString(loc(),{month:"short"})}</span><span class="mt">${esc(L(e.titel))}</span><span class="mo">${esc(L(e.ort))}</span></a>`;}).join("");
   document.querySelectorAll("#aside [data-go]").forEach(b=>b.addEventListener("click",()=>{searchQuery="";document.getElementById("article-query").value="";tab=b.dataset.go;save();syncTabs();window.scrollTo({top:0});}));
 }
@@ -554,11 +568,7 @@ function applyLang(){
   document.getElementById("article-query").placeholder=T("searchHint");
   document.getElementById("clear-search").setAttribute("aria-label",lang==="de"?"Suche löschen":"Clear search");
   const up=document.getElementById("updated");
-  const stamp=META&&META.letzte_recherche;
-  up.textContent=stamp?((lang==="de"?"Recherche: ":"Research: ")+new Date(stamp).toLocaleString(loc())):(lang==="de"?"Recherchezeitpunkt nicht bestätigt":"Research time not confirmed");
-  if(META&&META.laufstatus==="blocked") up.textContent+=(lang==="de"?" · Letzter Abruf fehlgeschlagen":" · Last retrieval failed");
-  if(META&&META.laufstatus==="partial") up.textContent+=(lang==="de"?" · Eingeschränkte Quellenabdeckung":" · Limited source coverage");
-  if(META&&META.letzter_artikel) up.textContent+=(lang==="de"?" · Letzte Meldung: ":" · Latest article: ")+fmt(META.letzter_artikel);
+  up.textContent=META&&META.letzter_artikel?(lang==="de"?"Letzte Meldung: ":"Latest article: ")+fmt(META.letzter_artikel):"";
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===lang));
 }
 function syncTabs(){

@@ -60,7 +60,7 @@ Die vollständigen Schreibbefehle und Statusregeln stehen in ROUTINE.md.
 
 Bei `Tunnel connection failed: 403 Forbidden` zunächst die erlaubten Netzwerkziele der Routine-Umgebung prüfen. Danach dort einen manuellen Feed-Abruf testen. Änderungen im Repository können diese Umgebungseinstellungen nicht freischalten. Der Websuche-Ersatzweg funktioniert nur, wenn entsprechende Werkzeuge verfügbar sind.
 
-Metadaten unterscheiden letzten Versuch, letzte erfolgreiche (ggf. eingeschränkte) Recherche und Laufstatus. Ein technischer Ausfall aktualisiert den Recherchezeitpunkt nicht. `letzter_artikel` zeigt das letzte bekannte Aufnahmedatum; Eventänderungen stehen zusätzlich im Laufprotokoll.
+Metadaten unterscheiden letzten Versuch, letzte erfolgreiche (ggf. eingeschränkte) Recherche und Laufstatus. Ein technischer Ausfall aktualisiert den Recherchezeitpunkt nicht. `letzter_artikel` zeigt das letzte bekannte Aufnahmedatum; Eventänderungen stehen zusätzlich im Laufprotokoll. Die Seite selbst zeigt davon nur „Letzte Meldung" mit Datum; Laufstatus und Recherchezeitpunkt stehen in `data/meta.json` und `RUNLOG.md`.
 
 ## Suche und Archiv
 
