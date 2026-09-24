@@ -6,7 +6,31 @@
   <atom:link href="https://esm.business/data/feed-en.xml" rel="self" type="application/rss+xml"/>
   <description>Relevant news on agentic AI, ESM around ServiceNow, digital sovereignty and tech in practice.</description>
   <language>en</language>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <item>
+   <title>AOK Plus deploys AI agents and EU cloud in member services</title>
+   <link>https://esm.business/#aok-plus-ki-agenten-cloud</link>
+   <guid isPermaLink="false">esm-business-aok-plus-ki-agenten-cloud</guid>
+   <category>AI adoption</category>
+   <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+   <description>German health insurer AOK Plus has rolled out a cloud-based AI platform with around 120 skills for 2,400 staff, handling requests from 3.5 million members in Saxony and Thuringia. A voice assistant answers routine questions around the clock, while complex cases go to staff. AOK Plus reports a 95% call acceptance rate, run on an EU sovereign cloud.
+
+Why it matters Shows how a large statutory health insurer runs AI agents at scale in production while relying on an EU cloud for data protection – relevant to sovereignty and scaling questions in healthcare.
+
+Source: CIO.de</description>
+  </item>
+  <item>
+   <title>DKB automates email processing in customer service with AI</title>
+   <link>https://esm.business/#dkb-ki-email-kundenservice</link>
+   <guid isPermaLink="false">esm-business-dkb-ki-email-kundenservice</guid>
+   <category>AI adoption</category>
+   <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Deutsche Kreditbank (DKB) has introduced an AI assistant built on the Pega platform for its roughly 1,500 service staff, automatically summarizing incoming customer emails and suggesting replies. Staff still decide on next steps. The system covers millions of emails from the bank's more than 5.5 million customers.
+
+Why it matters Illustrates a production use of AI agents with human-in-the-loop oversight in a German bank's customer service – relevant to governance questions around steering semi-autonomous agents.
+
+Source: CIO.de</description>
+  </item>
   <item>
    <title>Bitkom/IDC: German companies raise AI spending 48% in 2026</title>
    <link>https://esm.business/#ki-investitionen-bitkom-idc-2026</link>
@@ -342,30 +366,6 @@ Source: digital-magazin.de</description>
 Why it matters Automation is moving into business teams. That speeds things up but quickly creates parallel workflow worlds that someone has to hold together.
 
 Source: Computerwoche</description>
-  </item>
-  <item>
-   <title>noris network launches ServiceNow Sovereign Cloud with partners</title>
-   <link>https://esm.business/#sn-noris</link>
-   <guid isPermaLink="false">esm-business-sn-noris</guid>
-   <category>Sovereignty</category>
-   <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-   <description>noris network runs the full ServiceNow platform in its own high-security data centres in Germany and markets it with SOLVVision and iTSM Group – consulting, platform and operations from one source.
-
-Why it matters Mid-sized data centre operators are entering too. That lowers the barrier to sovereign operation but multiplies the variants to compare.
-
-Source: Presse Control</description>
-  </item>
-  <item>
-   <title>Sovereign ServiceNow on T Cloud</title>
-   <link>https://esm.business/#sn-tcloud</link>
-   <guid isPermaLink="false">esm-business-sn-tcloud</guid>
-   <category>Sovereignty</category>
-   <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-   <description>T-Systems runs the ServiceNow platform on its sovereign T Cloud in Germany. Customer data stays in Telekom data centres under German/EU operational control; supported areas include ITSM, ITOM, CSM and HR.
-
-Why it matters For regulated industries ServiceNow becomes an option where public cloud was previously ruled out. Feature scope and release cadence versus the standard cloud deserve a close comparison.
-
-Source: T-Systems</description>
   </item>
  </channel>
 </rss>

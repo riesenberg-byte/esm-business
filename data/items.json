@@ -1,6 +1,70 @@
 [
  {
   "tab": "ai",
+  "cat": "fs",
+  "sub": {
+   "de": "Versicherungen",
+   "en": "Insurance"
+  },
+  "id": "aok-plus-ki-agenten-cloud",
+  "rel_score": 3,
+  "added": "2026-09-24",
+  "datum": "2026-09-23",
+  "region": "DE",
+  "metric": {
+   "de": "95 %",
+   "en": "95%"
+  },
+  "msub": {
+   "de": "Anrufannahmequote nach Einführung der Plattform",
+   "en": "Call acceptance rate after platform rollout"
+  },
+  "titel": {
+   "de": "AOK Plus setzt KI-Agenten und EU-Cloud im Versichertenservice ein",
+   "en": "AOK Plus deploys AI agents and EU cloud in member services"
+  },
+  "kurz": {
+   "de": "Die Krankenkasse AOK Plus hat für 2.400 Mitarbeitende eine cloudbasierte KI-Plattform mit rund 120 Skills eingeführt, die Anfragen von 3,5 Millionen Versicherten in Sachsen und Thüringen bearbeitet. Ein Sprachassistent beantwortet Standardfragen rund um die Uhr, komplexe Fälle gehen an Mitarbeitende. Die Anrufannahmequote liegt laut AOK Plus bei 95 Prozent, betrieben in einer EU Sovereign Cloud.",
+   "en": "German health insurer AOK Plus has rolled out a cloud-based AI platform with around 120 skills for 2,400 staff, handling requests from 3.5 million members in Saxony and Thuringia. A voice assistant answers routine questions around the clock, while complex cases go to staff. AOK Plus reports a 95% call acceptance rate, run on an EU sovereign cloud."
+  },
+  "rel": {
+   "de": "Zeigt, wie ein großer Krankenversicherer KI-Agenten produktiv im großen Maßstab betreibt und dabei auf eine EU-Cloud für den Datenschutz setzt – relevant für Souveränitäts- und Skalierungsfragen im Gesundheitswesen.",
+   "en": "Shows how a large statutory health insurer runs AI agents at scale in production while relying on an EU cloud for data protection – relevant to sovereignty and scaling questions in healthcare."
+  },
+  "quelle": "https://www.cio.de/article/4223819/aok-plus-nutzt-ki-agenten-und-cloud-im-versichertenservice.html",
+  "qn": "CIO.de"
+ },
+ {
+  "tab": "ai",
+  "cat": "fs",
+  "sub": {
+   "de": "Banken",
+   "en": "Banking"
+  },
+  "id": "dkb-ki-email-kundenservice",
+  "rel_score": 2,
+  "added": "2026-09-24",
+  "datum": "2026-09-24",
+  "region": "DE",
+  "metric": null,
+  "msub": null,
+  "titel": {
+   "de": "DKB automatisiert E-Mail-Bearbeitung im Kundenservice mit KI",
+   "en": "DKB automates email processing in customer service with AI"
+  },
+  "kurz": {
+   "de": "Die Deutsche Kreditbank (DKB) setzt für ihre rund 1.500 Service-Mitarbeitenden einen KI-Assistenten auf Basis der Pega-Plattform ein, der eingehende Kundenmails automatisch zusammenfasst und Antworten vorschlägt. Über die nächsten Schritte entscheidet weiterhin das Personal. Betroffen sind Millionen E-Mails der mehr als 5,5 Millionen Kundinnen und Kunden der Bank.",
+   "en": "Deutsche Kreditbank (DKB) has introduced an AI assistant built on the Pega platform for its roughly 1,500 service staff, automatically summarizing incoming customer emails and suggesting replies. Staff still decide on next steps. The system covers millions of emails from the bank's more than 5.5 million customers."
+  },
+  "rel": {
+   "de": "Zeigt einen produktiven Einsatz von KI-Agenten mit Mensch-in-der-Schleife im Kundenservice einer deutschen Bank – relevant für Governance-Fragen bei der Steuerung teilautonomer Agenten.",
+   "en": "Illustrates a production use of AI agents with human-in-the-loop oversight in a German bank's customer service – relevant to governance questions around steering semi-autonomous agents."
+  },
+  "quelle": "https://www.cio.de/article/4224302/dkb-ki-bearbeitet-e-mails-im-kundenservice.html",
+  "qn": "CIO.de"
+ },
+ {
+  "tab": "ai",
   "cat": "cross",
   "id": "ki-investitionen-bitkom-idc-2026",
   "rel_score": 3,

@@ -6,7 +6,31 @@
   <atom:link href="https://esm.business/data/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Relevante Meldungen zu Agentic AI, ESM rund um ServiceNow, digitaler Souveränität und Tech-Praxis.</description>
   <language>de</language>
-  <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <item>
+   <title>AOK Plus setzt KI-Agenten und EU-Cloud im Versichertenservice ein</title>
+   <link>https://esm.business/#aok-plus-ki-agenten-cloud</link>
+   <guid isPermaLink="false">esm-business-aok-plus-ki-agenten-cloud</guid>
+   <category>AI Adoption</category>
+   <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Die Krankenkasse AOK Plus hat für 2.400 Mitarbeitende eine cloudbasierte KI-Plattform mit rund 120 Skills eingeführt, die Anfragen von 3,5 Millionen Versicherten in Sachsen und Thüringen bearbeitet. Ein Sprachassistent beantwortet Standardfragen rund um die Uhr, komplexe Fälle gehen an Mitarbeitende. Die Anrufannahmequote liegt laut AOK Plus bei 95 Prozent, betrieben in einer EU Sovereign Cloud.
+
+Warum relevant? Zeigt, wie ein großer Krankenversicherer KI-Agenten produktiv im großen Maßstab betreibt und dabei auf eine EU-Cloud für den Datenschutz setzt – relevant für Souveränitäts- und Skalierungsfragen im Gesundheitswesen.
+
+Quelle: CIO.de</description>
+  </item>
+  <item>
+   <title>DKB automatisiert E-Mail-Bearbeitung im Kundenservice mit KI</title>
+   <link>https://esm.business/#dkb-ki-email-kundenservice</link>
+   <guid isPermaLink="false">esm-business-dkb-ki-email-kundenservice</guid>
+   <category>AI Adoption</category>
+   <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Die Deutsche Kreditbank (DKB) setzt für ihre rund 1.500 Service-Mitarbeitenden einen KI-Assistenten auf Basis der Pega-Plattform ein, der eingehende Kundenmails automatisch zusammenfasst und Antworten vorschlägt. Über die nächsten Schritte entscheidet weiterhin das Personal. Betroffen sind Millionen E-Mails der mehr als 5,5 Millionen Kundinnen und Kunden der Bank.
+
+Warum relevant? Zeigt einen produktiven Einsatz von KI-Agenten mit Mensch-in-der-Schleife im Kundenservice einer deutschen Bank – relevant für Governance-Fragen bei der Steuerung teilautonomer Agenten.
+
+Quelle: CIO.de</description>
+  </item>
   <item>
    <title>Bitkom/IDC: Deutsche Unternehmen steigern KI-Investitionen 2026 um 48 Prozent</title>
    <link>https://esm.business/#ki-investitionen-bitkom-idc-2026</link>
@@ -342,30 +366,6 @@ Quelle: digital-magazin.de</description>
 Warum relevant? Automatisierung wandert in die Fachbereiche. Das beschleunigt, erzeugt aber schnell parallele Workflow-Welten, die jemand zusammenhalten muss.
 
 Quelle: Computerwoche</description>
-  </item>
-  <item>
-   <title>noris network startet ServiceNow Sovereign Cloud mit Partnern</title>
-   <link>https://esm.business/#sn-noris</link>
-   <guid isPermaLink="false">esm-business-sn-noris</guid>
-   <category>Souveränität</category>
-   <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-   <description>noris network betreibt die vollständige ServiceNow-Plattform in eigenen Hochsicherheitsrechenzentren in Deutschland und vermarktet sie gemeinsam mit SOLVVision und der iTSM Group – Beratung, Plattform und Betrieb aus einer Hand.
-
-Warum relevant? Auch mittelständische Rechenzentrumsbetreiber steigen ein. Das senkt die Einstiegshürde für souveränen Betrieb, erhöht aber die Zahl der Varianten, die man vergleichen muss.
-
-Quelle: Presse Control</description>
-  </item>
-  <item>
-   <title>Sovereign ServiceNow auf der T Cloud</title>
-   <link>https://esm.business/#sn-tcloud</link>
-   <guid isPermaLink="false">esm-business-sn-tcloud</guid>
-   <category>Souveränität</category>
-   <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-   <description>T-Systems betreibt die ServiceNow-Plattform auf seiner souveränen T Cloud in Deutschland. Kundendaten bleiben in Telekom-Rechenzentren und unter deutscher bzw. europäischer Betriebskontrolle; unterstützt werden unter anderem ITSM, ITOM, CSM und HR.
-
-Warum relevant? Für regulierte Branchen wird ServiceNow damit auch dort eine Option, wo die Public Cloud bisher ausgeschlossen war. Funktionsumfang und Release-Takt gegenüber der Standard-Cloud sollte man genau vergleichen.
-
-Quelle: T-Systems</description>
   </item>
  </channel>
 </rss>
