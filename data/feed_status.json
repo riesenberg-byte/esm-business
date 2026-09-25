@@ -1,18 +1,18 @@
 {
- "stand": "2026-09-24T04:19+00:00",
- "status": "partial",
+ "stand": "2026-09-25T04:03+00:00",
+ "status": "ok",
  "feeds": {
   "heise online": {
    "ok": true,
-   "neu": 6
+   "neu": 11
   },
   "Computerwoche": {
    "ok": true,
-   "neu": 2
+   "neu": 4
   },
   "CIO.de": {
    "ok": true,
-   "neu": 6
+   "neu": 5
   },
   "IT Finanzmagazin": {
    "ok": true,
@@ -20,11 +20,11 @@
   },
   "Bing News: ServiceNow": {
    "ok": true,
-   "neu": 3
+   "neu": 4
   },
   "Bing News: ServiceNow EN": {
    "ok": true,
-   "neu": 0
+   "neu": 1
   },
   "Bing News: KI-Agenten Unternehmen": {
    "ok": true,
@@ -35,12 +35,12 @@
    "neu": 5
   },
   "Bing News: souveräne Cloud": {
-   "ok": false,
-   "fehler": "not well-formed (invalid token): line 1, column 41"
+   "ok": true,
+   "neu": 1
   },
   "Bing News: Control Tower Agenten": {
-   "ok": false,
-   "fehler": "not well-formed (invalid token): line 1, column 41"
+   "ok": true,
+   "neu": 0
   },
   "Bing News: ITSM ESM": {
    "ok": true,

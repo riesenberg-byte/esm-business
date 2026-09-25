@@ -6,7 +6,55 @@
   <atom:link href="https://esm.business/data/feed-en.xml" rel="self" type="application/rss+xml"/>
   <description>Relevant news on agentic AI, ESM around ServiceNow, digital sovereignty and tech in practice.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <item>
+   <title>Gartner: Global AI spending to rise 49.5% in 2026</title>
+   <link>https://esm.business/#gartner-ki-ausgaben-2026</link>
+   <guid isPermaLink="false">esm-business-gartner-ki-ausgaben-2026</guid>
+   <category>AI adoption</category>
+   <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Gartner projects global AI spending will grow 49.5% in 2026 to $2.7 trillion, with AI agents and assistants leading at +77.3%. For Germany, IDC data cited by Bitkom puts the AI market at €28.7 billion (+48%), with generative AI spending set to double to €11.5 billion.
+
+Why it matters The forecast shows how strongly agentic AI drives AI investment and places the German market within the global trend, useful for budgeting and prioritization in AI programs.
+
+Source: Computerwoche</description>
+  </item>
+  <item>
+   <title>Autonomous AI agents attack hundreds of online shops, steal 600,000 credit card records</title>
+   <link>https://esm.business/#ki-agenten-angriff-kreditkarten-online-shops</link>
+   <guid isPermaLink="false">esm-business-ki-agenten-angriff-kreditkarten-online-shops</guid>
+   <category>Tech in practice</category>
+   <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Security researchers at Gambit Security reconstructed an attack campaign in which an actor used three open-source AI agents to compromise hundreds of online shops largely autonomously. At least 27 companies were breached, two lost data from more than 600,000 still-valid credit cards; the attacker's AI costs were roughly $12,000-18,000.
+
+Why it matters A concrete example of how cheaply and autonomously AI agents can now run large-scale attacks, a wake-up call for agent governance and securing one's own systems.
+
+Source: heise online</description>
+  </item>
+  <item>
+   <title>YouGov study: AI agents still rare among German SMEs, fast-growing ones lead</title>
+   <link>https://esm.business/#yougov-ki-agenten-mittelstand-2026</link>
+   <guid isPermaLink="false">esm-business-yougov-ki-agenten-mittelstand-2026</guid>
+   <category>AI adoption</category>
+   <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+   <description>A YouGov study commissioned by Alibaba.com and trade association bevh finds only 24% of German SMEs use agentic AI, but 45% among businesses with ten or more employees. Among decision-makers under 35, one in three already uses AI agents.
+
+Why it matters Shows how unevenly agentic AI is adopted across German SMEs, useful for vendors and advisors deciding which segments to target first.
+
+Source: ad-hoc news / YouGov (im Auftrag von Alibaba.com)</description>
+  </item>
+  <item>
+   <title>New alliance of 12 tech firms aims to set security standard for AI agents</title>
+   <link>https://esm.business/#blueprint-alliance-ki-agenten-sicherheit</link>
+   <guid isPermaLink="false">esm-business-blueprint-alliance-ki-agenten-sicherheit</guid>
+   <category>Tech in practice</category>
+   <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+   <description>Okta, together with AWS, Google Cloud, Salesforce, ServiceNow and other vendors, has launched the 'Blueprint Alliance' to build a vendor-neutral reference architecture for securing AI agents. Core principles include treating agents as first-class identities, minimal rather than standing access rights, and instant, reversible isolation.
+
+Why it matters A broad vendor alliance setting shared security principles for AI agents matters for any organization that needs to govern and secure agents in production.
+
+Source: Inside IT</description>
+  </item>
   <item>
    <title>AOK Plus deploys AI agents and EU cloud in member services</title>
    <link>https://esm.business/#aok-plus-ki-agenten-cloud</link>
@@ -318,54 +366,6 @@ Source: ServiceNow</description>
 Why it matters Limit agent write access deliberately and model agents as separate machine identities.
 
 Source: ServiceNow Docs</description>
-  </item>
-  <item>
-   <title>McKinsey: large firms scale agents – returns not yet following</title>
-   <link>https://esm.business/#mckinsey-2026</link>
-   <guid isPermaLink="false">esm-business-mckinsey-2026</guid>
-   <category>AI adoption</category>
-   <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-   <description>Among companies with more than $1bn in revenue, 40% already scale AI agents, up from 27% a year earlier. Around a fifth say model operating costs limit their use.
-
-Why it matters Scale alone does not deliver returns. Cost per agent and process becomes a key control metric.
-
-Source: brutkasten</description>
-  </item>
-  <item>
-   <title>Fraunhofer: AI assistant for discharge letters</title>
-   <link>https://esm.business/#iais-arztbrief</link>
-   <guid isPermaLink="false">esm-business-iais-arztbrief</guid>
-   <category>AI adoption</category>
-   <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-   <description>Fraunhofer IAIS developed an assistant that analyses history, findings and test results and turns them into standardised letter formats. One participating clinic writes around 2,500 discharge letters a year.
-
-Why it matters Documentation is the biggest quick lever in health care. Physician review remains mandatory and must be visible in the process.
-
-Source: Fraunhofer IAIS</description>
-  </item>
-  <item>
-   <title>Telekom automates entire service chains for business customers</title>
-   <link>https://esm.business/#tk-service</link>
-   <guid isPermaLink="false">esm-business-tk-service</guid>
-   <category>AI adoption</category>
-   <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-   <description>An agent turns a fault report into a ticket, then a technician appointment and finally an invoice – with no phone call in between. It builds on partnerships with n8n and Parloa; complex cases stay with people.
-
-Why it matters The benchmark moves from chatbots to end-to-end automation. That is where it becomes clear whether service platforms and agents work together cleanly.
-
-Source: digital-magazin.de</description>
-  </item>
-  <item>
-   <title>Mercedes-Benz scales AI across its workforce</title>
-   <link>https://esm.business/#mb-scale</link>
-   <guid isPermaLink="false">esm-business-mb-scale</guid>
-   <category>AI adoption</category>
-   <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-   <description>Mercedes wants employees to shape AI, not just use it, and defines three competence levels. At the top, business teams build their own workflows, for example with n8n. A hackathon with more than 1,500 employees accelerated the rollout.
-
-Why it matters Automation is moving into business teams. That speeds things up but quickly creates parallel workflow worlds that someone has to hold together.
-
-Source: Computerwoche</description>
   </item>
  </channel>
 </rss>

@@ -1,6 +1,128 @@
 [
  {
   "tab": "ai",
+  "cat": "cross",
+  "id": "gartner-ki-ausgaben-2026",
+  "datum": "2026-09-24",
+  "added": "2026-09-25",
+  "region": "Global",
+  "rel_score": 3,
+  "metric": {
+   "de": "+49,5 %",
+   "en": "+49.5%"
+  },
+  "msub": {
+   "de": "weltweite KI-Ausgaben 2026 laut Gartner",
+   "en": "global AI spending 2026, per Gartner"
+  },
+  "titel": {
+   "de": "Gartner: Weltweite KI-Ausgaben steigen 2026 um 49,5 Prozent",
+   "en": "Gartner: Global AI spending to rise 49.5% in 2026"
+  },
+  "kurz": {
+   "de": "Gartner beziffert das weltweite KI-Ausgabenwachstum 2026 auf 49,5 Prozent (2,7 Billionen Dollar), größter Treiber sind KI-Agenten und -Assistenten mit +77,3 Prozent. Für Deutschland nennt IDC laut Bitkom einen KI-Markt von 28,7 Milliarden Euro (+48 Prozent), generative KI soll sich auf 11,5 Milliarden Euro verdoppeln.",
+   "en": "Gartner projects global AI spending will grow 49.5% in 2026 to $2.7 trillion, with AI agents and assistants leading at +77.3%. For Germany, IDC data cited by Bitkom puts the AI market at €28.7 billion (+48%), with generative AI spending set to double to €11.5 billion."
+  },
+  "rel": {
+   "de": "Die Prognose zeigt, wie stark Agentic AI die KI-Investitionen treibt, und ordnet den deutschen Markt in den globalen Trend ein – relevant für Budget- und Priorisierungsentscheidungen in KI-Programmen.",
+   "en": "The forecast shows how strongly agentic AI drives AI investment and places the German market within the global trend, useful for budgeting and prioritization in AI programs."
+  },
+  "quelle": "https://www.computerwoche.de/article/4226192/gartner-ki-ausgaben-steigen-2026-um-495-prozent-sagt-gartner.html",
+  "qn": "Computerwoche"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "ki-agenten-angriff-kreditkarten-online-shops",
+  "datum": "2026-09-24",
+  "added": "2026-09-25",
+  "region": "Global",
+  "rel_score": 3,
+  "metric": {
+   "de": "600.000",
+   "en": "600,000"
+  },
+  "msub": {
+   "de": "gestohlene Kreditkartendatensätze",
+   "en": "stolen credit card records"
+  },
+  "titel": {
+   "de": "Autonome KI-Agenten greifen hunderte Online-Shops an, 600.000 Kreditkartendaten gestohlen",
+   "en": "Autonomous AI agents attack hundreds of online shops, steal 600,000 credit card records"
+  },
+  "kurz": {
+   "de": "Sicherheitsforscher von Gambit Security haben eine Angriffskampagne rekonstruiert, bei der ein Akteur mit drei quelloffenen KI-Agenten weitgehend autonom hunderte Online-Shops kompromittierte. Bei mindestens 27 Unternehmen gelang der Einbruch, zwei Firmen verloren Daten von über 600.000 noch gültigen Kreditkarten; die KI-Kosten des Angreifers lagen bei rund 12.000 bis 18.000 US-Dollar.",
+   "en": "Security researchers at Gambit Security reconstructed an attack campaign in which an actor used three open-source AI agents to compromise hundreds of online shops largely autonomously. At least 27 companies were breached, two lost data from more than 600,000 still-valid credit cards; the attacker's AI costs were roughly $12,000-18,000."
+  },
+  "rel": {
+   "de": "Zeigt konkret, wie günstig und autonom KI-Agenten heute große Angriffskampagnen fahren können – ein Weckruf für Agenten-Governance und die Absicherung eigener Systeme.",
+   "en": "A concrete example of how cheaply and autonomously AI agents can now run large-scale attacks, a wake-up call for agent governance and securing one's own systems."
+  },
+  "quelle": "https://www.heise.de/news/Angriff-mit-KI-Agenten-auf-hunderte-Shops-600-000-Kreditkartendaten-geklaut-11464492.html",
+  "qn": "heise online"
+ },
+ {
+  "tab": "ai",
+  "cat": "ind",
+  "sub": {
+   "de": "Handel",
+   "en": "Retail"
+  },
+  "id": "yougov-ki-agenten-mittelstand-2026",
+  "datum": "2026-09-24",
+  "added": "2026-09-25",
+  "region": "DE",
+  "rel_score": 2,
+  "metric": {
+   "de": "45 %",
+   "en": "45%"
+  },
+  "msub": {
+   "de": "KMU ab 10 Mitarbeitenden mit Agentic AI",
+   "en": "share of SMEs with 10+ employees using agentic AI"
+  },
+  "titel": {
+   "de": "YouGov-Studie: KI-Agenten im Mittelstand noch selten, wachstumsstarke KMU weit vorn",
+   "en": "YouGov study: AI agents still rare among German SMEs, fast-growing ones lead"
+  },
+  "kurz": {
+   "de": "Eine YouGov-Studie im Auftrag von Alibaba.com und dem Handelsverband bevh zeigt: Erst 24 Prozent der deutschen KMU nutzen Agentic AI, bei Betrieben ab zehn Mitarbeitenden sind es bereits 45 Prozent. Unter Entscheidern unter 35 Jahren setzt sogar jeder Dritte KI-Agenten ein.",
+   "en": "A YouGov study commissioned by Alibaba.com and trade association bevh finds only 24% of German SMEs use agentic AI, but 45% among businesses with ten or more employees. Among decision-makers under 35, one in three already uses AI agents."
+  },
+  "rel": {
+   "de": "Zeigt, wie ungleich Agentic AI im deutschen Mittelstand verteilt ist – ein Hinweis für Anbieter und Berater, welche Zielgruppen zuerst zu adressieren sind.",
+   "en": "Shows how unevenly agentic AI is adopted across German SMEs, useful for vendors and advisors deciding which segments to target first."
+  },
+  "quelle": "https://www.ad-hoc-news.de/boerse/news/corporate-news/alibaba-com/70177966",
+  "qn": "ad-hoc news / YouGov (im Auftrag von Alibaba.com)"
+ },
+ {
+  "tab": "tech",
+  "cat": "gov",
+  "id": "blueprint-alliance-ki-agenten-sicherheit",
+  "datum": "2026-09-23",
+  "added": "2026-09-25",
+  "region": "Global",
+  "rel_score": 2,
+  "metric": null,
+  "msub": null,
+  "titel": {
+   "de": "Neue Allianz aus 12 Tech-Konzernen will Sicherheitsstandard für KI-Agenten schaffen",
+   "en": "New alliance of 12 tech firms aims to set security standard for AI agents"
+  },
+  "kurz": {
+   "de": "Okta hat mit AWS, Google Cloud, Salesforce, ServiceNow und weiteren Anbietern die 'Blueprint Alliance' gegründet, um eine herstellerübergreifende Referenzarchitektur für die Absicherung von KI-Agenten zu entwickeln. Grundprinzipien sind unter anderem eigene Identitäten für Agenten, minimale statt dauerhafte Zugriffsrechte und sofortige Isolierbarkeit.",
+   "en": "Okta, together with AWS, Google Cloud, Salesforce, ServiceNow and other vendors, has launched the 'Blueprint Alliance' to build a vendor-neutral reference architecture for securing AI agents. Core principles include treating agents as first-class identities, minimal rather than standing access rights, and instant, reversible isolation."
+  },
+  "rel": {
+   "de": "Ein breites Herstellerbündnis, das gemeinsame Sicherheitsprinzipien für Agenten setzt, ist relevant für jede Organisation, die KI-Agenten produktiv steuern und absichern muss.",
+   "en": "A broad vendor alliance setting shared security principles for AI agents matters for any organization that needs to govern and secure agents in production."
+  },
+  "quelle": "https://www.inside-it.ch/neue-allianz-will-ki-agenten-absichern-20260923",
+  "qn": "Inside IT"
+ },
+ {
+  "tab": "ai",
   "cat": "fs",
   "sub": {
    "de": "Versicherungen",
